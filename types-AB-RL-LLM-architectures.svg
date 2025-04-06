@@ -28,9 +28,9 @@
      inkscape:deskcolor="#ffffff"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="799"
-     inkscape:cy="188"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="787.71695"
+     inkscape:cy="410.12193"
      inkscape:window-width="1920"
      inkscape:window-height="1055"
      inkscape:window-x="0"
@@ -38,7 +38,8 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:pageshadow="2"
-     showborder="false" /><defs
+     showborder="false"
+     inkscape:export-bgcolor="#ffffffff" /><defs
      id="defs1265"><filter
        style="color-interpolation-filters:sRGB"
        inkscape:label="Colorize"
@@ -1798,7 +1799,7 @@
          d="M 144.16443,106.19671 V 60.226196"
          id="path2-5-2-2-5" /></g><g
        id="g2-2-5-5"
-       transform="matrix(0,0.25,-0.25,0,359.61811,30.959235)"
+       transform="matrix(0.25,0,0,0.25,302.76815,46.217105)"
        style="stroke-width:3.175;stroke-dasharray:none"><ellipse
          style="opacity:1;fill:none;stroke:#000000;stroke-width:3.175;stroke-linecap:round;stroke-dasharray:none"
          id="path1-0-0-9"
@@ -1844,8 +1845,11 @@
          d="M 144.16443,106.19671 V 60.226196"
          id="path2-5-22-6-3" /></g><g
        id="g2-3-8-3-6"
-       transform="matrix(0,0.25,-0.25,0,359.61811,82.475479)"
-       style="stroke:#969696;stroke-width:3.175;stroke-dasharray:none;stroke-opacity:1"><ellipse
+       transform="matrix(0.25,0,0,0.25,302.76815,97.733349)"
+       style="stroke:#969696;stroke-width:3.175;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="../masters-thesis/g2-3-8-3-6.png"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192"><ellipse
          style="opacity:1;fill:none;stroke:#969696;stroke-width:3.175;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
          id="path1-5-9-2-5"
          cx="144.21567"
@@ -2002,7 +2006,10 @@
            id="tspan274-2-8-6-1-9-7-5">RL</tspan></text></g><g
        id="g2-3-8-8"
        transform="matrix(0.25,0,0,0.25,252.52491,-7.8477815)"
-       style="fill:none;stroke:#000000;stroke-width:3.175;stroke-dasharray:none;stroke-opacity:1"><ellipse
+       style="fill:none;stroke:#000000;stroke-width:3.175;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="../masters-thesis/world-symbol.png"
+       inkscape:export-xdpi="384"
+       inkscape:export-ydpi="384"><ellipse
          style="opacity:1;fill:none;stroke:#000000;stroke-width:3.175;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
          id="path1-5-9-6"
          cx="144.21567"
@@ -2162,7 +2169,10 @@
   </g>
 </g><g
        id="g23"
-       transform="matrix(0.25,0,0,0.25,143.25146,53.185001)"><path
+       transform="matrix(0.25,0,0,0.25,143.25146,53.185001)"
+       inkscape:export-filename="../masters-thesis/speech-symbol.png"
+       inkscape:export-xdpi="384"
+       inkscape:export-ydpi="384"><path
          id="rect21"
          style="display:inline;opacity:1;fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:round"
          d="m 362.62231,32.144291 c -9.88673,0 -17.84594,7.208214 -17.84594,16.162321 v 0.168465 c 0,5.354138 2.84761,10.082472 7.24969,13.020394 l -2.09807,10.984343 9.5834,-8.089946 c 1.01049,0.159725 2.04842,0.24753 3.11092,0.24753 h 10.09034 c 9.88672,0 17.84594,-7.208214 17.84594,-16.162321 v -0.168465 c 0,-8.954107 -7.95922,-16.162321 -17.84594,-16.162321 z" /><ellipse
@@ -2186,7 +2196,10 @@
          ry="1.3767409" /></g><g
        id="g23-2"
        transform="matrix(0.25,0,0,0.25,143.25146,105.04334)"
-       style="stroke:#999999"><path
+       style="stroke:#999999"
+       inkscape:export-filename="../masters-thesis/speech-gray.png"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192"><path
          id="rect21-5"
          style="display:inline;opacity:1;fill:none;stroke:#999999;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:round"
          d="m 362.62231,32.144291 c -9.88673,0 -17.84594,7.208214 -17.84594,16.162321 v 0.168465 c 0,5.354138 2.84761,10.082472 7.24969,13.020394 l -2.09807,10.984343 9.5834,-8.089946 c 1.01049,0.159725 2.04842,0.24753 3.11092,0.24753 h 10.09034 c 9.88672,0 17.84594,-7.208214 17.84594,-16.162321 v -0.168465 c 0,-8.954107 -7.95922,-16.162321 -17.84594,-16.162321 z" /><ellipse

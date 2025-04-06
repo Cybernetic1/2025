@@ -1,0 +1,178 @@
+\documentclass[runningheads]{llncs}
+
+\usepackage[backend=biber]{biblatex}
+\bibliography{AGI-book}
+
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\usepackage{amsmath}
+\usepackage{amssymb}    % for \rightsquigarrow
+\usepackage{wasysym}	% for frown face
+\usepackage{mathrsfs} 	% for \mathscr
+\usepackage{stmaryrd}
+\usepackage{mathtools}		% to extend length of double harpoon arrows
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,decorations.markings,shapes.multipart,shapes.geometric}
+\usepackage{tikz-cd}
+
+%\newcommand{\selfLoop}[2]{\begin{tikzcd}
+%	#1\ar[in=30,out=60,loop,"#2"{pos=.7}]
+%	\end{tikzcd}}
+
+\makeatletter
+\newcommand\mathcircled[1]{%
+	\mathpalette\@mathcircled{#1}%
+}
+\newcommand\@mathcircled[3]{%
+	\tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt] (math) {$\m@th#1#2$};%
+}
+\makeatother
+
+\begin{document}
+%
+\title{Combining LLM and RL and Logic Transformer}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{King-Yin Yan \orcidID{0009-0007-8238-2442}}
+%
+\authorrunning{K-Y. Yan}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{\email{general.intelligence@gmail.com}}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+blah
+
+\keywords{AGI \and large language models \and reinforcement learning \and neural-symbolic integration}
+\end{abstract}
+
+\section{LLM + RL architectures}
+
+For ``string diagrams'' there are usually two conventions: 1) data are nodes, functions are edges: \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt] (math) {$x$}; $\stackrel{f}{\longrightarrow}$ \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt] (math) {$y$};  or alternatively 2) functions are nodes, data are edges: $\stackrel{x}{\longrightarrow}$ \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt,fill=gray!20] (math) {$f$}; $\stackrel{y}{\longrightarrow}$.  In the following, I make explicit nodes for both functions (grey) and data (white), whereas edges merely represent linkages.
+
+First we look at the \textbf{fundamental forms} of RL (left) and auto-encoders (right).  The eye represents observations and the mouth (speech) actions.  Because RL has to maximize rewards, its internal representation (the state) must eventually approach a good approximation of the world.  The auto-encoder, of which LLMs are a special case, works by compressing world-data (via $\rho$) and de-compressing (via $\rho^{-1}$) to re-construct the data (grey world).
+\begin{equation}
+\begin{tikzpicture}[every path/.style={ultra thick},,decoration={
+	markings,mark=at position 0.53 with {\arrow{>}}}]
+
+\node[] (name) at (1,2) {\textbf{(RL)}};
+
+\node[] (eye) at (-3, 0.7) {\includegraphics{eye-symbol.png}};
+\node[] (mouth) at (-3, 0.2) {\includegraphics{mouth-symbol.png}};
+\node[draw,ultra thick,rectangle] (state) at (0, 0.5) {state};
+\node[draw,ultra thick,circle,fill=gray!20] (RL) at (2, 0.5) {RL};
+
+\node[] (world) at (-1.3,1.8) {\includegraphics[scale=0.6]{world-symbol.png}};
+\node[rotate=-40] (approx) at (-0.6,1.2) {\LARGE$\approx$};
+
+\draw[postaction={decorate},rounded corners=12pt] (state.north) to ([yshift=18pt]state.north) to ([yshift=12pt]RL.north) to (RL.north);
+\draw[postaction={decorate},rounded corners=12pt] (RL.south) to ([yshift=-12pt]RL.south) to ([yshift=-18pt]state.south) to (state.south);
+
+\draw[-left to,shorten >= 5pt] (eye) -- (state.north west);
+\draw[-left to,shorten <= 5pt] (state.south west) -- (mouth);
+\end{tikzpicture}
+\qquad \quad
+\begin{tikzpicture}[node distance=-2pt,every path/.style={ultra thick},every text node part/.style={align=center},decoration={
+	markings,mark=at position 0.53 with {\arrow{>}}}]
+
+\node[] (name) at (0,1.5) {\textbf{(Auto-encoder)}};
+
+\node[] (world1) at (-2,0) {\includegraphics[scale=0.6]{world-symbol.png}};
+\node[] (world2) at (2,0) {\includegraphics[scale=0.6]{world-gray.png}};
+
+\node[rotate=90,rectangle,fill=white] (state) at (0, 0) {state};
+\draw[] (state.south east) -- (state.north east) (state.south west) -- (state.north west);
+
+\node (compress1) [rotate=90, draw,trapezium, trapezium angle=-70, fill=gray!20, minimum height=32pt, inner xsep=3.1pt, above=0pt of state] {};
+\node (compress2) [rotate=90, draw,trapezium, trapezium angle=70, fill=gray!20, minimum height=32pt, inner xsep=3.1pt, below=0pt of state] {};
+
+\node[] (rho) at (0.1,0) {\large $\rho \qquad \quad \; \rho^{-1}$};
+%\node[] (rho-1) at (1,0) {$\rho^{-1}$};
+
+\end{tikzpicture}
+\end{equation}
+
+Types A and B:
+\begin{equation}
+\hspace{-0.5cm}
+\begin{tikzpicture}[node distance=-2pt,every path/.style={ultra thick},every text node part/.style={align=center},decoration={
+	markings,mark=at position 0.53 with {\arrow{>}}}]
+
+\node[] (name) at (0.1,2) {\textbf{(Type A)}};
+
+\node[draw,ultra thick,circle,fill=gray!20] (RL) at (2, 0) {RL};
+\node (state) [draw,rectangle split,rectangle split parts=2,minimum width=5em] at (0, 0) {out-state \nodepart{two} in-state};
+
+\node[] (speech1) at (-3,2) {\includegraphics[scale=0.6]{speech-gray.png}};
+\node[] (speech2) at (-3,-2) {\includegraphics[scale=0.6]{speech-symbol.png}};
+
+\node (compress1) [draw,trapezium,trapezium angle=-70, fill=gray!20, minimum height=32pt, inner xsep=-2pt] at (-3,0.55) {NL};
+\node (compress2) [draw,trapezium,trapezium angle=70, fill=gray!20, minimum height=32pt, inner xsep=-7pt, below=of compress1] {NL${}^{-1}$};
+
+\node (stateA) [rectangle,minimum width=45pt, minimum height=8pt, above=0pt of compress1] {};
+\draw(stateA.south west) -- (stateA.north west) -- (stateA.north east) -- (stateA.south east);
+\node (stateB) [rectangle,minimum width=45pt, minimum height=8pt, below=0pt of compress2] {};
+\draw(stateB.north west) -- (stateB.south west) -- (stateB.south east) -- (stateB.north east);
+
+\draw[dashed] (stateA.east) to ([yshift=-5pt]state.north west);
+\draw[dashed] (stateB.east) to ([yshift=5pt]state.south west);
+
+\draw[postaction={decorate},rounded corners=12pt] (state.north) to ([yshift=14pt]state.north) to ([yshift=15pt]RL.north) to (RL.north);
+\draw[postaction={decorate},rounded corners=12pt] (RL.south) to ([yshift=-15pt]RL.south) to ([yshift=-14pt]state.south) to (state.south);
+\end{tikzpicture}
+\qquad \qquad
+\begin{tikzpicture}[node distance=-2pt,every path/.style={ultra thick},every text node part/.style={align=center},decoration={
+	markings,mark=at position 0.53 with {\arrow{>}}}]
+
+\node[] (name) at (0.1,2) {\textbf{(Type B)}};
+
+\node[draw,ultra thick,circle,fill=gray!20] (RL) at (2, 0) {RL};
+\node (state) [draw,rectangle split,rectangle split parts=2,minimum width=5em] at (0, 0) {out-state \nodepart{two} in-state};
+
+\node[] (world1) at (-3,2) {\includegraphics[scale=0.6]{world-gray.png}};
+\node[] (world2) at (-3,-2) {\includegraphics[scale=0.6]{world-symbol.png}};
+
+\node (compress1) [draw,trapezium,trapezium angle=-70, fill=gray!20, minimum height=40pt, inner xsep=2pt] at (-3,0.67) {};
+\node (compress2) [draw,trapezium,trapezium angle=70, fill=gray!20, minimum height=40pt, inner xsep=2pt, below=of compress1] {};
+
+\node (stateA) [draw,trapezium,trapezium angle=-70, fill=white, minimum height=10pt, inner xsep=12pt, above=-25pt of compress1] {};
+%\draw(stateA.south west) -- (stateA.north west) -- (stateA.north east) -- (stateA.south east);
+\node (stateB) [draw,trapezium,trapezium angle=70, fill=white, minimum height=10pt, inner xsep=12pt, below=-25pt of compress2] {};
+%\draw(stateB.north west) -- (stateB.south west) -- (stateB.south east) -- (stateB.north east);
+
+\draw[dashed] (stateA.east) to ([yshift=-5pt]state.north west);
+\draw[dashed] (stateB.east) to ([yshift=5pt]state.south west);
+
+\draw[postaction={decorate},rounded corners=12pt] (state.north) to ([yshift=14pt]state.north) to ([yshift=15pt]RL.north) to (RL.north);
+\draw[postaction={decorate},rounded corners=12pt] (RL.south) to ([yshift=-15pt]RL.south) to ([yshift=-14pt]state.south) to (state.south);
+\end{tikzpicture}
+\end{equation}
+
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+% \bibliographystyle{splncs04}
+\printbibliography
+
+\end{document}

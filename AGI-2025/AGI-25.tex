@@ -261,7 +261,7 @@ Armed with these ideas, it is not too difficult to work out a new kind of differ
 \begin{figure}
 	\hspace{-3cm}
 	\includegraphics[scale=.7]{logic-Transformer-string-diagram-3.png}
-	\caption{String diagram of the Logic Transformer.  The {\LARGE\color{magenta}\RIGHTarrow} indicates \textbf{internal data} supplied by the Transformer, similar to the Q,K,V matrices in traditional Transformers.  These are modified through ``learning'' or training.  The 2 \RIGHTarrow's \ are \textbf{inputs} to the Transformer, this is matched with the 2 \textbf{outputs} on the right of the diagram.  Tags {\color{orange}$[M,N,...]$} indicate the \textbf{dimensions} of data streams.}
+	\caption{String diagram of the Logic Transformer.  The {\LARGE\color{gray}\RIGHTarrow} indicates \textbf{internal data} supplied by the Transformer, similar to the Q,K,V matrices in traditional Transformers.  These are modified through ``learning'' or training.  The 2 \RIGHTarrow's \ are \textbf{inputs} to the Transformer, this is matched with the 2 \textbf{outputs} on the right of the diagram.  Tags {\color{gray}$[M,N,...]$} indicate the \textbf{dimensions} of data streams.}
 	\label{fig:string-diagram}
 \end{figure}
 
@@ -269,7 +269,7 @@ Armed with these ideas, it is not too difficult to work out a new kind of differ
 
 The significance of combining RL and LLM is such that the system can \textit{think in loops}, eliminating thoughts that contradict accepted truths, thus achieving genuine, logically coherent understanding, instead of just parroting human speeches.  This would also solve the problem of ``hallucinations''.  The remaining question is how to train the Type L model \textit{efficiently}, but this is more of an engineering rather than theoretical problem.
 
-A very interesting question concerning Part II is how to handle variable-length propositions?  If this could be done, the neural network may have a form very close to or even identical to current Transformers.  Would that mean
+A very interesting question concerning Part II is how to handle \textbf{variable-length propositions}?  If this could be done, the neural network may have a form very close to or even identical to current Transformers...
 
 %
 % ---- Bibliography ----

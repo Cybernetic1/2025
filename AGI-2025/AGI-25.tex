@@ -72,16 +72,16 @@ For ``string diagrams'' there are usually two conventions: 1) data are nodes, fu
 \begin{tikzpicture}[every path/.style={thick},,decoration={
 	markings,mark=at position 0.53 with {\arrow{>}}}]
 
-\node[] (name) at (1.5,2) {\textbf{(RL)}};
+\node[] (name) at (1.5,1.5) {\textbf{(RL)}};
 
-\node[] (eye) at (-2, 0.7) {\includegraphics{eye-symbol.png}};
-\node[] (mouth) at (-2, 0.2) {\includegraphics{mouth-symbol.png}};
-\node[draw,thick,rectangle] (state) at (0, 0.5) {state $x$};
-\node[draw,thick,circle,fill=gray!20] (RL) at (3.3, 0.5) {RL};
-\node[draw,thick,cylinder,shape aspect=0.2,shape border rotate=90] (LTM) at (2.15,0.4) {LTM};
+\node[] (eye) at (-2, 0.25) {\includegraphics{eye-symbol.png}};
+\node[] (mouth) at (-2, -0.25) {\includegraphics{mouth-symbol.png}};
+\node[draw,thick,rectangle] (state) at (0, 0) {state $x$};
+\node[draw,thick,circle,fill=gray!20] (RL) at (3.3, 0) {RL};
+\node[draw,thick,cylinder,shape aspect=0.2,shape border rotate=90] (LTM) at (2.15,-0.1) {LTM};
 
-\node[] (world) at (-1.3,1.8) {\includegraphics[scale=0.6]{world-symbol.png}};
-\node[rotate=-40] (approx) at (-0.6,1.2) {\LARGE$\approx$};
+\node[] (world) at (-1.3,1.3) {\includegraphics[scale=0.6]{world-symbol.png}};
+\node[rotate=-40] (approx) at (-0.6,0.7) {\LARGE$\approx$};
 
 \draw[postaction={decorate},rounded corners=12pt] (state.north) to ([yshift=18pt]state.north) to ([yshift=12pt]RL.north) to (RL.north);
 \draw[postaction={decorate},rounded corners=12pt] (RL.south) to ([yshift=-12pt]RL.south) to ([yshift=-18pt]state.south) to (state.south);
@@ -89,7 +89,7 @@ For ``string diagrams'' there are usually two conventions: 1) data are nodes, fu
 \draw[-left to,shorten >= 5pt] (eye) -- (state.north west);
 \draw[-left to,shorten <= 5pt] (state.south west) -- (mouth);
 % \draw[double=gray!20,double distance=3pt,implies-{implies[fill=gray!20]}] (state.east) -- (LTM);
-\node[draw, double arrow, double arrow head extend=1.5pt, fill=gray!20, minimum height=26pt, inner ysep=1.6pt] at (1.15,0.5) {};
+\node[draw, double arrow, double arrow head extend=1.5pt, fill=gray!20, minimum height=26pt, inner ysep=1.6pt] at (1.15,0) {};
 \end{tikzpicture}
 \qquad
 \begin{tikzpicture}[node distance=-2pt,every path/.style={thick},every text node part/.style={align=center},decoration={
@@ -113,65 +113,71 @@ For ``string diagrams'' there are usually two conventions: 1) data are nodes, fu
 \caption{The eye represents observations and the mouth (speech) actions.  Because RL has to maximize rewards, its internal representation (the state) must eventually approach a good approximation of the world.  LTM = long term memory, which works by associative recall and condensation, but will not concern us in this paper.  The auto-encoder, of which LLMs are a special case, works by compressing world-data (via $\rho$) and de-compressing (via $\rho^{-1}$) to re-construct the data (grey world).}
 \end{figure}
 
-First let's recall the \textbf{fundamental forms} of RL (Fig.\ref{fig:fundamental-forms} left) and auto-encoders (right).  The question is how to combine them, for which we can ignore the LTM module. Both RL and LLM have the ``state'' $x$ in common but there are subtle differences as to how to interpret these states (Fig.\ref{fig:types-AB}).  Initially my research favored \textbf{Type W}, where the LLM is interpreted as a \textbf{world model}.  This approach suffers the problem that we don't really understand the internal state (marked ``?'') of the LLM, which consists of many layers of Transformers and their intermediate token outputs, so we don't know how to ``merge'' the RL state with the LLM state.
+First let's recall the \textbf{fundamental forms} of RL (Fig.\ref{fig:fundamental-forms} left) and auto-encoders (right).  The question is how to combine them, for which we can ignore the LTM module. Both RL and LLM have the ``state'' $x$ in common but there are subtle differences as to how to interpret these states (Fig.\ref{fig:types-AB}).  Initially my research favored \textbf{Type W}, where the LLM is interpreted as a \textbf{world model}.  This approach suffers the problem that we don't really understand the internal state (marked ``?'') of LLMs, which consists of many layers of Transformers and their intermediate token outputs, so we don't know how to ``merge'' the RL state with the LLM state.
 
 % 反省的有效性，取决于： 这个 loop 如何训练，有效地训练。
 
 % (Other researchers have proposed different taxonomies \cite{?}).
-It seems that \textbf{Type L} would be easier to work with, and it is also the ``mainstream'' approach, of which RLHF seems to be an instance.  Here, the LLM models the ``spoken thoughts'' of human thinking, as found in text corpora.  These thoughts are interpreted as internal states of the RL.  Ever since Richard Montague's success in converting a fragment of English into formal logic \cite{Montague}, the line between formal logic and natural language is blurred.  We should not obsess with the idea that ``logic'' must be some kind of cryptic, undecipherable code.  This leads to a novel idea: \textit{the ``representation'' of human internal thought is just natural language.}  Type L also has the advantage that we can directly examine the internal state of an AGI.  What are currently called ``prompts'' is just \textbf{Working Memory}.
+It seems that \textbf{Type L} would be easier to work with, and it is also the ``mainstream'' approach, of which RLHF seems to be an instance.  Here, the LLM simply loops over itself to form an RL loop.  The LLM models the ``spoken thoughts'' of human thinking, as found in text corpora.  These thoughts are interpreted as internal states of the RL.  Ever since Richard Montague's success in converting a fragment of English into formal logic \cite{Montague}, the line between formal logic and natural language is blurred.  We should not obsess with the idea that ``logic'' must be some kind of cryptic, undecipherable code.  This leads to a novel idea: \textit{the ``representation'' of human internal thought is just natural language.}  Type L also has the advantage that we can directly examine the internal state of an AGI.  What are currently called ``prompts'' is just \textbf{Working Memory}.
 
 \begin{figure}
 	\label{fig:types-AB}
 \begin{tikzpicture}[node distance=-2pt,every path/.style={thick},decoration={
 	markings,mark=at position 0.53 with {\arrow{>}}}]
 
-\node[rectangle, align=left, text depth=5pt, anchor=west, text width=100pt] at (-1, 2) {\textbf{(Type L)} \\ LLM as language model};
+\node[rectangle, align=left, text depth=5pt, anchor=west, text width=100pt] at (-1.5, 2.25) {\textbf{(Type L)} LLM as \\ language model};
 
-\node[draw,thick,circle,fill=gray!20] (RL) at (1.5, 0) {RL};
-\node (state) [draw,rectangle split,rectangle split parts=2,minimum width=3em] at (0, 0) {$x_{t+1}$ \nodepart{two} $x_t$};
+\node[draw,thick,dashed,rectangle, minimum height=66pt, rounded corners=10pt, minimum width=50pt, label=right:RL] (RL) at (2, 0) {};
+\node (state) [draw,rectangle split,rectangle split parts=2,minimum width=3em] at (0, 0) {$x_{t}$ \nodepart{two} $x_{t+1}$};
 
-\node[] (speech1) at (-2,2) {\includegraphics[scale=0.5]{speech-gray.png}};
-\node[] (speech2) at (-2,-2) {\includegraphics[scale=0.5]{speech-symbol.png}};
+\node[] (eye) at (-1.5, 0.27) {\includegraphics{eye-symbol.png}};
+\node[] (mouth) at (-1.5, -0.27) {\includegraphics{mouth-symbol.png}};
 
-\node (compress1) [draw,trapezium,trapezium angle=-70, fill=gray!20, minimum height=32pt, inner xsep=-2pt] at (-2,0.55) {NL};
-\node (compress2) [draw,trapezium,trapezium angle=70, fill=gray!20, minimum height=32pt, inner xsep=-6.5pt, below=0pt of compress1] {NL${}^{-1}$};
+\node[] (speech1) at (2,1.8) {\includegraphics[scale=0.5]{speech-symbol.png}};
+\node[] (speech2) at (2,-1.8) {\includegraphics[scale=0.5]{speech-gray.png}};
 
-\node (stateA) [rectangle,minimum width=45pt, minimum height=8pt, above=0pt of compress1] {};
-\draw(stateA.south west) -- (stateA.north west) -- (stateA.north east) -- (stateA.south east);
-\node (stateB) [rectangle,minimum width=45pt, minimum height=8pt, below=0pt of compress2] {};
-\draw(stateB.north west) -- (stateB.south west) -- (stateB.south east) -- (stateB.north east);
+\node (compress1) [draw,trapezium,trapezium angle=-70, fill=gray!20, minimum height=25pt, inner xsep=-6.5pt, anchor=south] at (2,0) {\footnotesize NL${}^{-1}$};
+\node (compress2) [draw,trapezium,trapezium angle=70, fill=gray!20, minimum height=25pt, inner xsep=-2pt, below=0pt of compress1] {\footnotesize NL};
 
-\draw[dashed] (stateA.east) to ([yshift=-5pt]state.north west);
-\draw[dashed] (stateB.east) to ([yshift=5pt]state.south west);
+% \node (stateA) [rectangle,minimum width=35pt, minimum height=5pt, above=0pt of compress1] {};
+% \draw(stateA.south west) -- (stateA.north west) -- (stateA.north east) -- (stateA.south east);
+% \node (stateB) [rectangle,minimum width=35pt, minimum height=5pt, below=0pt of compress2] {};
+% \draw(stateB.north west) -- (stateB.south west) -- (stateB.south east) -- (stateB.north east);
 
-\draw[postaction={decorate},rounded corners=12pt] (state.north) to ([yshift=14pt]state.north) to ([yshift=15pt]RL.north) to (RL.north);
-\draw[postaction={decorate},rounded corners=12pt] (RL.south) to ([yshift=-15pt]RL.south) to ([yshift=-14pt]state.south) to (state.south);
+% \draw[dashed] (stateA.east) to ([yshift=-5pt]state.north west);
+% \draw[dashed] (stateB.east) to ([yshift=5pt]state.south west);
+
+\draw[-left to, shorten >= 3pt] (eye) -- ([yshift=7pt]state.west);
+\draw[-left to, shorten <= 3pt] ([yshift=-7pt]state.west) -- (mouth);
+
+\draw[postaction={decorate},rounded corners=12pt] (state.north) to ([yshift=27pt]state.north) to ([yshift=14pt]compress1.north) to (compress1.north);
+\draw[postaction={decorate},rounded corners=12pt] (compress2.south) to ([yshift=-14pt]compress2.south) to ([yshift=-27pt]state.south) to (state.south);
 \end{tikzpicture}
-\qquad
+\qquad \quad
 \begin{tikzpicture}[node distance=-2pt,every path/.style={thick},decoration={
 	markings,mark=at position 0.53 with {\arrow{>}}}]
 
-\node[align=left, anchor=west, text width=100pt] at (-1, 2) {\textbf{(Type W)} \\ LLM as world model};
+\node[align=left, anchor=west, text width=100pt] at (-1, 2) {\textbf{(Type W)} LLM as \\ world model};
 
 \node[draw,thick,circle,fill=gray!20] (RL) at (1.5, 0) {RL};
-\node (state) [draw,rectangle split,rectangle split parts=2,minimum width=3em] at (0, 0) {$x_{t+1}$ \nodepart{two} $x_t$};
+\node (state) [draw,rectangle split,rectangle split parts=2,minimum width=3em] at (0, 0) {$x_{t}$ \nodepart{two} $x_{t+1}$};
 
-\node[] (world1) at (-2,1.9) {\includegraphics[scale=0.5]{world-gray.png}};
-\node[] (world2) at (-2,-1.9) {\includegraphics[scale=0.5]{world-symbol.png}};
+\node[] (world1) at (-2,1.7) {\includegraphics[scale=0.5]{world-symbol.png}};
+\node[] (world2) at (-2,-1.7) {\includegraphics[scale=0.5]{world-gray.png}};
 
-\node (compress1) [draw,trapezium,trapezium angle=-70, fill=gray!20, minimum height=40pt, inner xsep=2pt] at (-2,0.67) {};
-\node (compress2) [draw,trapezium,trapezium angle=70, fill=gray!20, minimum height=40pt, inner xsep=2pt, below=of compress1] {};
+\node (compress1) [draw,trapezium,trapezium angle=-70, fill=gray!20, minimum height=35pt, inner xsep=1pt, anchor=south] at (-2,0) {};
+\node (compress2) [draw,trapezium,trapezium angle=70, fill=gray!20, minimum height=35pt, inner xsep=1pt, below=of compress1] {};
 
-\node (stateA) [draw,trapezium,trapezium angle=-70, fill=white, minimum height=10pt, inner xsep=11.5pt, above=-25pt of compress1] {?};
-\node (stateB) [draw,trapezium,trapezium angle=70, fill=white, minimum height=10pt, inner xsep=11.5pt, below=-25pt of compress2] {?};
+\node (stateA) [draw,trapezium,trapezium angle=-70, fill=white, minimum height=6pt, inner xsep=4pt, above=-22pt of compress1] {?};
+\node (stateB) [draw,trapezium,trapezium angle=70, fill=white, minimum height=6pt, inner xsep=4pt, below=-22pt of compress2] {?};
 
-\draw[dashed] (stateA.east) to ([yshift=-5pt]state.north west);
-\draw[dashed] (stateB.east) to ([yshift=5pt]state.south west);
+\draw[dashed] (stateA.east) to [edge label=?] ([yshift=-5pt]state.north west);
+\draw[dashed] (stateB.east) to [edge label'=?] ([yshift=5pt]state.south west);
 
 \draw[postaction={decorate},rounded corners=12pt] (state.north) to ([yshift=14pt]state.north) to ([yshift=15pt]RL.north) to (RL.north);
 \draw[postaction={decorate},rounded corners=12pt] (RL.south) to ([yshift=-15pt]RL.south) to ([yshift=-14pt]state.south) to (state.south);
 \end{tikzpicture}
-\caption{Two types of RL + LLM architectures.}
+\caption{Two types of RL + LLM architectures. NL${}^{-1}$ is a map that compresses natural language to a hidden representation (not shown explicitly).}
 \end{figure}
 
 \section*{Part II. \ Logic Transformer}

@@ -27,6 +27,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows,positioning,decorations.markings,shapes.multipart,shapes.geometric,shapes.arrows,tikzmark,calc}
 \usepackage{tikz-cd}
+\usepackage{sidecap}
 
 \newcommand\logic[1]{{\color{gray}\mathsf{#1}}}
 
@@ -181,6 +182,52 @@ It seems that \textbf{Type L} would be easier to work with, and it is also the `
 \end{figure}
 
 \section*{Part II. \ Logic Transformer}
+
+\begin{SCfigure}[50]
+	\label{fig:she-loves-him}
+\begin{tikzpicture}[every path/.style={thick}]
+
+\node (she) [draw,rectangle,rounded corners=4pt,rotate=-45] at (-1, 1) {she};
+\node (loves) [draw,rectangle,rounded corners=4pt,rotate=-45] at (0, 0) {loves};
+\node (him) [draw,rectangle,rounded corners=4pt,rotate=-45] at (1, -1) {him};
+\node (more) [draw,gray,rectangle,rounded corners=4pt,rotate=-45] at (1, 1) {more};
+\node (than) [draw,gray,rectangle,rounded corners=4pt,rotate=-45] at (2, 0) {than};
+\node (me) [draw,gray,rectangle,rounded corners=4pt,rotate=-45] at (3, -1) {me};
+
+\draw[] (she) -- (loves) -- (him);
+\draw[gray] (loves) -- (more) -- (than) -- (me);
+
+\end{tikzpicture}
+\caption{Example of a linguistic tree (a connected graph without loops or double edges).  From a Chomskyan perspective, any NL sentence can fit into a tree structure.  This example starts with a simple relation, she-loves-him, and the ``love'' node is modified by a ``more'' clause.  Let's not dwell too deep into the details of this example, as machine-learning will fill in such details.}
+\end{SCfigure}
+
+As we know, LLMs predicts the next word per each iteration.  The number of possible natural-language sentences is an astronomical figure (if not $\infty$), so it is infeasible on any real computer to represent probability distributions over this set.  However, as vocabulary size is finite, the conditional probabilities $\mathbb{P}$(next word | prior words, context) is manageable.  This is part of what makes LLMs so efficient -- by decomposing sentences into words.
+
+For a long time I tried to analyze the Transformer (Self Attention) from a symbolic-logic point of view, but could not interpret the meaning of \textbf{tokens} -- whether they should correspond to logic propositions, or sub-propositional symbols?  The question is how to reconcile these two views:
+\begin{equation}
+\nonumber
+\hspace{-1cm} \begin{tikzpicture}[align=center, every path/.style={thick}]
+\node[text width=100pt] at (-5.5, 0) {\textbf{current\\LLMs}};
+
+\node (inputs1) [] at (-3,0) {prior words};
+\node (KB1) [draw,thick,cylinder,shape aspect=0.1,shape border rotate=90,text width=60pt] at (0,0) {layers of\\Transformers};
+\node (outputs1) [] at (3,0) {next word};
+
+\draw[->] (inputs1) edge (KB1) (KB1) -- (outputs1);
+
+% -------------------------------
+
+\node[text width=100pt] at (-5.5, -1.5) {\textbf{symbolic AI}\\eg. OpenCog};
+
+\node (inputs2) [] at (-2.5,-1.5) {propositions in\\working memory};
+\node (KB2) [draw,thick,cylinder,shape aspect=0.15,shape border rotate=90,text width=30pt] at (0.5,-1.5) {logic\\rules};
+\node (outputs2) [] at (3,-1.5) {inferred\\proposition};
+
+\draw[->] (inputs2) edge (KB2) (KB2) -- (outputs2);
+\end{tikzpicture}
+\end{equation}
+Finally I had a break-through insight that a symbolic-logic Transformer should output \textbf{atomic propositions} that modifies only one part of a linguistic tree at a time (Fig.\ref{fig:she-loves-him}).
+
 
 Having convinced ourselves that LLMs can be a model of \textit{internal} thoughts, we wonder if the Transformer can be re-formulated as some kind of logic engine or general \textbf{rewriting system}, defined by rewriting \textbf{rules} that can be learned via gradient descent?
 

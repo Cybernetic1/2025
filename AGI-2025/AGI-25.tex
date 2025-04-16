@@ -24,10 +24,12 @@
 \usepackage{stmaryrd}
 \usepackage{bm}
 \usepackage{mathtools}		% to extend length of double harpoon arrows
-\usepackage{tikz}
+\usepackage{tikz,ifthen}
 \usetikzlibrary{arrows,positioning,decorations.markings,shapes.multipart,shapes.geometric,shapes.arrows,tikzmark,calc}
 \usepackage{tikz-cd}
 \usepackage{sidecap}
+\usepackage{comment}
+\usepackage{adjustbox}
 
 \newcommand\logic[1]{{\color{gray}\mathsf{#1}}}
 
@@ -48,13 +50,16 @@
 % If the paper title is too long for the running head, you can set
 % an abbreviated paper title here
 %
-\author{King-Yin Yan \orcidID{0009-0007-8238-2442}}
+\author{$\blacksquare\blacksquare\blacksquare\blacksquare$}
+% \author{King-Yin Yan \orcidID{0009-0007-8238-2442}}
 %
-\authorrunning{K-Y. Yan}
+\authorrunning{$\blacksquare\blacksquare\blacksquare\blacksquare$}
+% \authorrunning{K-Y. Yan}
 % First names are abbreviated in the running head.
 % If there are more than two authors, 'et al.' is used.
 %
-\institute{\email{general.intelligence@gmail.com}}
+\institute{$\blacksquare\blacksquare\blacksquare\blacksquare$}
+% \institute{\email{general.intelligence@gmail.com}}
 %
 \maketitle              % typeset the header of the contribution
 %
@@ -63,6 +68,10 @@ This paper has two main ideas:  The first is to explain two types of LLM (large 
 
 \keywords{AGI \and large language models \and reinforcement learning \and neural-symbolic integration}
 \end{abstract}
+
+\begin{tikzpicture}[remember picture,overlay]
+\node[draw, rectangle, red] at ([shift={(8cm,-2cm)}]current page.north west) {\huge\textbf{NOTE: unfinished draft}};
+\end{tikzpicture}
 
 \section*{Part I. \ LLM + RL architectures}
 
@@ -119,7 +128,7 @@ First let's recall the \textbf{fundamental forms} of RL (Fig.\ref{fig:fundamenta
 % 反省的有效性，取决于： 这个 loop 如何训练，有效地训练。
 
 % (Other researchers have proposed different taxonomies \cite{?}).
-It seems that \textbf{Type L} would be easier to work with, and it is also the ``mainstream'' approach, of which RLHF seems to be an instance.  Here, the LLM simply loops over itself to form an RL loop.  The LLM models the ``spoken thoughts'' of human thinking, as found in text corpora.  These thoughts are interpreted as internal states of the RL.  Ever since Richard Montague's success in converting a fragment of English into formal logic \cite{Montague}, the line between formal logic and natural language is blurred.  We should not obsess with the idea that ``logic'' must be some kind of cryptic, undecipherable code.  This leads to a novel idea: \textit{the ``representation'' of human internal thought is just natural language.}  Type L also has the advantage that we can directly examine the internal state of an AGI.  What are currently called ``prompts'' is just \textbf{Working Memory}.
+It seems that \textbf{Type L} would be easier to work with, and it is also the ``mainstream'' approach, along the direction of RLHF \cite{RLHF}.  Here, the LLM simply loops over itself to form an RL loop.  The LLM models the ``spoken thoughts'' of human thinking, as found in text corpora.  These thoughts are interpreted as internal states of the RL.  Ever since Richard Montague's success in converting a fragment of English into formal logic \cite{Montague}, the line between formal logic and natural language is blurred.  We should not obsess with the idea that ``logic'' must be some kind of cryptic, undecipherable code.  A new perspective: \textit{the ``representation'' of human internal thought is just natural language} (or very close to it).  Type L also has the advantage that we can directly examine the internal state of an AGI.  What are currently called ``prompts'' is just \textbf{Working Memory}.
 
 \begin{figure}
 	\label{fig:types-AB}
@@ -183,27 +192,9 @@ It seems that \textbf{Type L} would be easier to work with, and it is also the `
 
 \section*{Part II. \ Logic Transformer}
 
-\begin{SCfigure}[50]
-	\label{fig:she-loves-him}
-\begin{tikzpicture}[every path/.style={thick}]
+As we know, LLMs predict the next word per each iteration.  The number of possible natural-language sentences is an astronomical figure (if not $\infty$), so it is infeasible in practice to represent probability distributions over this set.  However, as vocabulary size is finite, the conditional probabilities $\mathbb{P}$(next word | prior words, context) is manageable.  This is part of what makes LLMs so efficient -- by decomposing sentences into words.
 
-\node (she) [draw,rectangle,rounded corners=4pt,rotate=-45] at (-1, 1) {she};
-\node (loves) [draw,rectangle,rounded corners=4pt,rotate=-45] at (0, 0) {loves};
-\node (him) [draw,rectangle,rounded corners=4pt,rotate=-45] at (1, -1) {him};
-\node (more) [draw,gray,rectangle,rounded corners=4pt,rotate=-45] at (1, 1) {more};
-\node (than) [draw,gray,rectangle,rounded corners=4pt,rotate=-45] at (2, 0) {than};
-\node (me) [draw,gray,rectangle,rounded corners=4pt,rotate=-45] at (3, -1) {me};
-
-\draw[] (she) -- (loves) -- (him);
-\draw[gray] (loves) -- (more) -- (than) -- (me);
-
-\end{tikzpicture}
-\caption{Example of a linguistic tree (a connected graph without loops or double edges).  From a Chomskyan perspective, any NL sentence can fit into a tree structure.  This example starts with a simple relation, she-loves-him, and the ``love'' node is modified by a ``more'' clause.  Let's not dwell too deep into the details of this example, as machine-learning will fill in such details.}
-\end{SCfigure}
-
-As we know, LLMs predicts the next word per each iteration.  The number of possible natural-language sentences is an astronomical figure (if not $\infty$), so it is infeasible on any real computer to represent probability distributions over this set.  However, as vocabulary size is finite, the conditional probabilities $\mathbb{P}$(next word | prior words, context) is manageable.  This is part of what makes LLMs so efficient -- by decomposing sentences into words.
-
-For a long time I tried to analyze the Transformer (Self Attention) from a symbolic-logic point of view, but could not interpret the meaning of \textbf{tokens} -- whether they should correspond to logic propositions, or sub-propositional symbols?  The question is how to reconcile these two views:
+For a long time I tried to analyze the Transformer (Self Attention) from a symbolic-logic point of view, but did not know how to interpret the meaning of \textbf{tokens} -- should they correspond to logic propositions, or sub-propositional symbols?  The question is how to reconcile these two views:
 \begin{equation}
 \nonumber
 \hspace{-1cm} \begin{tikzpicture}[align=center, every path/.style={thick}]
@@ -217,7 +208,7 @@ For a long time I tried to analyze the Transformer (Self Attention) from a symbo
 
 % -------------------------------
 
-\node[text width=100pt] at (-5.5, -1.5) {\textbf{symbolic AI}\\eg. OpenCog};
+\node[text width=100pt] at (-5.5, -1.5) {\textbf{symbolic AI}\\eg. OpenCog,\\OpenNARS};
 
 \node (inputs2) [] at (-2.5,-1.5) {propositions in\\working memory};
 \node (KB2) [draw,thick,cylinder,shape aspect=0.15,shape border rotate=90,text width=30pt] at (0.5,-1.5) {logic\\rules};
@@ -226,12 +217,45 @@ For a long time I tried to analyze the Transformer (Self Attention) from a symbo
 \draw[->] (inputs2) edge (KB2) (KB2) -- (outputs2);
 \end{tikzpicture}
 \end{equation}
-Finally I had a break-through insight that a symbolic-logic Transformer should output \textbf{atomic propositions} that modifies only one part of a linguistic tree at a time (Fig.\ref{fig:she-loves-him}).
+Finally I had a break-through insight that a symbolic-logic Transformer should output \textbf{atomic propositions} that modify a linguistic tree \textbf{at one position} at a time (Fig.\ref{fig:flat-vs-tree}).  Tree structure simplifies the implementation of logic rules -- fewer parameters needed; learns faster.  An analogy is that humans try to parse sentences syntactically first (which requires only superficial information such as parts-of-speech) before deeper semantic understanding.  In order words, grammar \textit{simplifies} subsequent understanding.
 
+\begin{figure}
+% NOTE: use ~/Downloads/GraphML-to-Tikz to convert graphML to Tikz, then edit Tikz
+\centering
+\begin{tikzpicture}[every path/.style={thick}]
+\begin{scope}[scale=2.5]
+\tikzstyle{defnode}=[draw,rectangle,rounded corners=4pt,node font=\small,inner ysep=1pt]
 
-Having convinced ourselves that LLMs can be a model of \textit{internal} thoughts, we wonder if the Transformer can be re-formulated as some kind of logic engine or general \textbf{rewriting system}, defined by rewriting \textbf{rules} that can be learned via gradient descent?
+\node (a) [defnode] at (-1, 0)   {I\strut};
+\node (b) [defnode] at (-0.5, 0) {love\strut};
+\node (c) [defnode] at (0, 0)    {you\strut};
+\node (d) [defnode] at (0.5, 0)  {to\strut};
+\node (e) [defnode] at (1, 0)    {pieces\strut};
 
-In order for such rules to be \textbf{differentiable}, we can't have $N$ rules at one moment and then suddenly $N+1$ rules the next moment (that would not be differentiable).  The only solution I can think of is to maintain a \textit{fixed} number, $M$, of rules.  Every rule may potentially ``morph'' into any other rule in this space of rules.  The set of rules would look like a \textit{rectangular} matrix:
+\foreach \n/\m in {a/b,a/c,a/d,a/e,b/c,b/d,b/e,c/d,c/e,d/e} {
+	\draw (\n.north) to[bend left] node[above] {} (\m.north); }
+\end{scope}
+\begin{scope}[shift={(5.5,0.2)},scale=1.5,rotate=-20]
+\tikzstyle{defnode}=[draw,rectangle,rounded corners=4,thick,node font=\small]
+\tikzstyle{defedge}=[->,thick]
+
+\node(I) at (-1,0)       [defnode] {I};
+\node(love) at (0,0)     [defnode] {love};
+\node(you) at (1,0)      [defnode] {you};
+\node(to) at (0,0.6)     [defnode,gray] {to};
+\node(pieces) at (1,0.6) [defnode,gray] {pieces};
+
+\draw[defedge](I) edge (love) (love) edge (you);
+\draw[defedge,gray] (to) edge (love) (to) edge (pieces);
+\end{scope}
+\end{tikzpicture}
+\caption{\textbf{Left:} In traditional Self-Attention Transformer, each token is related to every other token, ie. fully connected graph.  \textbf{Right:}  Example of a linguistic tree, ie. a connected graph without loops or double edges, here also with directions added to form a DAG, directed acyclic graph.  From a \textbf{Chomskyan} perspective, any NL sentence can fit into a tree structure.  This example starts with a simple relation, I-love-you, and the ``love'' node is modified by a ``to'' clause (gray).  Let's not dwell too much into details of this example, as machine-learning will fill in such details.}
+\label{fig:flat-vs-tree}
+\end{figure}
+
+% Having convinced ourselves that LLMs can be a model of \textit{internal} thoughts, we wonder if the Transformer can be re-formulated as some kind of logic engine or general \textbf{rewriting system}, defined by rewriting \textbf{rules} that can be learned via gradient descent?
+
+Now we are ready to re-formulate the Transformer as applying a set of logic / symbolic rules to its inputs.  In order for such rules to be \textbf{differentiable}, we can't have $N$ rules at one moment and then suddenly $N+1$ rules the next moment (that would not be differentiable).  The only solution I can think of is to maintain a \textit{fixed} number, $M$, of rules.  Every rule may potentially ``morph'' into any other rule in this space of rules.  The set of rules would look like a \textit{rectangular} matrix: {\color{red}(This part needs modification for tree-based logic rules instead of fixed-length rules; Tree-based rules require special syntax.  This may not be too difficult, as tree-rewriting is equivalent to term-rewriting, which the author already has some familiarity with.  [Goertzel 2021] also developed a ``reflective metagraph rewriting as a foundation for an AGI language of thought'')}
 
 \begin{equation}
 \begin{aligned}
@@ -309,12 +333,12 @@ except that softmax does not commute with inner products, so they are not exactl
 
 A final obstacle concerns the limitations of first-order logic.  As Ben Goertzel pointed out during an online discussion, my earlier design lacked mechanisms for handling \textbf{Skolem functions} and thus existential quantifiers.  One way to get around this problem is to define $\exists$ via a set of \textbf{higher-order logic} rules.  Without explicitly specifying how to do so (though I believe this can be done), we simply use a more powerful ``higher-order'' logic in the sense that rules admit substitutions in all (predicate or argument) positions, and hope that machine learning will learn the required axioms.
 
-Armed with these ideas, it is not too difficult to work out a new kind of differentiable ``Logic Transformer'' (Fig.\ref{fig:string-diagram}).  A detailed explanation is contained in my on-going research thesis \cite{}.
+Armed with these ideas, it is not too difficult to work out a new kind of differentiable ``Logic Transformer'' (Fig.\ref{fig:string-diagram}).  A detailed explanation is contained in my on-going research thesis \cite{YKY}.
 
 \begin{figure}
 	\hspace{-3cm}
 	\includegraphics[scale=.7]{logic-Transformer-string-diagram-3.png}
-	\caption{String diagram of the Logic Transformer.  The {\LARGE\color{gray}\RIGHTarrow} indicates \textbf{internal data} supplied by the Transformer, similar to the Q,K,V matrices in traditional Transformers.  These are modified through ``learning'' or training.  The 2 \RIGHTarrow's \ are \textbf{inputs} to the Transformer, this is matched with the 2 \textbf{outputs} on the right of the diagram.  Tags {\color{gray}$[M,N,...]$} indicate the \textbf{dimensions} of data streams.}
+	\caption{String diagram of the Logic Transformer.  The {\LARGE\color{gray}\RIGHTarrow} indicates \textbf{internal data} supplied by the Transformer, similar to the Q,K,V matrices in traditional Transformers.  These are modified through ``learning'' or training.  The 2 \RIGHTarrow's \ are \textbf{inputs} to the Transformer, this is matched with the 2 \textbf{outputs} on the right of the diagram.  Tags {\color{gray}$[M,N,...]$} indicate the \textbf{dimensions} of data streams.  {\color{red}NOTE:  diagram is obsolete as it pertains only to fixed-length propositional logic.}}
 	\label{fig:string-diagram}
 \end{figure}
 

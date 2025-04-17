@@ -128,7 +128,7 @@ First let's recall the \textbf{fundamental forms} of RL (Fig.\ref{fig:fundamenta
 % 反省的有效性，取决于： 这个 loop 如何训练，有效地训练。
 
 % (Other researchers have proposed different taxonomies \cite{?}).
-It seems that \textbf{Type L} would be easier to work with, and it is also the ``mainstream'' approach, along the direction of RLHF \cite{RLHF}.  Here, the LLM simply loops over itself to form an RL loop.  The LLM models the ``spoken thoughts'' of human thinking, as found in text corpora.  These thoughts are interpreted as internal states of the RL.  Ever since Richard Montague's success in converting a fragment of English into formal logic \cite{Montague}, the line between formal logic and natural language is blurred.  We should not obsess with the idea that ``logic'' must be some kind of cryptic, undecipherable code.  A new perspective: \textit{the ``representation'' of human internal thought is just natural language} (or very close to it).  Type L also has the advantage that we can directly examine the internal state of an AGI.  What are currently called ``prompts'' is just \textbf{Working Memory}.
+It seems that \textbf{Type L} would be easier to work with, and it is also the ``mainstream'' approach, along the direction of RLHF \cite{RLHF}.  Here, the LLM simply loops over itself to complete the RL cycle.  LLM models the ``spoken thoughts'' of human thinking, as found in text corpora.  These thoughts are interpreted as internal states of the RL.  Ever since Richard Montague's success in converting a fragment of English into formal logic \cite{Montague}, the line between formal logic and natural language is blurred.  We should not obsess with the idea that ``logic'' must be some kind of cryptic, undecipherable code.  A new perspective: \textit{the ``representation'' of human internal thought is just natural language} (or very close to it).  Type L also has the advantage that we can directly examine the internal state of an AGI.  What are currently called ``prompts'' is just \textbf{Working Memory}.
 
 \begin{figure}
 	\label{fig:types-AB}
@@ -192,9 +192,9 @@ It seems that \textbf{Type L} would be easier to work with, and it is also the `
 
 \section*{Part II. \ Logic Transformer}
 
-As we know, LLMs predict the next word per each iteration.  The number of possible natural-language sentences is an astronomical figure (if not $\infty$), so it is infeasible in practice to represent probability distributions over this set.  However, as vocabulary size is finite, the conditional probabilities $\mathbb{P}$(next word | prior words, context) is manageable.  This is part of what makes LLMs so efficient -- by decomposing sentences into words.
+As we know, LLMs predict the next word per each iteration.  The number of possible natural-language sentences is an astronomical figure (if not $\infty$), so it is infeasible in practice to represent probability distributions over this set.  However, as vocabulary size is finite, the conditional probabilities $\mathbb{P}$(next word | prior words, context) is manageable.  This is partly why LLMs are so efficient -- by decomposing sentences into words.
 
-For a long time I tried to analyze the Transformer (Self Attention) from a symbolic-logic point of view, but did not know how to interpret the meaning of \textbf{tokens} -- should they correspond to logic propositions, or sub-propositional symbols?  The question is how to reconcile these two views:
+For a long time I tried to analyze the Transformer (Self Attention) from a symbolic-logic point of view, but did not know how to interpret the meaning of \textbf{tokens} -- do they correspond to logic propositions, or to sub-propositional symbols?  The question is how to reconcile these two views:
 \begin{equation}
 \nonumber
 \hspace{-1cm} \begin{tikzpicture}[align=center, every path/.style={thick}]
@@ -249,7 +249,7 @@ Finally I had a break-through insight that a symbolic-logic Transformer should o
 \draw[defedge,gray] (to) edge (love) (to) edge (pieces);
 \end{scope}
 \end{tikzpicture}
-\caption{\textbf{Left:} In traditional Self-Attention Transformer, each token is related to every other token, ie. fully connected graph.  \textbf{Right:}  Example of a linguistic tree, ie. a connected graph without loops or double edges, here also with directions added to form a DAG, directed acyclic graph.  From a \textbf{Chomskyan} perspective, any NL sentence can fit into a tree structure.  This example starts with a simple relation, I-love-you, and the ``love'' node is modified by a ``to'' clause (gray).  Let's not dwell too much into details of this example, as machine-learning will fill in such details.}
+\caption{\textbf{Left:} In traditional Self-Attention Transformer, each token is related to every other token, ie. fully connected graph.  \textbf{Right:}  Example of a linguistic tree, ie. a connected graph without loops or double edges, here also with directions added to form a DAG, directed acyclic graph.  From a \textbf{Chomskyan} perspective, any NL sentence can fit into a tree structure.  This example starts with a simple relation, I-love-you, and the ``love'' node is modified by a ``to'' clause (gray).  Let's not dwell too deep into this example, as machine-learning will fill in such details.}
 \label{fig:flat-vs-tree}
 \end{figure}
 

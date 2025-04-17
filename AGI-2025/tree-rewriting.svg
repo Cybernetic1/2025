@@ -24,7 +24,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1"
-     inkscape:cx="397"
+     inkscape:cx="397.5"
      inkscape:cy="749.5"
      inkscape:window-width="1920"
      inkscape:window-height="1059"
@@ -551,15 +551,15 @@
        transform="translate(-3.7041668)"><tspan
          x="16.139584"
          y="237.33125"
-         id="tspan17">Matching algorithm 可以很复杂，
+         id="tspan7">Matching algorithm 可以很复杂，
 </tspan><tspan
          x="16.139584"
          y="243.99877"
-         id="tspan18">但如果它能 match 到一个东西，
+         id="tspan20">但如果它能 match 到一个东西，
 </tspan><tspan
          x="16.139584"
          y="250.66628"
-         id="tspan19">就必需覆盖所有连通的东西。
+         id="tspan21">就必需覆盖所有连通的东西。
 </tspan></text><text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
@@ -582,22 +582,27 @@
          y="275.27252"
          id="tspan13">Multi-edge 可以吗？</tspan></text><text
        xml:space="preserve"
-       style="font-size:4.9389px;line-height:1.25;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans, Normal';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:90.6555;display:inline;stroke-width:0.264583"
        x="113.77083"
        y="235.21458"
        id="text14"><tspan
-         sodipodi:role="line"
-         id="tspan14"
-         style="stroke-width:0.264583"
          x="113.77083"
-         y="235.21458">很明显，这个 tree 是一个离散的结构，</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
+         y="235.21458"
+         id="tspan22">很明显，这个 tree 是一个离散的结构，
+</tspan><tspan
          x="113.77083"
          y="241.8821"
-         id="tspan15">那么可微的 matching 是什么意思呢？</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
+         id="tspan24">那么 <tspan
+   style="font-weight:bold"
+   id="tspan23">可微 </tspan>的 matching 是什么意思呢？
+</tspan><tspan
          x="113.77083"
-         y="248.05573"
-         id="tspan16" /></text></g></svg>
+         y="248.54961"
+         id="tspan25">当 rules params 改变，则被 match 到的</tspan><tspan
+         x="113.77083"
+         y="255.21712"
+         id="tspan26">物体亦不一样，但那 match 到的物体亦</tspan><tspan
+         x="113.77083"
+         y="261.88465"
+         id="tspan27">可能随 WM 的内容不同而改变。
+</tspan></text></g></svg>

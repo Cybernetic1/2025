@@ -192,7 +192,7 @@ It seems that \textbf{Type L} would be easier to work with, and it is also the `
 
 \section*{Part II. \ Logic Transformer}
 
-As we know, LLMs predict the next word per each iteration.  The number of possible natural-language sentences is an astronomical figure (if not $\infty$), so it is infeasible in practice to represent probability distributions over this set.  However, as vocabulary size is finite, the conditional probabilities $\mathbb{P}$(next word | prior words, context) is manageable.  This is partly why LLMs are so efficient -- by decomposing sentences into words.
+As we know, LLMs predict the next word per each iteration.  The number of possible natural-language sentences is an astronomical figure (if not $\infty$), so it is infeasible in practice to represent probability distributions over this set.  However, as vocabulary size is finite, the conditional probabilities $\mathbb{P}$(next word | prior words, context) are manageable.  This is partly why LLMs are so efficient -- by decomposing sentences into words.
 
 For a long time I tried to analyze the Transformer (Self Attention) from a symbolic-logic point of view, but did not know how to interpret the meaning of \textbf{tokens} -- do they correspond to logic propositions, or to sub-propositional symbols?  The question is how to reconcile these two views:
 \begin{equation}
@@ -338,7 +338,7 @@ Armed with these ideas, it is not too difficult to work out a new kind of differ
 \begin{figure}
 	\hspace{-3cm}
 	\includegraphics[scale=.7]{logic-Transformer-string-diagram-3.png}
-	\caption{String diagram of the Logic Transformer.  The {\LARGE\color{gray}\RIGHTarrow} indicates \textbf{internal data} supplied by the Transformer, similar to the Q,K,V matrices in traditional Transformers.  These are modified through ``learning'' or training.  The 2 \RIGHTarrow's \ are \textbf{inputs} to the Transformer, this is matched with the 2 \textbf{outputs} on the right of the diagram.  Tags {\color{gray}$[M,N,...]$} indicate the \textbf{dimensions} of data streams.  {\color{red}NOTE:  diagram is obsolete as it pertains only to fixed-length propositional logic.}}
+	\caption{String diagram of the Logic Transformer.  The {\LARGE\color{gray}\RIGHTarrow} indicates \textbf{internal data} supplied by the Transformer, similar to the Q,K,V matrices in traditional Transformers.  These are modified through ``learning'' or training.  The 2 \RIGHTarrow's \ are \textbf{inputs} to the Transformer, this is matched with the 2 \textbf{outputs} on the right of the diagram.  Tags {\color{gray}$[M,N,...]$} indicate the \textbf{dimensions} of data streams.  {\color{red}NOTE:  diagram is obsolete as it pertains only to fixed-length propositions.}}
 	\label{fig:string-diagram}
 \end{figure}
 
@@ -346,7 +346,11 @@ Armed with these ideas, it is not too difficult to work out a new kind of differ
 
 The significance of combining RL and LLM is such that the system can \textit{think in loops}, eliminating thoughts that contradict accepted truths, thus achieving genuine, logically coherent understanding, instead of just parroting human speeches.  This would also solve the problem of ``hallucinations''.  The remaining question is how to train the Type L model \textit{efficiently}, but this is more of an engineering rather than theoretical problem.
 
-A very interesting question concerning Part II is how to handle \textbf{variable-length propositions}?  If this could be done, the neural network may have a form very close to or even identical to current Transformers...
+{\color{red} Update:  need to handle \textbf{variable-length propositions}.  Need tree-rewriting logic.  In a certain direction, the neural network may end up with a form very close to or even identical to current Transformers.}
+\begin{equation}
+	\nonumber
+	\vcenter{\hbox{\includegraphics[scale=0.7]{tree-rewriting.png}}}
+\end{equation}
 
 %
 % ---- Bibliography ----

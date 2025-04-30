@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    xml:space="preserve"
-   inkscape:version="1.4.1 (1:1.4.1+202503302257+93de688d07)"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="tree-rewriting.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,11 +23,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#ffffff"
      inkscape:document-units="mm"
-     inkscape:zoom="2"
-     inkscape:cx="407.25"
-     inkscape:cy="1299.25"
-     inkscape:window-width="1920"
-     inkscape:window-height="1059"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="262.69017"
+     inkscape:cy="1299.3087"
+     inkscape:window-width="1080"
+     inkscape:window-height="1895"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -35,6 +35,16 @@
      inkscape:pageshadow="0"
      showgrid="false" /><defs
      id="defs1"><rect
+       x="-9.2978456"
+       y="1535.4922"
+       width="149.88286"
+       height="61.451826"
+       id="rect56911" /><rect
+       x="-10.370536"
+       y="1532.7081"
+       width="468.93117"
+       height="154.01324"
+       id="rect42813" /><rect
        x="36.590958"
        y="914.90063"
        width="340.85712"
@@ -559,24 +569,24 @@
        transform="translate(40.353432,-108.88848)"><tspan
          x="83.594383"
          y="145.20505"
-         id="tspan37"><tspan
+         id="tspan78747"><tspan
            style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi'"
-           id="tspan36">右边： 如何改写？
+           id="tspan78745">右边： 如何改写？
 </tspan></tspan><tspan
          x="83.594383"
          y="151.37867"
-         id="tspan40"><tspan
+         id="tspan78753"><tspan
            style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi'"
-           id="tspan38">输出是 原子命题。要能做到 </tspan><tspan
+           id="tspan78749">输出是 原子命题。要能做到 </tspan><tspan
            style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi'"
-           id="tspan39">universal </tspan></tspan><tspan
+           id="tspan78751">universal </tspan></tspan><tspan
          x="83.594383"
          y="157.55228"
-         id="tspan43"><tspan
+         id="tspan78759"><tspan
            style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi'"
-           id="tspan41">的改写，</tspan><tspan
+           id="tspan78755">的改写，</tspan><tspan
            style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi'"
-           id="tspan42">how？</tspan></tspan></text><text
+           id="tspan78757">how？</tspan></tspan></text><text
        xml:space="preserve"
        style="font-weight:300;font-size:6.35px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
        x="13.211855"
@@ -605,15 +615,15 @@
        transform="translate(-5.7513771,-128.51376)"><tspan
          x="16.139584"
          y="237.33125"
-         id="tspan44">Matching algorithm 可以很复杂，
+         id="tspan78761">Matching algorithm 可以很复杂，
 </tspan><tspan
          x="16.139584"
          y="243.99877"
-         id="tspan45">但如果它能 match 到一个东西，
+         id="tspan78763">但如果它能 match 到一个东西，
 </tspan><tspan
          x="16.139584"
          y="250.66628"
-         id="tspan46">就必需覆盖所有连通的东西。
+         id="tspan78765">就必需覆盖所有连通的东西。
 </tspan></text><text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
@@ -643,34 +653,34 @@
        transform="translate(-2.0404439,-129.13407)"><tspan
          x="113.77083"
          y="235.21458"
-         id="tspan47">很明显，这个 tree 是一个离散的结构，
+         id="tspan78767">很明显，这个 tree 是一个离散的结构，
 </tspan><tspan
          x="113.77083"
          y="241.8821"
-         id="tspan49">那么 <tspan
+         id="tspan78771">那么 <tspan
    style="font-weight:bold"
-   id="tspan48">可微 </tspan>的 matching 是什么意思呢？
+   id="tspan78769">可微 </tspan>的 matching 是什么意思呢？
 </tspan><tspan
          x="113.77083"
          y="248.54961"
-         id="tspan50">当 rules params 改变，则被 match 到的</tspan><tspan
+         id="tspan78773">当 rules params 改变，则被 match 到的</tspan><tspan
          x="113.77083"
          y="255.21712"
-         id="tspan51">物体亦不一样，但那 match 到的物体亦</tspan><tspan
+         id="tspan78775">物体亦不一样，但那 match 到的物体亦</tspan><tspan
          x="113.77083"
          y="261.88465"
-         id="tspan52">可能随 WM 的内容不同而改变。
+         id="tspan78777">可能随 WM 的内容不同而改变。
 </tspan><tspan
          x="113.77083"
          y="268.55216"
-         id="tspan53">可微是指一条 rule 可以变成另一条 rule.
+         id="tspan78779">可微是指一条 rule 可以变成另一条 rule.
 </tspan><tspan
          x="113.77083"
          y="275.21967"
-         id="tspan54">只需要决定有若干个 matched subtrees </tspan><tspan
+         id="tspan78781">只需要决定有若干个 matched subtrees </tspan><tspan
          x="113.77083"
          y="281.88718"
-         id="tspan55">就可以。</tspan></text><text
+         id="tspan78783">就可以。</tspan></text><text
        xml:space="preserve"
        style="font-weight:300;font-size:4.93889px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
        x="12.554151"
@@ -1082,23 +1092,23 @@
        transform="translate(-9.554504,0.43556773)"><tspan
          x="109.23994"
          y="190.24516"
-         id="tspan56">但如果从一颗树的角度看，
+         id="tspan78785">但如果从一颗树的角度看，
 </tspan><tspan
          x="109.23994"
          y="196.41878"
-         id="tspan57">加上遗忘，这会不会是一种 universal 的 改</tspan><tspan
+         id="tspan78787">加上遗忘，这会不会是一种 universal 的 改</tspan><tspan
          x="109.23994"
          y="202.5924"
-         id="tspan58">写系统？In the sense that any tree can be </tspan><tspan
+         id="tspan78789">写系统？In the sense that any tree can be </tspan><tspan
          x="109.23994"
          y="208.76601"
-         id="tspan59">rewritten to any other tree -- but is that </tspan><tspan
+         id="tspan78791">rewritten to any other tree -- but is that </tspan><tspan
          x="109.23994"
          y="214.93962"
-         id="tspan60">the definition of a universal rewriting </tspan><tspan
+         id="tspan78793">the definition of a universal rewriting </tspan><tspan
          x="109.23994"
          y="221.11324"
-         id="tspan61">system?  How to define universality?
+         id="tspan78795">system?  How to define universality?
 </tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -1111,7 +1121,7 @@
        id="text63922"><tspan
          x="11.610435"
          y="238.93483"
-         id="tspan62">但我曾经说：probabilities over discrete 是可微学习的。</tspan></text><text
+         id="tspan78797">但我曾经说：probabilities over discrete 是可微学习的。</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text91521"
@@ -1190,4 +1200,104 @@
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
          x="7.3270407"
          y="382.98294"
-         id="tspan14-2">4）要找一个 adverbial phrase 的例子，它将会指导理论发展</tspan></text></g></svg>
+         id="tspan14-2">4）要找一个 adverbial phrase 的例子，它将会指导理论发展</tspan></text><text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.93889px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="7.6196861"
+       y="392.91553"
+       id="text2425"><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="7.6196861"
+         y="392.91553"
+         id="tspan4161">果然，其实 只需要输出 atomic tree addition</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="7.6196861"
+         y="399.08914"
+         id="tspan4941">and occasionally whole-branch deletion.</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="7.6196861"
+         y="405.26276"
+         id="tspan4943">例子： she dumped her husband ∧ she eloped with Tom</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="7.6196861"
+         y="411.43637"
+         id="tspan7099">⇒ she dumped her husband for Tom</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="7.6196861"
+         y="418.05563"
+         id="tspan38999">似乎是 redundant 的，因为 RHS 似乎已经包含在 LHS</tspan></text><text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,10.219109,20.88524)"
+       id="text42811"
+       style="font-weight:300;font-size:18.6667px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:471.637"
+       x="-9.7550926"
+       y="1535.6023"><tspan
+         x="-9.7550926"
+         y="1535.6023"
+         id="tspan78799">争议在什么？ 如何 generate tree
+</tspan><tspan
+         x="-9.7550926"
+         y="1558.9356"
+         id="tspan78801">而这跟 NL given context, generate next word 有关
+</tspan><tspan
+         x="-9.7550926"
+         y="1582.269"
+         id="tspan78803">如果它可以 gen next word，它也可以 construct tree
+</tspan><tspan
+         x="-9.7550926"
+         y="1605.6024"
+         id="tspan78805">问题是这输出的究竟是什么？ 
+</tspan><tspan
+         x="-9.7550926"
+         y="1628.9358"
+         id="tspan78807">如果 GPT 能输出 next word，则它必定有某个 thought，
+</tspan><tspan
+         x="-9.7550926"
+         y="1652.2691"
+         id="tspan78809">但这 thought 储存於什么地方？
+</tspan><tspan
+         x="-9.7550926"
+         y="1675.6025"
+         id="tspan78811">我们知道 atomic thought 是什么形式，
+</tspan><tspan
+         x="-9.7550926"
+         y="1698.9359"
+         id="tspan78813">但不知道 modifying phrases 是不是 atomic
+</tspan><tspan
+         x="-9.7550926"
+         y="1722.2692"
+         id="tspan78815">例子： she loves Tom [more than Pete]
+</tspan><tspan
+         x="-9.7550926"
+         y="1745.6026"
+         id="tspan78817">I gave [some] money to the [poor] beggar
+</tspan><tspan
+         x="-9.7550926"
+         y="1768.936"
+         id="tspan78819">I shitted my pants [as I lay dying]
+</tspan><tspan
+         x="-9.7550926"
+         y="1792.2694"
+         id="tspan78829">结论： <tspan
+   style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi'"
+   id="tspan78821">atomic </tspan><tspan
+   style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi'"
+   id="tspan78823">不是问题，</tspan><tspan
+   style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi'"
+   id="tspan78825">de-referencing </tspan><tspan
+   style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi'"
+   id="tspan78827">才是</tspan>
+</tspan><tspan
+         x="-9.7550926"
+         y="1815.6027"
+         id="tspan78831">general rules 似乎可以解决 de-referencing 的问题
+</tspan></text><text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,6.9559164,19.904075)"
+       id="text56909"
+       style="font-family:'Alibaba PuHuiTi';font-size:24px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Alibaba PuHuiTi, Light';font-weight:300;white-space:pre;shape-inside:url(#rect56911)" /></g></svg>

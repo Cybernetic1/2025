@@ -7,7 +7,7 @@
    viewBox="0 0 189.88826 347.74133"
    version="1.1"
    id="svg24150"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.4.1 (1:1.4.1+202503302257+93de688d07)"
    sodipodi:docname="substitution.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,18 +24,26 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="233.5"
-     inkscape:cy="1000.5"
-     inkscape:window-width="1080"
-     inkscape:window-height="1895"
+     inkscape:zoom="2"
+     inkscape:cx="71.75"
+     inkscape:cy="1316.25"
+     inkscape:window-width="1920"
+     inkscape:window-height="1059"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     inkscape:snap-global="false" />
+     inkscape:snap-global="false"
+     inkscape:showpageshadow="false"
+     inkscape:deskcolor="#ffffff" />
   <defs
      id="defs24147">
+    <rect
+       x="33"
+       y="1107"
+       width="106.5"
+       height="19.5"
+       id="rect2" />
     <marker
        style="overflow:visible;"
        id="Arrow2Mend"
@@ -2275,7 +2283,7 @@
          id="tspan12-7-56-1">γ</tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:300;font-size:5.64444px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:7.17102;stroke-width:0.264583"
+       style="font-weight:300;font-size:5.64444px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:7.17102;display:inline;stroke-width:0.264583"
        x="103.13317"
        y="355.45465"
        id="text1-13-3-5"
@@ -2285,9 +2293,9 @@
        transform="translate(8.0634472,-59.943748)"><tspan
          x="103.13317"
          y="355.45465"
-         id="tspan68224"><tspan
+         id="tspan5"><tspan
            style="font-style:italic;font-weight:normal;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle"
-           id="tspan68222">x</tspan></tspan></text>
+           id="tspan1">x</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:5.64444px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
@@ -2408,17 +2416,17 @@
        sodipodi:nodetypes="cssc" />
     <path
        style="fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;marker-end:url(#Arrow2Mend)"
-       d="m 100.78391,300.59388 c 5.00187,-0.14589 6.0497,-2.3918 8.9558,-4.13266"
+       d="m 100.78391,300.06471 c 5.00187,-0.14589 6.0497,-2.3918 8.9558,-4.13266"
        id="path24-2-3-0-0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;marker-end:url(#Arrow2Mend-9)"
-       d="m 110.25505,293.19416 c -2.35679,-2.75184 -6.3045,-3.75028 -8.9558,-4.13266"
+       d="m 110.25505,293.72333 c -2.35679,-2.75184 -6.3045,-3.75028 -8.9558,-4.13266"
        id="path24-2-3-0-0-6"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529167;stroke-linecap:round"
-       d="m 69.794684,307.16619 v -6.7595 c 0,-2.58984 -2.084968,-4.63717 -4.6748,-4.6309 l -38.407474,-2.2e-4 c -2.58984,0 -4.6748,-2.08496 -4.6748,-4.6748 v -5.70117 c 0,-2.58984 2.08496,-4.6748 4.6748,-4.6748 h 7.156628"
+       d="m 69.794684,306.9791 v -6.7595 c 0,-2.58984 -2.084968,-4.63717 -4.6748,-4.6309 l -38.407474,-2.2e-4 c -2.58984,0 -4.6748,-2.08496 -4.6748,-4.6748 v -5.70117 c 0,-2.58984 2.08496,-4.6748 4.6748,-4.6748 h 7.156628"
        id="path24-2-3-0-3"
        sodipodi:nodetypes="csccsssc" />
     <path
@@ -2727,33 +2735,32 @@
          x="52.475357"
          y="238.87822">●</tspan></text>
     <g
-       id="g20715-8"
-       transform="translate(11.572825,152.66338)">
+       id="g1">
       <ellipse
          style="fill:#ffffff;stroke:none;stroke-width:0.545672;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="path2984-9-3-6-6-04-8-6"
-         cx="92.212654"
-         cy="77.861221"
+         cx="103.78548"
+         cy="230.5246"
          rx="3.1360316"
          ry="3.6116433" />
       <ellipse
          style="fill:none;stroke:#000000;stroke-width:0.545672;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="path2984-92-2-4-6-9-88"
-         cx="92.212654"
-         cy="77.861221"
+         cx="103.78548"
+         cy="230.5246"
          rx="3.1360316"
          ry="3.6116433" />
       <text
          xml:space="preserve"
          style="font-weight:300;font-size:3.52778px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-         x="91.154373"
-         y="78.983475"
+         x="102.91429"
+         y="231.64685"
          id="text14277-3-4"><tspan
            sodipodi:role="line"
            id="tspan14275-6-3"
            style="font-size:3.52778px;stroke-width:0.264583"
-           x="91.154373"
-           y="78.983475">⦁</tspan></text>
+           x="102.91429"
+           y="231.64685">⦁</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -3115,5 +3122,61 @@
        id="path7003-8"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:300px;line-height:125%;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.0998515"
        d="m 118.49436,306.06582 c -1.15626,-0.68926 -3.47234,-1.1363 -8.84212,-1.3029 l -11.766819,-0.36506 c -6.593276,-0.20455 -8.434023,-0.9109 -9.862372,-1.67925 -1.360325,0.74575 -3.268162,1.50663 -9.250217,1.67925 l -12.651034,0.36506 c -5.370257,0.15497 -7.481794,0.59105 -8.910131,1.3029 0.06806,-0.68926 0.544121,-0.66318 1.76842,-0.92307 1.564374,-0.31638 4.151336,-0.70867 8.297988,-0.82833 l 12.651035,-0.36505 c 4.894413,-0.14123 6.733614,-1.28726 8.093939,-1.95392 1.360325,0.70056 2.860461,1.7802 8.297998,1.95392 l 11.426733,0.36505 c 4.68989,0.14984 7.34577,0.50065 8.91015,0.79444 1.29231,0.24858 1.76841,0.22251 1.83643,0.95696" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,4.7006624,13.887795)"
+       id="text2"
+       style="font-size:18.6667px;line-height:1.25;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans, Normal';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2);display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="-65.546211"
+       y="335.75342"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
+         x="-65.546211"
+         y="335.75342">improve rules matching 的方法：</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
+         x="-65.546211"
+         y="342.27277"
+         id="tspan4">1）WM has addresses</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
+         x="-65.546211"
+         y="348.79211"
+         id="tspan6">2）。。。</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
+         x="-65.546211"
+         y="355.31146"
+         id="tspan7" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
+         x="-65.546211"
+         y="361.83081"
+         id="tspan8">Generalities of matching...</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
+         x="-65.546211"
+         y="368.35016"
+         id="tspan9">它需不需要 ergodic？</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
+         x="-65.546211"
+         y="374.86951"
+         id="tspan10" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
+         x="-65.546211"
+         y="381.38885"
+         id="tspan11">新想法：rewriter = a compact</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi Light';stroke-width:0.264583"
+         x="-65.546211"
+         y="387.9082"
+         id="tspan12">bunch of HOL rules</tspan></text>
   </g>
 </svg>

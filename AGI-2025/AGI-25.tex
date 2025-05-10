@@ -32,6 +32,7 @@
 \usepackage{adjustbox}
 
 \newcommand\logic[1]{{\color{gray}\mathsf{#1}}}
+\newcommand*\sigmoid{\vcenter{\hbox{\includegraphics{sigmoid.png}}}}
 
 \makeatletter
 \newcommand\mathcircled[1]{%
@@ -273,6 +274,16 @@ For a rule to be applicable, its atoms must match with propositions in Working M
 	\caption{Illustration of the cylindrification factor $\gamma$.}
 	\label{fig:cylindrify-example}
 \end{figure}
+
+\begin{equation}
+	\gamma =\begin{cases}
+		\approx 0 \Rightarrow \mbox{constant, do matching, TV = match degree} \cdot \sigmoid(1 - \gamma) \\
+		\approx 1 \Rightarrow \mbox{variable, do substitution, TV = 1} \cdot \sigmoid(\gamma)
+	\end{cases}
+\end{equation}
+Each position inside a rule can be either a constant or variable, and their treatments are obviously very different, but the results of the two streams would be super-imposed (added) together, pretty much like the \textbf{superposition} of quantum states.
+
+\url{https://www.alignmentforum.org/posts/pHPmMGEMYefk9jLeh/llm-basics-embedding-spaces-transformer-token-vectors-are}.
 
 To make \textbf{variable substitution} differentiable is even trickier.  Consider this logic rule:
 \begin{equation}

@@ -30,6 +30,7 @@
 \usepackage{sidecap}
 \usepackage{comment}
 \usepackage{adjustbox}
+\usepackage{hyperref}
 
 \newcommand\logic[1]{{\color{gray}\mathsf{#1}}}
 \newcommand*\sigmoid{\vcenter{\hbox{\includegraphics{sigmoid.png}}}}
@@ -283,7 +284,7 @@ For a rule to be applicable, its atoms must match with propositions in Working M
 \end{equation}
 Each position inside a rule can be either a constant or variable, and their treatments are obviously very different, but the results of the two streams would be super-imposed (added) together, pretty much like the \textbf{superposition} of quantum states.
 
-\url{https://www.alignmentforum.org/posts/pHPmMGEMYefk9jLeh/llm-basics-embedding-spaces-transformer-token-vectors-are}.
+\href{https://www.alignmentforum.org/posts/pHPmMGEMYefk9jLeh/llm-basics-embedding-spaces-transformer-token-vectors-are}{Transformer Token Vectors Are Not Points in Space}.
 
 To make \textbf{variable substitution} differentiable is even trickier.  Consider this logic rule:
 \begin{equation}
@@ -346,14 +347,37 @@ A final obstacle concerns the limitations of first-order logic.  As Ben Goertzel
 
 Armed with these ideas, it is not too difficult to work out a new kind of differentiable ``Logic Transformer'' (Fig.\ref{fig:string-diagram}).  A detailed explanation is contained in my on-going research thesis \cite{YKY}.
 
-\begin{figure}
-	\hspace{-3cm}
-	\includegraphics[scale=.7]{logic-Transformer-string-diagram-3.png}
-	\caption{String diagram of the Logic Transformer.  The {\LARGE\color{gray}\RIGHTarrow} indicates \textbf{internal data} supplied by the Transformer, similar to the Q,K,V matrices in traditional Transformers.  These are modified through ``learning'' or training.  The 2 \RIGHTarrow's \ are \textbf{inputs} to the Transformer, this is matched with the 2 \textbf{outputs} on the right of the diagram.  Tags {\color{gray}$[M,N,...]$} indicate the \textbf{dimensions} of data streams.  {\color{red}NOTE:  diagram is obsolete as it pertains only to fixed-length propositions.}}
-	\label{fig:string-diagram}
-\end{figure}
+%\begin{figure}
+%	\hspace{-3cm}
+%	\includegraphics[scale=.7]{logic-Transformer-string-diagram-3.png}
+%	\caption{String diagram of the Logic Transformer.  The {\LARGE\color{gray}\RIGHTarrow} indicates \textbf{internal data} supplied by the Transformer, similar to the Q,K,V matrices in traditional Transformers.  These are modified through ``learning'' or training.  The 2 \RIGHTarrow's \ are \textbf{inputs} to the Transformer, this is matched with the 2 \textbf{outputs} on the right of the diagram.  Tags {\color{gray}$[M,N,...]$} indicate the \textbf{dimensions} of data streams.  {\color{red}NOTE:  diagram is obsolete as it pertains only to fixed-length propositions.}}
+%	\label{fig:string-diagram}
+%\end{figure}
 
 \section*{Conclusions}
+
+I guess I am not the only one among AGI researchers who is jealous of the success of the Self-Attention Transformer BERT-GPT lineage tradition.  Many like us suspect that Transformers are unnecessarily ``bulky'', meaning that they can be reduced or simplified.  But how?
+
+String diagrams allow us to visually compare architectures, such as Self-Attention with my differentiable Logic Transformer.  These diagrams can be ``morphed'' by rewriting rules.  One research team proposed universal approximators as an equivalence class of architectures under rewriting, but such a class is too permissive and pretty useless.  We want a more refined view of architectures such that we can distinguish which ones are more \textbf{learning-efficient} -- the key question in AGI development.
+
+If all continuous functions are equivalent, then what sets them apart?  My idea is that functions such as sigmoid and softmax are ``tearing'' the input space irreversibly, due to finite precision, into \textbf{discrete} regions that are no longer connected.  This process is crucial to eg. Transformer's ability to output discrete tokens.
+
+In Ben Goertzel's ``General Theory of General Intelligence'', he formulates intelligence as the re-writing of some metagraph or hypergraph structure, which is essentially the same as my idea of tree as Working Memory and which I now link to the Transformer.  Rewriting is defined categorically as certain morphisms, requiring some diagrams to commute.  This defines intelligence in \textbf{algebraic} terms, and it requires the discretizing functions above to achieve such algebraic rewriting.
+
+But the Transformer has also been shown capable of discrete (syntactic) manipulations.  Does that mean that all functions with discretizing ability are equivalent?  Can the Transformer be replaced by a fully-connected NN with sigmoid activation?  Seems unlikely, and if not, then what sets them apart \textit{still}?  Well, an obvious answer is that we need to \textbf{count computations}.
+
+
+
+We want to endow the structure with
+\begin{itemize}
+	\item Tree structure as Chomskyan linguistics
+
+	\item Ontology such as ``kingdom-phylem-species-genus'' in biology or a library catalog system.
+
+	\item The (probabilistic) strength of a thought as the length of the thought vector.
+\end{itemize}
+
+The
 
 The significance of combining RL and LLM is such that the system can \textit{think in loops}, eliminating thoughts that contradict accepted truths, thus achieving genuine, logically coherent understanding, instead of just parroting human speeches.  This would also solve the problem of ``hallucinations''.  The remaining question is how to train the Type L model \textit{efficiently}, but this is more of an engineering rather than theoretical problem.
 

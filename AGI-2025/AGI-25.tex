@@ -20,7 +20,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}    % for \rightsquigarrow
 \usepackage{wasysym}	% for frown face
-\usepackage{mathrsfs} 	% for \mathscr
+% \usepackage{mathrsfs} % for \mathscr
+\usepackage{eucal}	 	% for better-looking \mathcal
 \usepackage{stmaryrd}
 \usepackage{bm}
 \usepackage{mathtools}		% to extend length of double harpoon arrows
@@ -77,7 +78,7 @@ This paper has two main ideas:  The first is to explain two types of LLM (large 
 
 \section*{Part I. \ LLM + RL architectures}
 
-For ``string diagrams'' there are usually two conventions: 1) data are nodes, functions are edges: \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt] (math) {$x$}; $\stackrel{f}{\longrightarrow}$ \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt] (math) {$y$};  or alternatively 2) functions are nodes, data are edges: $\stackrel{x}{\longrightarrow}$ \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt,fill=gray!20] (math) {$f$}; $\stackrel{y}{\longrightarrow}$.  In the following, I make explicit nodes for both functions (grey) and data (white), whereas edges merely represent linkages.
+For \textbf{string diagrams} \cite{Hinze2023} there are usually two conventions: 1) data are nodes, functions are edges: \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt] (math) {$x$}; $\stackrel{f}{\longrightarrow}$ \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt] (math) {$y$};  or alternatively 2) functions are nodes, data are edges: $\stackrel{x}{\longrightarrow}$ \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt,fill=gray!20] (math) {$f$}; $\stackrel{y}{\longrightarrow}$.  In the following, I make explicit nodes for both functions (grey) and data (white), whereas edges merely represent linkages.
 
 \begin{figure}
 \label{fig:fundamental-forms}
@@ -133,7 +134,7 @@ First let's recall the \textbf{fundamental forms} of RL (Fig.\ref{fig:fundamenta
 It seems that \textbf{Type L} would be easier to work with, and it is also the ``mainstream'' approach, along the direction of RLHF \cite{RLHF}.  Here, the LLM simply loops over itself to complete the RL cycle.  LLM models the ``spoken thoughts'' of human thinking, as found in text corpora.  These thoughts are interpreted as internal states of the RL.  Ever since Richard Montague's success in converting a fragment of English into formal logic \cite{Montague}, the line between formal logic and natural language is blurred.  We should not obsess with the idea that ``logic'' must be some kind of cryptic, undecipherable code.  A new perspective: \textit{the ``representation'' of human internal thought is just natural language} (or very close to it).  Type L also has the advantage that we can directly examine the internal state of an AGI.  What are currently called ``prompts'' is just \textbf{Working Memory}.
 
 \begin{figure}
-	\label{fig:types-AB}
+\label{fig:types-AB}
 \begin{tikzpicture}[node distance=-2pt,every path/.style={thick},decoration={
 	markings,mark=at position 0.53 with {\arrow{>}}}]
 
@@ -194,7 +195,7 @@ It seems that \textbf{Type L} would be easier to work with, and it is also the `
 
 \section*{Part II. \ Logic Transformer}
 
-As we know, LLMs predict the next word per each iteration.  The number of possible natural-language sentences is an astronomical figure (if not $\infty$), so it is infeasible in practice to represent probability distributions over this set.  However, as vocabulary size is finite, the conditional probabilities $\mathbb{P}$(next word | prior words, context) are manageable.  This is partly why LLMs are so efficient -- by decomposing sentences into words.
+As we know, LLMs predict the next word per each iteration.  The number of possible natural-language sentences is an astronomical figure (if not $\infty$), so it is infeasible in practice to represent probability distributions over this set.  However, as vocabulary size is finite, the conditional probabilities $\mathbb{P}$(next word | prior words, context) are manageable.  This is partly why LLMs are so efficient -- exploiting the decomposition of sentences into words.
 
 For a long time I tried to analyze the Transformer (Self Attention) from a symbolic-logic point of view, but did not know how to interpret the meaning of \textbf{tokens} -- do they correspond to logic propositions, or to sub-propositional symbols?  The question is how to reconcile these two views:
 \begin{equation}
@@ -257,16 +258,44 @@ Finally I had a break-through insight that a symbolic-logic Transformer should o
 
 % Having convinced ourselves that LLMs can be a model of \textit{internal} thoughts, we wonder if the Transformer can be re-formulated as some kind of logic engine or general \textbf{rewriting system}, defined by rewriting \textbf{rules} that can be learned via gradient descent?
 
+\subsection{Knowledge Representation}
+
+We want to endow the structure with
+\begin{itemize}
+	\item Tree structure as inspired by Chomskyan linguistics
+
+	\item Ontology such as ``kingdom-phylum-species-genus'' in biology or a library catalog system.
+
+	\item The (probabilistic) strength of a thought as the length of the thought vector.
+\end{itemize}
+
+\subsection{Rete}
+
+\subsection{Graph-rewriting}
+
+In \cite{Goertzel2021} \cite{Goertzel2021b}, Goertzel formulates intelligence as the re-writing of some metagraph or hypergraph structure, which is essentially the same as the author's idea of tree as Working Memory and which I now link to the Transformer.  Rewriting is defined categorically as certain morphisms, requiring some diagrams to commute.  This defines intelligence in \textbf{algebraic} terms, and it requires the discretizing functions above to achieve such algebraic rewriting.
+
+Relation algebra \cite{Maddux2006} \cite{Schmidt2010}.
+
+\textbf{The hallucination problem.}  The significance of combining RL and LLM is such that the system can \textit{think in loops}, eliminating thoughts that contradict accepted truths, thus achieving genuine, logically coherent understanding, instead of just parroting human speeches.  Reward maximization in the RL loop forces better ideas to win, ie. those ideas that are logically coherent with the rest of the knowledge.  This would solve the problem of ``hallucinations''.  The remaining question is how to train the Type L model \textit{efficiently}, but this is more of an engineering rather than theoretical problem.
+
+{\color{red} Update:  need to handle \textbf{variable-length propositions}.  Need tree-rewriting logic.  In a certain direction, the neural network may end up with a form very close to or even identical to current Transformers.}
+\begin{equation}
+	\nonumber
+	\vcenter{\hbox{\includegraphics[scale=0.7]{tree-rewriting.png}}}
+\end{equation}
+
+
 Now we are ready to re-formulate the Transformer as applying a set of logic / symbolic rules to its inputs.  In order for such rules to be \textbf{differentiable}, we can't have $N$ rules at one moment and then suddenly $N+1$ rules the next moment (that would not be differentiable).  The only solution I can think of is to maintain a \textit{fixed} number, $M$, of rules.  Every rule may potentially ``morph'' into any other rule in this space of rules.  The set of rules would look like a \textit{rectangular} matrix: {\color{red}(This part needs modification for tree-based logic rules instead of fixed-length rules; Tree-based rules require special syntax.  This may not be too difficult, as tree-rewriting is equivalent to term-rewriting, which the author already has some familiarity with.  [Goertzel 2021] also developed a ``reflective metagraph rewriting as a foundation for an AGI language of thought'')}
 
-\begin{equation}
-\begin{aligned}
-\mbox{rule 1:} & \quad \boxed{X^1_{11}... X^1_{1I}} \;\wedge\; \boxed{X^1_{21} ... X^1_{2I}} \;\wedge\;...\; \boxed{X^1_{K1} ... X^1_{KI}} \rightarrow \boxed{X^1_{01} ... X^1_{0I}} \\
-\mbox{rule 2:} & \quad \boxed{X^2_{11}... X^2_{1I}} \;\wedge\; \boxed{X^2_{21} ... X^2_{2I}} \;\wedge\;...\; \boxed{X^2_{K1} ... X^2_{KI}} \rightarrow \boxed{X^2_{01} ... X^2_{0I}} \\
-.... & \quad .... \\
-\mbox{rule M:} & \quad \boxed{X^M_{11}... X^M_{1I}} \;\wedge\; \boxed{X^M_{21} ... X^M_{2I}} \;\wedge\;...\; \boxed{X^M_{K1} ... X^M_{KI}} \rightarrow \boxed{X^M_{01} ... X^M_{0I}}
-\end{aligned}
-\end{equation}
+%\begin{equation}
+%\begin{aligned}
+%\mbox{rule 1:} & \quad \boxed{X^1_{11}... X^1_{1I}} \;\wedge\; \boxed{X^1_{21} ... X^1_{2I}} \;\wedge\;...\; \boxed{X^1_{K1} ... X^1_{KI}} \rightarrow \boxed{X^1_{01} ... X^1_{0I}} \\
+%\mbox{rule 2:} & \quad \boxed{X^2_{11}... X^2_{1I}} \;\wedge\; \boxed{X^2_{21} ... X^2_{2I}} \;\wedge\;...\; \boxed{X^2_{K1} ... X^2_{KI}} \rightarrow \boxed{X^2_{01} ... X^2_{0I}} \\
+%.... & \quad .... \\
+%\mbox{rule M:} & \quad \boxed{X^M_{11}... X^M_{1I}} \;\wedge\; \boxed{X^M_{21} ... X^M_{2I}} \;\wedge\;...\; \boxed{X^M_{K1} ... X^M_{KI}} \rightarrow \boxed{X^M_{01} ... X^M_{0I}}
+%\end{aligned}
+%\end{equation}
 
 For a rule to be applicable, its atoms must match with propositions in Working Memory.  An atom may contain constants (such as ``Socrates'', that must be matched correspondingly) or variables (such as $x$, that matches any entity).  To achieve this, I introduce a trick called \textbf{cylindrification factor} (Fig.\ref{fig:cylindrify-example}).
 
@@ -290,14 +319,16 @@ To make \textbf{variable substitution} differentiable is even trickier.  Conside
 \begin{equation}
 \logic{father}(X_1,X_2) \wedge \logic{father}(X_2,X_3) \rightarrow \logic{grand\hbox{-}father}(X_1,X_3)
 \end{equation}
-We have to imagine some ``slots'' where we ``select'' variables using weights and \textbf{softmax}:
-\vspace{-0.2cm} \begin{equation}
-\logic{father}(\begin{tikzpicture} \draw[line width=3pt, gray!50] (0.2,0.9) -- (0.2,0) (0.5,0.9) -- (0.5,0) (0.8,0.2) -- (0.8,0); \draw[thick] (0,0) to (1,0); \end{tikzpicture})
-\wedge
-\logic{father}(\begin{tikzpicture} \draw[line width=3pt, gray!50] (0.2,0.2) -- (0.2,0) (0.5,0.9) -- (0.5,0) (0.8,0.9) -- (0.8,0); \draw[thick] (0,0) to (1,0); \end{tikzpicture})
-\rightarrow
-\logic{grand\hbox{-}father}(\begin{tikzpicture} \draw[line width=3pt, gray!50] (0.2,0.9) -- (0.2,0) (0.5,0.2) -- (0.5,0) (0.8,0.9) -- (0.8,0); \draw[thick] (0,0) to (1,0); \end{tikzpicture})
-\end{equation}
+
+%We have to imagine some ``slots'' where we ``select'' variables using weights and \textbf{softmax}:
+%\vspace{-0.2cm} \begin{equation}
+%\logic{father}(\begin{tikzpicture} \draw[line width=3pt, gray!50] (0.2,0.9) -- (0.2,0) (0.5,0.9) -- (0.5,0) (0.8,0.2) -- (0.8,0); \draw[thick] (0,0) to (1,0); \end{tikzpicture})
+%\wedge
+%\logic{father}(\begin{tikzpicture} \draw[line width=3pt, gray!50] (0.2,0.2) -- (0.2,0) (0.5,0.9) -- (0.5,0) (0.8,0.9) -- (0.8,0); \draw[thick] (0,0) to (1,0); \end{tikzpicture})
+%\rightarrow
+%\logic{grand\hbox{-}father}(\begin{tikzpicture} \draw[line width=3pt, gray!50] (0.2,0.9) -- (0.2,0) (0.5,0.2) -- (0.5,0) (0.8,0.9) -- (0.8,0); \draw[thick] (0,0) to (1,0); \end{tikzpicture})
+%\end{equation}
+
 The actual implementation leads to formulas like these:
 \begin{align}
 \nonumber
@@ -366,34 +397,33 @@ In Ben Goertzel's ``General Theory of General Intelligence'', he formulates inte
 
 But the Transformer has also been shown capable of discrete (syntactic) manipulations.  Does that mean that all functions with discretizing ability are equivalent?  Can the Transformer be replaced by a fully-connected NN with sigmoid activation?  Seems unlikely, and if not, then what sets them apart \textit{still}?  Well, an obvious answer is that we need to \textbf{count computations}.
 
-
-
-We want to endow the structure with
-\begin{itemize}
-	\item Tree structure as Chomskyan linguistics
-
-	\item Ontology such as ``kingdom-phylem-species-genus'' in biology or a library catalog system.
-
-	\item The (probabilistic) strength of a thought as the length of the thought vector.
-\end{itemize}
-
-The
-
-The significance of combining RL and LLM is such that the system can \textit{think in loops}, eliminating thoughts that contradict accepted truths, thus achieving genuine, logically coherent understanding, instead of just parroting human speeches.  This would also solve the problem of ``hallucinations''.  The remaining question is how to train the Type L model \textit{efficiently}, but this is more of an engineering rather than theoretical problem.
-
-{\color{red} Update:  need to handle \textbf{variable-length propositions}.  Need tree-rewriting logic.  In a certain direction, the neural network may end up with a form very close to or even identical to current Transformers.}
 \begin{equation}
-	\nonumber
-	\vcenter{\hbox{\includegraphics[scale=0.7]{tree-rewriting.png}}}
+\label{fig:KR-rewriting}
+\begin{tikzpicture}[baseline=(current bounding box.center), every path/.style={thick}]
+
+	\node[rectangle, align=center, text depth=5pt, anchor=west, text width=100pt] at (-3.5, 0.2) {\small\textbf{KR\\structure}};
+
+	\node[] at (-2.5, 0) {\Huge $\big($};
+	\node[] (KR) at (0,0) {\includegraphics[scale=0.5]{KR-structure.png}};
+	\node[] at (1, 0) {\Huge $\big)$};
+
+	\node at (1.3,0) (here) {};
+	\draw [->] (here) to[out=60, in=-60, looseness=10, "rewrite"] (here);
+\end{tikzpicture}
 \end{equation}
 
-%
-% ---- Bibliography ----
-%
-% BibTeX users should specify bibliography style 'splncs04'.
-% References will then be sorted and formatted in the correct style.
-%
-% \bibliographystyle{splncs04}
+Functor $\mathsf{F}: \mathcal{C} \rightarrow \mathcal{D}$.
+
+For example, in the ``double-pushout'' approach \cite{Kennaway1993}: a rewrite rule is a pair of morphisms $L \leftarrow K \rightarrow R$, $L$ and $R$ are the left and right hand sides, and $K$ is the interface graph.  $G$ is the input graph and $H$ is the result of rewriting.  The effect is that the part of $L$ outside $K$ is deleted from $G$ and is replaced by the part of $R$ outside $K$:
+\begin{equation}
+\label{eqn:rewrite-rule}
+\begin{tikzcd}
+	L \arrow[d] & K \arrow[l] \arrow[d] \arrow[r] & R \arrow[d] \\
+	G & D \arrow[l] \arrow[r] & H
+\end{tikzcd}
+\end{equation}
+This occurs in a category where graphs are objects and homomorphisms define some notion of ``matching''.  Now in a \textbf{differentiable} version of rewriting, all the rules are represented by a set of parameters $\Theta \in \mathbb{R}^n$, and the parameterized rules \textit{must} cover the entire family of rewrite rules as $\Theta$ vary continuously (in practice, we can limit the rules length to make that possible).  This requires the use of \textbf{discretizing} functions such as sigmoid and softmax to achieve, and may even be formulated by a fairly mechanical process.  However, in doing so we have overlooked the possibility that a \textbf{deep} neural network such as Transformer may be able to aggregate all the contents of Working Memory and output some intermediate, \textbf{distributive} representations before finally outputting some discrete tokens.  Such a process would have no counterpart in the form of discrete rewriting rules as (\ref{eqn:rewrite-rule}).
+
 \printbibliography
 
 \end{document}

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="331.24081pt"
-   height="230.58374pt"
-   viewBox="0 0 331.24081 230.58374"
+   width="357.72839pt"
+   height="376.95312pt"
+   viewBox="0 0 357.72839 376.95312"
    version="1.1"
    id="svg319"
    sodipodi:docname="RL-LLM-how-to-train.svg"
@@ -26,8 +26,8 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="1.4142136"
-     inkscape:cx="224.5064"
-     inkscape:cy="126.21856"
+     inkscape:cx="209.65716"
+     inkscape:cy="601.3943"
      inkscape:window-width="1080"
      inkscape:window-height="1895"
      inkscape:window-x="0"
@@ -682,12 +682,12 @@
   <path
      id="rect44617"
      style="fill:#f2f2f2;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
-     d="M 130.52062,70.069868 C 109.78663,105.80061 114.24291,111.89711 70.010858,112.60893 l -34.21582,0.0234 c -5.81163,0.37598 -5.70996,3.62693 -5.70996,8.13135 v 30.92579 c 0,4.50441 2.54695,8.12988 5.70996,8.12988 H 190.50744 c 3.16301,0 5.70996,-3.62547 5.70996,-8.12988 v -30.92575 c 0,-4.50442 -2.54695,-8.13135 -5.70996,-8.13135 h -51.53906 c -24.06103,-1.92659 -21.21289,-8.02979 -8.44776,-42.562502 z"
+     d="m 141.77235,216.43927 c -20.73399,35.73074 -16.27771,41.82724 -60.509761,42.53906 l -34.21582,0.0234 c -5.81163,0.37598 -5.70996,3.62693 -5.70996,8.13135 v 30.92579 c 0,4.50441 2.54695,8.12988 5.70996,8.12988 H 201.75917 c 3.16301,0 5.70996,-3.62547 5.70996,-8.12988 v -30.92575 c 0,-4.50442 -2.54695,-8.13135 -5.70996,-8.13135 h -51.53906 c -24.06103,-1.92659 -21.21289,-8.02979 -8.44776,-42.5625 z"
      sodipodi:nodetypes="cccssssssscc" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g162"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph1-1"
        x="236.075"
@@ -720,7 +720,7 @@
   <use
      xlink:href="#image6"
      mask="url(#mask0)"
-     transform="matrix(0.375,0,0,0.375,5.9566971,-196.96628)"
+     transform="matrix(0.375,0,0,0.375,17.208428,-50.596882)"
      id="use164"
      x="0"
      y="0"
@@ -729,7 +729,7 @@
   <use
      xlink:href="#image12"
      mask="url(#mask1)"
-     transform="matrix(0.375,0,0,0.375,4.456697,-182.79328)"
+     transform="matrix(0.375,0,0,0.375,15.708428,-36.423882)"
      id="use166"
      x="0"
      y="0"
@@ -737,12 +737,12 @@
      height="100%" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 54.492788,-178.42769 h 33.94141 v -11.65625 h -33.94141 z m 0,0"
+     d="m 65.744519,-32.058292 h 33.94141 v -11.65625 h -33.94141 z m 0,0"
      id="path168" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g180"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph0-2"
        x="190.94099"
@@ -782,7 +782,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g184"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph2-1"
        x="213.517"
@@ -792,13 +792,13 @@
        height="100%" />
   </g>
   <path
-     style="fill:#e3e3e3;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 176.18029,-184.25581 c 0,-6.17188 -5.0039,-11.17188 -11.17187,-11.17188 -6.17188,0 -11.17578,5 -11.17578,11.17188 0,6.17187 5.0039,11.17578 11.17578,11.17578 6.16797,0 11.17187,-5.00391 11.17187,-11.17578 z m 0,0"
+     style="fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="m 187.43202,-37.886412 c 0,-6.17188 -5.0039,-11.17188 -11.17187,-11.17188 -6.17188,0 -11.17578,5 -11.17578,11.17188 0,6.17187 5.0039,11.17578 11.17578,11.17578 6.16797,0 11.17187,-5.00391 11.17187,-11.17578 z m 0,0"
      id="path186" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g192"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph0-6"
        x="292.11499"
@@ -816,12 +816,12 @@
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 119.29357,-176.94722 c 0,1.44922 5.8711,2.6211 13.11329,2.6211 7.24609,0 13.11718,-1.17188 13.11718,-2.6211 v -13.65234 c 0,-1.44922 -5.87109,-2.625 -13.11718,-2.625 -7.24219,0 -13.11329,1.17578 -13.11329,2.625 z m 0,-13.65234 c 0,1.44922 5.8711,2.62109 13.11329,2.62109 7.24609,0 13.11718,-1.17187 13.11718,-2.62109"
+     d="m 130.5453,-30.577822 c 0,1.44922 5.8711,2.6211 13.11329,2.6211 7.24609,0 13.11718,-1.17188 13.11718,-2.6211 v -13.65234 c 0,-1.44922 -5.87109,-2.625 -13.11718,-2.625 -7.24219,0 -13.11329,1.17578 -13.11329,2.625 z m 0,-13.65234 c 0,1.44922 5.8711,2.62109 13.11329,2.62109 7.24609,0 13.11718,-1.17187 13.11718,-2.62109"
      id="path194" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g198"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph0-7"
        x="255.742"
@@ -833,7 +833,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g204"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph0-8"
        x="260.72821"
@@ -851,7 +851,7 @@
   </g>
   <use
      xlink:href="#image17"
-     transform="matrix(0.1125,0,0,0.1125,24.149698,-231.73678)"
+     transform="matrix(0.1125,0,0,0.1125,35.401429,-85.367382)"
      id="use206"
      x="0"
      y="0"
@@ -860,7 +860,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g210"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph3-1"
        x="180.03101"
@@ -871,48 +871,48 @@
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 71.461538,-190.48237 v -5.97657 c 0,-6.60156 5.35157,-11.91797 11.95703,-11.875 l 69.632822,0.46875 c 6.60547,0.0469 11.95703,5.4336 11.95703,12.03907"
+     d="m 82.713269,-44.112972 v -5.97657 c 0,-6.60156 5.35157,-11.91797 11.95703,-11.875 l 69.632821,0.46875 c 6.60547,0.0469 11.95703,5.4336 11.95703,12.03907"
      id="path212" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79698;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 115.75061,-211.22456 c 0.45312,1.86719 1.48828,2.75781 2.53125,3.125 -1.05079,0.35937 -2.09375,1.23047 -2.57032,3.09375"
+     d="m 127.00234,-64.855162 c 0.45312,1.86719 1.48828,2.75781 2.53125,3.125 -1.05079,0.35937 -2.09375,1.23047 -2.57032,3.09375"
      id="path214" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 165.00842,-172.68159 c 0,6.60156 -5.35156,11.98828 -11.95703,12.03515 l -69.632822,0.46875 c -6.60546,0.0469 -11.95703,-5.26953 -11.95703,-11.875 v -5.97656"
+     d="m 176.26015,-26.312192 c 0,6.60156 -5.35156,11.98828 -11.95703,12.03515 l -69.632821,0.46875 c -6.60546,0.0469 -11.95703,-5.26953 -11.95703,-11.875 v -5.97656"
      id="path216" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79698;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 114.91467,-157.27925 c -0.48047,-1.86328 -1.52344,-2.73828 -2.57422,-3.09375 1.04687,-0.36719 2.07812,-1.25781 2.53125,-3.1289"
+     d="m 126.1664,-10.909852 c -0.48047,-1.86328 -1.52344,-2.73828 -2.57422,-3.09375 1.04687,-0.36719 2.07812,-1.25781 2.53125,-3.1289"
      id="path218" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 27.051388,-191.07222 21.35547,0.46485"
+     d="m 38.303119,-44.702822 21.35547,0.46485"
      id="path220" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.637568;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 46.899038,-192.71284 c 0.11329,0.78125 1.51172,1.97656 1.89454,2.11718 -0.10547,0.0742 -0.12891,0.0742 -0.12891,0.0742 l -0.26172,-0.004"
+     d="m 58.150769,-46.343442 c 0.11329,0.78125 1.51172,1.97656 1.89454,2.11718 -0.10547,0.0742 -0.12891,0.0742 -0.12891,0.0742 l -0.26172,-0.004"
      id="path222" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 49.113888,-177.91987 -19.85547,0.43359"
+     d="m 60.365619,-31.550472 -19.85547,0.43359"
      id="path224" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.637568;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 30.856068,-175.44722 c -0.14453,-0.77343 -1.59375,-1.91015 -1.98828,-2.03125 0.10547,-0.082 0.12891,-0.082 0.12891,-0.082 l 0.25781,-0.004"
+     d="m 42.107799,-29.077822 c -0.14453,-0.77343 -1.59375,-1.91015 -1.98828,-2.03125 0.10547,-0.082 0.12891,-0.082 0.12891,-0.082 l 0.25781,-0.004"
      id="path226" />
   <path
-     style="fill:#e3e3e3;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 117.01232,-184.25581 -3.48828,-3.48828 v 1.49609 H 94.598258 v -1.49609 l -3.48828,3.48828 3.48828,3.48828 v -1.49609 h 18.925782 v 1.49609 z m 0,0"
+     style="fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="m 128.26405,-37.886412 -3.48828,-3.48828 v 1.49609 h -18.92578 v -1.49609 l -3.48828,3.48828 3.48828,3.48828 v -1.49609 h 18.92578 v 1.49609 z m 0,0"
      id="path228" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 120.51969,67.295978 h 33.94141 v -11.65625 h -33.94141 z m 0,0"
+     d="m 131.77142,213.66538 h 33.94141 v -11.65625 h -33.94141 z m 0,0"
      id="path168-2" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g180-3"
-     transform="translate(-67.351399,-105.26261)">
+     transform="translate(-56.099668,41.106788)">
     <use
        xlink:href="#glyph0-2"
        x="190.94099"
@@ -952,7 +952,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g184-8"
-     transform="translate(-67.351399,-105.26261)">
+     transform="translate(-56.099668,41.106788)">
     <use
        xlink:href="#glyph2-1"
        x="213.517"
@@ -963,48 +963,48 @@
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 137.48844,55.241298 v -5.97657 c 0,-6.60156 5.35157,-11.91797 11.95703,-11.875 l 39.63282,0.46875 c 6.60547,0.0469 11.95703,5.4336 11.95703,12.03907"
+     d="m 148.74017,201.6107 v -5.97657 c 0,-6.60156 5.35157,-11.91797 11.95703,-11.875 l 39.63282,0.46875 c 6.60547,0.0469 11.95703,5.4336 11.95703,12.03907"
      id="path212-5"
      sodipodi:nodetypes="csccc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 71.955478,153.10151 v 26.97657 c 0,6.60156 5.35157,11.91797 11.95703,11.875 l 50.663152,0.0616"
+     d="m 83.207209,299.47091 v 26.97657 c 0,6.60156 5.35157,11.91797 11.95703,11.875 l 50.663151,0.0616"
      id="path212-5-0"
      sodipodi:nodetypes="cscc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79698;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 166.77751,34.499108 c 0.45312,1.86719 1.48828,2.75781 2.53125,3.125 -1.05079,0.35937 -2.09375,1.23047 -2.57032,3.09375"
+     d="m 178.02924,180.86851 c 0.45312,1.86719 1.48828,2.75781 2.53125,3.125 -1.05079,0.35937 -2.09375,1.23047 -2.57032,3.09375"
      id="path214-0"
      sodipodi:nodetypes="ccc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 141.733,191.5618 h 67.47657 c 6.60156,0 11.91797,-5.35157 11.875,-11.95703 L 220.61582,73.971948 c -0.0469,-6.60547 -5.4336,-11.95703 -12.03907,-11.95703"
+     d="m 152.98473,337.9312 h 67.47657 c 6.60156,0 11.91797,-5.35157 11.875,-11.95703 l -0.46875,-105.63282 c -0.0469,-6.60547 -5.4336,-11.95703 -12.03907,-11.95703"
      id="path212-5-3"
      sodipodi:nodetypes="csccc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79698;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 223.97519,132.27273 c -1.86719,-0.45312 -2.75781,-1.48828 -3.125,-2.53125 -0.35937,1.05079 -1.23047,2.09375 -3.09375,2.57032"
+     d="m 235.22692,278.64213 c -1.86719,-0.45312 -2.75781,-1.48828 -3.125,-2.53125 -0.35937,1.05079 -1.23047,2.09375 -3.09375,2.57032"
      id="path214-0-7"
      sodipodi:nodetypes="ccc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79698;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 87.711298,188.75719 c 0.45312,1.86719 1.48828,2.75781 2.53125,3.125 -1.05079,0.35937 -2.09375,1.23047 -2.57032,3.09375"
+     d="m 98.963029,335.12659 c 0.45312,1.86719 1.488281,2.75781 2.531251,3.125 -1.05079,0.35937 -2.093751,1.23047 -2.570321,3.09375"
      id="path214-0-2"
      sodipodi:nodetypes="ccc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 201.03532,73.042078 c 0,6.60156 -5.35156,11.98828 -11.95703,12.03515 l -39.63282,0.46875 c -6.60546,0.0469 -11.95703,-5.26953 -11.95703,-11.875 v -5.97656"
+     d="m 212.28705,219.41148 c 0,6.60156 -5.35156,11.98828 -11.95703,12.03515 l -39.63282,0.46875 c -6.60546,0.0469 -11.95703,-5.26953 -11.95703,-11.875 v -5.97656"
      id="path216-3"
      sodipodi:nodetypes="cccsc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79698;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 165.94157,88.444418 c -0.48047,-1.86328 -1.52344,-2.73828 -2.57422,-3.09375 1.04687,-0.36719 2.07812,-1.25781 2.53125,-3.1289"
+     d="m 177.1933,234.81382 c -0.48047,-1.86328 -1.52344,-2.73828 -2.57422,-3.09375 1.04687,-0.36719 2.07812,-1.25781 2.53125,-3.1289"
      id="path218-6"
      sodipodi:nodetypes="ccc" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g250"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph1-1"
        x="348.43201"
@@ -1079,7 +1079,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g258"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph1-13"
        x="400.49271"
@@ -1105,7 +1105,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g262"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph1-15"
        x="419.16077"
@@ -1117,7 +1117,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g272"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph1-3"
        x="428.0061"
@@ -1149,7 +1149,7 @@
   </g>
   <use
      xlink:href="#image17"
-     transform="matrix(0.1125,0,0,0.1125,201.1457,-195.70978)"
+     transform="matrix(0.1125,0,0,0.1125,212.39743,-49.340382)"
      id="use274"
      x="0"
      y="0"
@@ -1157,7 +1157,7 @@
      height="100%" />
   <use
      xlink:href="#image23"
-     transform="matrix(0.225,0,0,0.225,314.5317,-195.76528)"
+     transform="matrix(0.225,0,0,0.225,325.78343,-49.395882)"
      id="use276"
      x="0"
      y="0"
@@ -1165,12 +1165,12 @@
      height="100%" />
   <path
      style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     d="m 262.47326,-202.04878 v 33.94141 h 11.65625 v -33.94141 z m 0,0"
+     d="m 273.72499,-55.679382 v 33.94141 h 11.65625 v -33.94141 z m 0,0"
      id="path278" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g290"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph4-1"
        x="404.436"
@@ -1210,7 +1210,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g294"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph5-1"
        x="404.436"
@@ -1221,20 +1221,20 @@
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 274.52795,-202.44722 h -12.45313 m 12.45313,34.73828 h -12.45313"
+     d="m 285.77968,-56.077822 h -12.45313 m 12.45313,34.73828 h -12.45313"
      id="path296" />
   <path
-     style="fill:#e3e3e3;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 261.67248,-167.42769 -27.89453,10.15235 v -55.60547 l 27.89453,10.15234 z m 0,0"
+     style="fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="m 272.92421,-21.058292 -27.89453,10.15235 v -55.60547 l 27.89453,10.15234 z m 0,0"
      id="path298" />
   <path
-     style="fill:#e3e3e3;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 302.82482,-157.27534 -27.89843,-10.15235 v -35.30078 l 27.89843,-10.15234 z m 0,0"
+     style="fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="m 314.07655,-10.905942 -27.89843,-10.15235 v -35.30078 l 27.89843,-10.15234 z m 0,0"
      id="path300" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g304"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph6-1"
        x="373.60199"
@@ -1246,7 +1246,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g308"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph6-1"
        x="418.07535"
@@ -1258,7 +1258,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g312"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph7-1"
        x="424.108"
@@ -1270,7 +1270,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g316"
-     transform="translate(-133.3783,-350.98628)">
+     transform="translate(-122.12657,-204.61688)">
     <use
        xlink:href="#glyph8-1"
        x="430.694"
@@ -1282,126 +1282,126 @@
   <text
      xml:space="preserve"
      style="font-size:10px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;fill:#00ff00;stroke-width:1.5"
-     x="-10.347822"
-     y="-285.03937"
+     x="-195.60851"
+     y="-64.033081"
      id="text1222"><tspan
        sodipodi:role="line"
        id="tspan1220"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10px;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';fill:#000000;stroke-width:1.5"
-       x="-10.347822"
-       y="-285.03937">失去了 LLM 的训练优势：</tspan><tspan
+       x="-195.60851"
+       y="-64.033081">失去了 LLM 的训练优势：</tspan><tspan
        sodipodi:role="line"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10px;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';fill:#000000;stroke-width:1.5"
-       x="-10.347822"
-       y="-274.03937"
+       x="-195.60851"
+       y="-53.033085"
        id="tspan10326">1）首先要有丰富的训练资料</tspan><tspan
        sodipodi:role="line"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10px;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';fill:#000000;stroke-width:1.5"
-       x="-10.347822"
-       y="-263.03937"
+       x="-195.60851"
+       y="-42.033085"
        id="tspan14082">2）updates 要非常多而频繁</tspan><tspan
        sodipodi:role="line"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10px;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';fill:#000000;stroke-width:1.5"
-       x="-10.347822"
-       y="-252.03937"
+       x="-195.60851"
+       y="-31.033083"
        id="tspan14272">3）如果可能的话，利用 trained models</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.5"
-     x="-8.7770805"
-     y="-136.65802"
+     x="-244.69933"
+     y="-3.8484824"
      id="text27287"><tspan
        sodipodi:role="line"
        id="tspan27285"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-136.65802">首先也观测到，</tspan><tspan
+       x="-244.69933"
+       y="-3.8484824">首先也观测到，</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-125.65802"
+       x="-244.69933"
+       y="7.1515179"
        id="tspan31710">LLM 的结构非常有利于 encoding thought processes</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-114.65802"
+       x="-244.69933"
+       y="18.151518"
        id="tspan31706">但我们现在就是企图把 LLM 放进 RL 迴路里</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-103.65802"
+       x="-244.69933"
+       y="29.151518"
        id="tspan31708">在这一点上没有不同，</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-92.65802"
+       x="-244.69933"
+       y="40.151516"
        id="tspan31714">不同的似乎是放弃了 predict next token 的训练方法？</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-81.65802"
+       x="-244.69933"
+       y="51.151516"
        id="tspan31718">那么训练方法有什么不同了呢？</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-70.65802"
+       x="-244.69933"
+       y="62.151516"
        id="tspan31916">Thought 在 WM 的出现往往不能直接得到奖励</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-59.65802"
+       x="-244.69933"
+       y="73.15152"
        id="tspan33325">这已经大大地令 updates 稀疏了很多</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-49.65802"
+       x="-244.69933"
+       y="83.15152"
        id="tspan39833" /><tspan
        sodipodi:role="line"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans';fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-38.65802"
+       x="-244.69933"
+       y="94.15152"
        id="tspan40277">训练方式：</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-27.65802"
+       x="-244.69933"
+       y="105.15152"
        id="tspan40279">当新句子从 WM 里出现，我们需要 sequitur score</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-16.65802"
+       x="-244.69933"
+       y="116.15152"
        id="tspan41925">而这似乎很明显需要 现有的 LLM 评分</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
-       x="-8.7770805"
-       y="-6.65802"
+       x="-244.69933"
+       y="126.15152"
        id="tspan33525" /></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.5"
-     x="40.591686"
-     y="128.59648"
+     x="51.843418"
+     y="274.96588"
      id="text27287-6"><tspan
        sodipodi:role="line"
        style="font-size:9px;fill:#000000;stroke-width:1.5"
-       x="40.591686"
-       y="128.59648"
+       x="51.843418"
+       y="274.96588"
        id="tspan33525-5">the state contains many sentences:</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.5"
-     x="37.014355"
-     y="214.78374"
+     x="48.266087"
+     y="361.15314"
      id="text27287-6-9"><tspan
        sodipodi:role="line"
        style="font-size:9px;fill:#000000;stroke-width:1.5"
-       x="37.014355"
-       y="214.78374"
+       x="48.266087"
+       y="361.15314"
        id="tspan12495">each sentence is sent to a &quot;teacher&quot; LLM for evaluation:</tspan><tspan
        sodipodi:role="line"
        style="font-size:9px;fill:#000000;stroke-width:1.5"
-       x="37.014355"
-       y="223.78374"
+       x="48.266087"
+       y="370.15314"
        id="tspan12499">given the current state / context, is this sentence a good sequitur?</tspan></text>
   <text
      xml:space="preserve"
@@ -1409,140 +1409,140 @@
      x="294.65271"
      y="619.1062"
      id="text27287-6-9-5"
-     transform="translate(-64.54933,-492.98551)"><tspan
+     transform="translate(-53.297599,-346.61611)"><tspan
        x="294.65271"
        y="619.1062"
-       id="tspan23510">the result is what I call a </tspan><tspan
+       id="tspan11112">the result is what I call a </tspan><tspan
        x="294.65271"
        y="628.10618"
-       id="tspan23512">&quot;sequitur score&quot; which </tspan><tspan
+       id="tspan11114">&quot;sequitur score&quot; which </tspan><tspan
        x="294.65271"
        y="637.10618"
-       id="tspan23514">serves as rewards for RL</tspan></text>
+       id="tspan11116">serves as rewards for RL</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:100.077;fill:#000000;stroke-width:1.5"
      x="294.65271"
      y="619.1062"
      id="text27287-6-9-5-6"
-     transform="translate(-72.555776,-607.2662)"><tspan
+     transform="translate(-61.304045,-460.8968)"><tspan
        x="294.65271"
        y="619.1062"
-       id="tspan23516">This is an LLM turned </tspan><tspan
+       id="tspan11118">This is an LLM turned </tspan><tspan
        x="294.65271"
        y="628.10618"
-       id="tspan23518">into the policy function </tspan><tspan
+       id="tspan11120">into the policy function </tspan><tspan
        x="294.65271"
        y="637.10618"
-       id="tspan23520">of RL -- the &quot;actions&quot; it </tspan><tspan
+       id="tspan11122">of RL -- the &quot;actions&quot; it </tspan><tspan
        x="294.65271"
        y="646.10618"
-       id="tspan23522">outputs are thoughts</tspan></text>
+       id="tspan11124">outputs are thoughts</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:100.077;fill:#000000;stroke-width:1.5"
      x="391.89752"
      y="619.1062"
      id="text27287-6-9-5-3"
-     transform="translate(-391.48478,-569.81799)"><tspan
+     transform="translate(-380.23305,-423.44859)"><tspan
        x="391.89752"
        y="619.1062"
-       id="tspan23526"><tspan
+       id="tspan11128"><tspan
          style="text-align:end;text-anchor:end"
-         id="tspan23524">the &quot;state&quot; in RL can be </tspan></tspan><tspan
+         id="tspan11126">the &quot;state&quot; in RL can be </tspan></tspan><tspan
        x="391.89752"
        y="628.10618"
-       id="tspan23530"><tspan
+       id="tspan11132"><tspan
          style="text-align:end;text-anchor:end"
-         id="tspan23528">understood as &quot;working </tspan></tspan><tspan
+         id="tspan11130">understood as &quot;working </tspan></tspan><tspan
        x="391.89752"
        y="637.10618"
-       id="tspan23534"><tspan
+       id="tspan11136"><tspan
          style="text-align:end;text-anchor:end"
-         id="tspan23532">memory&quot;, is also the </tspan></tspan><tspan
+         id="tspan11134">memory&quot;, is also the </tspan></tspan><tspan
        x="391.89752"
        y="646.10618"
-       id="tspan23538"><tspan
+       id="tspan11140"><tspan
          style="text-align:end;text-anchor:end"
-         id="tspan23536">&quot;prompt&quot; in LLM</tspan></tspan></text>
+         id="tspan11138">&quot;prompt&quot; in LLM</tspan></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:100.077;fill:#000000;stroke-width:1.5"
      x="294.65271"
      y="619.1062"
      id="text27287-6-9-5-2"
-     transform="translate(-138.62655,-591.34248)"><tspan
+     transform="translate(-127.37482,-444.97308)"><tspan
        x="294.65271"
        y="619.1062"
-       id="tspan23540">RL loop</tspan></text>
+       id="tspan11142">RL loop</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.5"
-     x="39.733974"
-     y="142.06157"
+     x="50.985706"
+     y="288.43097"
      id="text27287-6-3"><tspan
        sodipodi:role="line"
        style="font-size:9px;fill:#000000;stroke-width:1.5"
-       x="39.733974"
-       y="142.06157"
+       x="50.985706"
+       y="288.43097"
        id="tspan33525-5-7">▢▢▢▢▢▢▢▵  ▢▢▢▢▢▵   . . . . .</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;opacity:0.2;fill:#000000;stroke:#000000;stroke-width:0.800002;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
-     x="82.978905"
-     y="171.84862"
+     x="94.230637"
+     y="318.21802"
      id="text56645"><tspan
        sodipodi:role="line"
        id="tspan56643"
        style="stroke-width:0.8"
-       x="82.978905"
-       y="171.84862" /></text>
+       x="94.230637"
+       y="318.21802" /></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.5"
-     x="46.177151"
-     y="172.31029"
+     x="57.428883"
+     y="318.67969"
      id="text27287-6-2"><tspan
        sodipodi:role="line"
        style="font-size:9px;fill:#000000;stroke-width:1.5"
-       x="46.177151"
-       y="172.31029"
+       x="57.428883"
+       y="318.67969"
        id="tspan33325-6-0" /><tspan
        sodipodi:role="line"
        style="font-size:9px;fill:#000000;stroke-width:1.5"
-       x="46.177151"
-       y="181.31029"
+       x="57.428883"
+       y="327.67969"
        id="tspan33525-5-6" /></text>
   <path
      sodipodi:nodetypes="csscssccsscsscc"
      inkscape:connector-curvature="0"
      id="path7003"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:300px;line-height:125%;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.128435"
-     d="m 103.44048,147.65122 c -1.18884,1.1091 -3.570132,1.82845 -9.091142,2.09652 l -12.09821,0.58742 c -6.77896,0.32914 -8.67155,1.46574 -10.14012,2.70212 -1.39863,-1.20001 -3.3602,-2.42437 -9.51072,-2.70212 l -13.00733,-0.58742 c -5.52149,-0.24936 -7.6925,-0.95106 -9.16107,-2.09652 0.0699,1.1091 0.55946,1.06714 1.81823,1.48533 1.60843,0.50909 4.26825,1.14033 8.53168,1.33287 l 13.00732,0.58742 c 5.03225,0.22726 6.92326,2.07134 8.32189,3.14408 1.39864,-1.12728 2.94102,-2.86455 8.53169,-3.14408 l 11.74855,-0.58742 c 4.82195,-0.24109 7.55264,-0.8056 9.161072,-1.27833 1.3287,-0.4 1.81823,-0.35804 1.88816,-1.53987" />
+     d="m 114.69221,294.02062 c -1.18884,1.1091 -3.57013,1.82845 -9.09114,2.09652 l -12.098211,0.58742 c -6.77896,0.32914 -8.67155,1.46574 -10.14012,2.70212 -1.39863,-1.20001 -3.3602,-2.42437 -9.51072,-2.70212 l -13.00733,-0.58742 c -5.52149,-0.24936 -7.6925,-0.95106 -9.16107,-2.09652 0.0699,1.1091 0.55946,1.06714 1.81823,1.48533 1.60843,0.50909 4.26825,1.14033 8.53168,1.33287 l 13.00732,0.58742 c 5.03225,0.22726 6.92326,2.07134 8.32189,3.14408 1.39864,-1.12728 2.94102,-2.86455 8.53169,-3.14408 l 11.748551,-0.58742 c 4.82195,-0.24109 7.55264,-0.8056 9.16107,-1.27833 1.3287,-0.4 1.81823,-0.35804 1.88816,-1.53987" />
   <rect
      style="fill:#ffff00;stroke:#000000;stroke-width:0.800002;stop-color:#000000"
      id="rect5505"
      width="42.213463"
      height="25.013168"
-     x="130.18594"
-     y="178.42125"
+     x="141.43767"
+     y="324.79065"
      rx="5.835495"
      ry="6.4457703" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:14px;line-height:0.6;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.5"
-     x="151.2085"
-     y="189.69426"
+     x="162.46022"
+     y="336.06366"
      id="text27287-5-6"><tspan
        sodipodi:role="line"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans';text-align:center;text-anchor:middle;fill:#000000;stroke-width:1.5"
-       x="151.2085"
-       y="189.69426"
+       x="162.46022"
+       y="336.06366"
        id="tspan40277-6-8">LLM</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;text-align:center;text-anchor:middle;fill:#000000;stroke-width:1.5"
-       x="151.2085"
-       y="198.09425"
+       x="162.46022"
+       y="344.46365"
        id="tspan33525-2-7">teacher</tspan></text>
   <text
      xml:space="preserve"
@@ -1550,7 +1550,7 @@
      x="257.25815"
      y="752.39276"
      id="text4190"
-     transform="matrix(0.75,0,0,0.75,-86.65972,-499.8876)"><tspan
+     transform="matrix(0.75,0,0,0.75,-75.407989,-353.5182)"><tspan
        sodipodi:role="line"
        id="tspan4188"
        x="257.25815"
@@ -1558,17 +1558,17 @@
        style="font-size:16px">≈</tspan></text>
   <path
      style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 208.82385,55.731018 c 9.16425,-0.0748 17.98783,-3.91091 20.43528,-11.6025"
+     d="m 220.07558,202.10042 c 9.16425,-0.0748 17.98783,-3.91091 20.43528,-11.6025"
      id="path9523"
      sodipodi:nodetypes="cc" />
   <path
      style="fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 212.20719,61.467858 c 0,-6.17188 -5.0039,-11.17188 -11.17187,-11.17188 -6.17188,0 -11.17578,5 -11.17578,11.17188 0,6.17187 5.0039,11.17578 11.17578,11.17578 6.16797,0 11.17187,-5.00391 11.17187,-11.17578 z m 0,0"
+     d="m 223.45892,207.83726 c 0,-6.17188 -5.0039,-11.17188 -11.17187,-11.17188 -6.17188,0 -11.17578,5 -11.17578,11.17188 0,6.17187 5.0039,11.17578 11.17578,11.17578 6.16797,0 11.17187,-5.00391 11.17187,-11.17578 z m 0,0"
      id="path186-7" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g192-3"
-     transform="translate(-97.351401,-105.26261)">
+     transform="translate(-86.09967,41.106788)">
     <use
        xlink:href="#glyph0-6"
        x="292.11499"
@@ -1586,38 +1586,116 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.33333333px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:pre;shape-padding:0;shape-margin:0;inline-size:162.472;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:pre;shape-padding:0;shape-margin:0;inline-size:162.472;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
      x="-19.248041"
      y="339.36377"
      id="text7858"
-     transform="scale(0.75)" />
+     transform="matrix(0.75,0,0,0.75,11.251731,146.3694)" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:pre;shape-padding:0;shape-margin:0;inline-size:224.621;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
      x="-8.1929588"
      y="342.0011"
      id="text10396"
-     transform="scale(0.75)"><tspan
+     transform="matrix(0.75,0,0,0.75,4.7360415,145.03315)"><tspan
        x="-8.1929588"
        y="342.0011"
-       id="tspan23542">新的问题出现：
+       id="tspan11144">新的问题出现：
 </tspan><tspan
        x="-8.1929588"
        y="358.66772"
-       id="tspan23544">LLM 本来就可以输出 next token
+       id="tspan11146">LLM 本来就可以输出 next token
 </tspan><tspan
        x="-8.1929588"
        y="375.33435"
-       id="tspan23546">那么所谓 RL update 是什么？
+       id="tspan11148">那么所谓 RL update 是什么？
 </tspan><tspan
        x="-8.1929588"
        y="392.00097"
-       id="tspan23548">那是要透过 policy function 来理解
+       id="tspan11150">那是要透过 policy function 来理解
 </tspan><tspan
        x="-8.1929588"
        y="408.6676"
-       id="tspan23550">那么 policy update 和 plain update 有</tspan><tspan
+       id="tspan11152">那么 policy update 和 plain update 有</tspan><tspan
        x="-8.1929588"
        y="425.33423"
-       id="tspan23552">什么不同呢？</tspan></text>
+       id="tspan11154">什么不同呢？</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:pre;shape-padding:0;shape-margin:0;inline-size:468.955;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+     x="-5.0841208"
+     y="-359.17432"
+     id="text1199"
+     transform="matrix(0.75,0,0,0.75,10.474363,122.0345)"><tspan
+       x="-5.0841208"
+       y="-359.17432"
+       id="tspan11158">On the left is the basic <tspan
+   style="font-weight:bold"
+   id="tspan11156">RL (reinforcement learning)</tspan> architecture, by which the </tspan><tspan
+       x="-5.0841208"
+       y="-342.50769"
+       id="tspan11160">state asymptotically approximates &quot;the world&quot; by maximizing rewards while </tspan><tspan
+       x="-5.0841208"
+       y="-325.84107"
+       id="tspan11164">interacting with the world.  On the right is the basic <tspan
+   style="font-weight:bold"
+   id="tspan11162">auto-encoder</tspan> architecture </tspan><tspan
+       x="-5.0841208"
+       y="-309.17444"
+       id="tspan11166">(which compresses world-data and tries to re-construct it), and is the basis of </tspan><tspan
+       x="-5.0841208"
+       y="-292.50781"
+       id="tspan11168">current LLMs.  Our goal is to combine these two:</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:pre;shape-padding:0;shape-margin:0;inline-size:468.955;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+     x="-5.0841208"
+     y="-359.17432"
+     id="text1199-3"
+     transform="matrix(0.75,0,0,0.75,9.4629866,282.02072)"><tspan
+       x="-5.0841208"
+       y="-359.17432"
+       id="tspan11170">Long story short, I came up with the following architecture which seems to be </tspan><tspan
+       x="-5.0841208"
+       y="-342.50769"
+       id="tspan11172">the same as RLHF and DeepSeek's architectures, ie, it coincides with the </tspan><tspan
+       x="-5.0841208"
+       y="-325.84107"
+       id="tspan11176">&quot;mainstream&quot; approach.  This architecture has the advantage that its <tspan
+   style="font-weight:bold"
+   id="tspan11174">internal </tspan></tspan><tspan
+       x="-5.0841208"
+       y="-309.17444"
+       id="tspan11180"><tspan
+   style="font-weight:bold"
+   id="tspan11178">state</tspan> is expressed in natural language, so we can simply &quot;read off&quot; its </tspan><tspan
+       x="-5.0841208"
+       y="-292.50781"
+       id="tspan11184">thoughts.  Also, the reinforcement learning &quot;<tspan
+   style="font-weight:bold"
+   id="tspan11182">loop</tspan>&quot; will force its thinking to </tspan><tspan
+       x="-5.0841208"
+       y="-275.84119"
+       id="tspan11188">become <tspan
+   style="font-weight:bold"
+   id="tspan11186">logically coherent</tspan> during the process of reward maximization;  this </tspan><tspan
+       x="-5.0841208"
+       y="-259.17456"
+       id="tspan11190">solves the problem of hallucinations.
+</tspan><tspan
+       x="-5.0841208"
+       y="-242.50794"
+       id="tspan11192">
+</tspan><tspan
+       x="-5.0841208"
+       y="-225.84131"
+       id="tspan11194">So we have a sort of consensus architecture for AGI and the remaining task is </tspan><tspan
+       x="-5.0841208"
+       y="-209.17468"
+       id="tspan11198">just to make the <tspan
+   style="font-weight:bold"
+   id="tspan11196">training process</tspan> more efficient.  This is more of an </tspan><tspan
+       x="-5.0841208"
+       y="-192.50806"
+       id="tspan11200">engineering task but does not require further theoretical breakthroughs.</tspan></text>
 </svg>

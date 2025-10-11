@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (1:1.4.2+202505120738+ebf0e940d0)"
+   sodipodi:docname="algebraic-logic.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1"
+     inkscape:cx="397"
+     inkscape:cy="307"
+     inkscape:window-width="1082"
+     inkscape:window-height="929"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:21.3333px;line-height:1.55;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:715.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="158"
+       y="256"
+       id="text1"
+       transform="matrix(0.26458333,0,0,0.26458333,-30.42709,-48.154173)"><tspan
+         x="158"
+         y="256"
+         id="tspan13"><tspan
+   style="font-weight:bold"
+   id="tspan11">classically:</tspan>
+</tspan><tspan
+         x="158"
+         y="289.06661"
+         id="tspan14">    Boolean logic    →    Boolean ring    =    commutative ring    →    geometry</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:21.3333px;line-height:3.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:738.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="158"
+       y="256"
+       id="text1-3"
+       transform="matrix(0.26458333,0,0,0.26458333,-32.014584,-24.814404)"><tspan
+         x="158"
+         y="256"
+         id="tspan16"><tspan
+   style="font-weight:bold"
+   id="tspan15">Paul Halmos:</tspan>
+</tspan><tspan
+         x="158"
+         y="325.33322"
+         id="tspan17">    predicate logic    →    Boolean ring    =    commutative ring    →    geometry</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:24px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:353.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="250"
+       y="158"
+       id="text2"
+       transform="matrix(0.26458333,0,0,0.26458333,-1.5875,4.2333335)"><tspan
+         x="250"
+         y="158"
+         id="tspan19"><tspan
+   style="font-size:21.3333px"
+   id="tspan18">   Boolean ring</tspan>
+</tspan><tspan
+         x="250"
+         y="188.00001"
+         id="tspan22"><tspan
+   style="font-size:16px"
+   id="tspan20">algebra</tspan>↓<tspan
+   style="font-size:16px"
+   id="tspan21">homomorphism</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:24px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:353.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="250"
+       y="158"
+       id="text2-1"
+       transform="matrix(0.26458333,0,0,0.26458333,48.418751,4.2897612)"><tspan
+         x="250"
+         y="158"
+         id="tspan24"><tspan
+   style="font-size:21.3333px"
+   id="tspan23">commutative ring</tspan>
+</tspan><tspan
+         x="250"
+         y="188.00001"
+         id="tspan25">            ↓</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:21.3333px;line-height:1.55;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:589.472;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="55"
+       y="305"
+       id="text10"
+       transform="matrix(0.26458333,0,0,0.26458333,-3.4395833,-4.7625)"><tspan
+         x="55"
+         y="305"
+         id="tspan27"><tspan
+           style="font-weight:bold"
+           id="tspan26">Huet-Buchberger correspondence:
+</tspan></tspan><tspan
+         x="55"
+         y="338.06661"
+         id="tspan31"><tspan
+           style="-inkscape-font-specification:'Alibaba PuHuiTi Light'"
+           id="tspan28">    completion algorithm     </tspan><tspan
+           style="-inkscape-font-specification:'Alibaba PuHuiTi Light'"
+           id="tspan29">↔</tspan><tspan
+           style="-inkscape-font-specification:'Alibaba PuHuiTi Light'"
+           id="tspan30">     Gröbner basis algorithm</tspan></tspan></text>
+  </g>
+</svg>

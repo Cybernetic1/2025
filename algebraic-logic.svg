@@ -26,8 +26,8 @@
      inkscape:document-units="mm"
      inkscape:zoom="1"
      inkscape:cx="397"
-     inkscape:cy="547"
-     inkscape:window-width="1080"
+     inkscape:cy="707"
+     inkscape:window-width="1082"
      inkscape:window-height="1895"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -50,13 +50,13 @@
        transform="matrix(0.26458333,0,0,0.26458333,-30.42709,-48.154173)"><tspan
          x="158"
          y="256"
-         id="tspan26"><tspan
+         id="tspan28"><tspan
    style="font-weight:bold"
-   id="tspan3">classically:</tspan>
+   id="tspan27">classically:</tspan>
 </tspan><tspan
          x="158"
          y="289.06661"
-         id="tspan27">    Boolean logic    →    Boolean ring    =    commutative ring    →    geometry</tspan></text>
+         id="tspan29">    Boolean logic    →    Boolean ring    =    commutative ring    →    geometry</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:21.3333px;line-height:1.55;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:715.472;display:inline;fill:#ff0000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
@@ -66,37 +66,69 @@
        transform="matrix(0.26458333,0,0,0.26458333,33.337502,75.502194)"><tspan
          x="158"
          y="256"
-         id="tspan28">(commutative)</tspan></text>
+         id="tspan30">(commutative)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:21.3333px;line-height:1.55;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:715.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="158"
+       y="256"
+       id="text1-35-23"
+       transform="matrix(0.26458333,0,0,0.26458333,5.6959613,98.481423)"><tspan
+         x="158"
+         y="256"
+         id="tspan31">(probability)</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:21.3333px;line-height:1.55;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:715.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
        x="158"
        y="256"
        id="text1-35-6"
-       transform="matrix(0.26458333,0,0,0.26458333,51.998052,56.941851)"><tspan
+       transform="matrix(0.26458333,0,0,0.26458333,50.410551,56.941851)"><tspan
          x="158"
          y="256"
-         id="tspan29">state</tspan></text>
+         id="tspan33"><tspan
+           style="font-weight:500;-inkscape-font-specification:'Alibaba PuHuiTi Medium'"
+           id="tspan32">state</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:21.3333px;line-height:1.55;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:715.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
        x="158"
        y="256"
        id="text1-35-6-8"
-       transform="matrix(0.26458333,0,0,0.26458333,6.8220213,44.251732)"><tspan
+       transform="matrix(0.26458333,0,0,0.26458333,1.5303543,44.251732)"><tspan
          x="158"
          y="256"
-         id="tspan30">reinforcement learning</tspan></text>
+         id="tspan35"><tspan
+           style="font-weight:500;-inkscape-font-specification:'Alibaba PuHuiTi Medium'"
+           id="tspan34">reinforcement learning</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:21.3333px;line-height:0.95;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:715.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="292.93286"
+       y="256"
+       id="text1-35-6-8-8"
+       transform="matrix(0.26458333,0,0,0.26458333,-199.94174,67.547762)"><tspan
+         x="292.93286"
+         y="256"
+         id="tspan37"><tspan
+           style="font-weight:500;-inkscape-font-specification:'Alibaba PuHuiTi Medium';text-align:end;text-anchor:end"
+           id="tspan36">consequence
+</tspan></tspan><tspan
+         x="292.93286"
+         y="276.26663"
+         id="tspan39"><tspan
+           style="font-weight:500;-inkscape-font-specification:'Alibaba PuHuiTi Medium';text-align:end;text-anchor:end"
+           id="tspan38">operator</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:21.3333px;line-height:1.55;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:715.472;display:inline;fill:#ff0000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
        x="158"
        y="256"
        id="text1-35-2"
-       transform="matrix(0.26458333,0,0,0.26458333,45.648,114.35648)"><tspan
+       transform="matrix(0.26458333,0,0,0.26458333,40.356333,120.17729)"><tspan
          x="158"
          y="256"
-         id="tspan31">(non-commutative)</tspan></text>
+         id="tspan40">(non-commutative)</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:21.3333px;line-height:3.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:738.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
@@ -106,13 +138,13 @@
        transform="matrix(0.26458333,0,0,0.26458333,-32.014584,-24.814404)"><tspan
          x="158"
          y="256"
-         id="tspan33"><tspan
+         id="tspan42"><tspan
    style="font-weight:bold"
-   id="tspan32">Paul Halmos:</tspan>
+   id="tspan41">Paul Halmos:</tspan>
 </tspan><tspan
          x="158"
          y="325.33322"
-         id="tspan34">    predicate logic    →    Boolean ring    =    commutative ring    →    geometry</tspan></text>
+         id="tspan43">    predicate logic    →    Boolean ring    =    commutative ring    →    geometry</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:24px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:353.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
@@ -122,17 +154,17 @@
        transform="matrix(0.26458333,0,0,0.26458333,-1.5875,4.2333335)"><tspan
          x="250"
          y="158"
-         id="tspan36"><tspan
+         id="tspan45"><tspan
    style="font-size:21.3333px"
-   id="tspan35">   Boolean ring</tspan>
+   id="tspan44">   Boolean ring</tspan>
 </tspan><tspan
          x="250"
          y="188.00001"
-         id="tspan39"><tspan
+         id="tspan48"><tspan
    style="font-size:16px"
-   id="tspan37">algebra</tspan>↓<tspan
+   id="tspan46">algebra</tspan>↓<tspan
    style="font-size:16px"
-   id="tspan38">homomorphism</tspan></tspan></text>
+   id="tspan47">homomorphism</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:24px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:353.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
@@ -142,13 +174,13 @@
        transform="matrix(0.26458333,0,0,0.26458333,48.418751,4.2897612)"><tspan
          x="250"
          y="158"
-         id="tspan41"><tspan
+         id="tspan50"><tspan
    style="font-size:21.3333px"
-   id="tspan40">commutative ring</tspan>
+   id="tspan49">commutative ring</tspan>
 </tspan><tspan
          x="250"
          y="188.00001"
-         id="tspan42">            ↓</tspan></text>
+         id="tspan51">            ↓</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:300;font-size:21.3333px;line-height:1.55;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:589.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
@@ -158,19 +190,19 @@
        transform="matrix(0.26458333,0,0,0.26458333,-3.4395833,-4.7625)"><tspan
          x="55"
          y="305"
-         id="tspan44"><tspan
+         id="tspan53"><tspan
            style="font-weight:bold"
-           id="tspan43">Huet-Buchberger correspondence:
+           id="tspan52">Huet-Buchberger correspondence:
 </tspan></tspan><tspan
          x="55"
          y="338.06661"
-         id="tspan48"><tspan
+         id="tspan57"><tspan
            style="-inkscape-font-specification:'Alibaba PuHuiTi Light'"
-           id="tspan45">    completion algorithm     </tspan><tspan
+           id="tspan54">    completion algorithm     </tspan><tspan
            style="-inkscape-font-specification:'Alibaba PuHuiTi Light'"
-           id="tspan46">↔</tspan><tspan
+           id="tspan55">↔</tspan><tspan
            style="-inkscape-font-specification:'Alibaba PuHuiTi Light'"
-           id="tspan47">     Gröbner basis algorithm</tspan></tspan></text>
+           id="tspan56">     Gröbner basis algorithm</tspan></tspan></text>
     <g
        id="g990"
        transform="matrix(0.705556,0,0,0.705556,71.286606,131.8503)"
@@ -388,7 +420,7 @@
     </g>
     <g
        id="g5647"
-       transform="matrix(0.705556,0,0,0.705556,53.008563,153.07641)"
+       transform="matrix(0.705556,0,0,0.705556,47.716896,153.07641)"
        ns12:version="1.12.0"
        ns12:texconverter="pdflatex"
        ns12:pdfconverter="inkscape"
@@ -711,7 +743,7 @@
     </g>
     <g
        id="g1451"
-       transform="matrix(0.705556,0,0,0.705556,60.378264,169.72476)"
+       transform="matrix(0.705556,0,0,0.705556,55.086597,175.54557)"
        ns12:version="1.12.0"
        ns12:texconverter="pdflatex"
        ns12:pdfconverter="inkscape"
@@ -1135,6 +1167,36 @@
         </g>
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:24px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:607.472;display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="96"
+       y="773"
+       id="text26"
+       transform="matrix(0.26458333,0,0,0.26458333,4.2333335,0.52916667)"><tspan
+         x="96"
+         y="773"
+         id="tspan58">1）厘清 逻辑的分解结构
+</tspan><tspan
+         x="96"
+         y="802.99998"
+         id="tspan59">2）Curry-Howard 是否和 polynomial 不相容？
+</tspan><tspan
+         x="96"
+         y="832.99998"
+         id="tspan60">    polynomial 对应 rewrite rule，但同时也是 mapping？
+</tspan><tspan
+         x="96"
+         y="862.99998"
+         id="tspan61">3）既然我已经说了 AGI map 的一般结构，
+</tspan><tspan
+         x="96"
+         y="892.99998"
+         id="tspan62">    为什么 polynomial 又能带来额外优势？
+</tspan><tspan
+         x="96"
+         y="922.99998"
+         id="tspan63">4）substitution 结构 → attention 结构</tspan></text>
   </g>
   <g
      id="g1933"

@@ -689,7 +689,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g162"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph1-1"
        x="236.075"
@@ -744,7 +744,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g180"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph0-2"
        x="190.94099"
@@ -784,7 +784,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g184"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph2-1"
        x="213.517"
@@ -800,7 +800,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g192"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph0-6"
        x="292.11499"
@@ -823,7 +823,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g198"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph0-7"
        x="255.742"
@@ -835,7 +835,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g204"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph0-8"
        x="260.72821"
@@ -853,7 +853,7 @@
   </g>
   <use
      xlink:href="#image17"
-     transform="matrix(0.1125,0,0,0.1125,280.05076,69.648819)"
+     transform="matrix(0.1125,0,0,0.1125,280.05076,69.64882)"
      id="use206"
      x="0"
      y="0"
@@ -862,7 +862,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g210"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph3-1"
        x="180.03101"
@@ -873,11 +873,11 @@
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 327.3626,110.90323 v -5.97657 c 0,-6.601561 5.35157,-11.917971 11.95703,-11.875001 l 69.63282,0.46875 c 6.60547,0.0469 11.95703,5.4336 11.95703,12.039071"
+     d="m 327.3626,110.90323 v -5.97657 c 0,-6.60156 5.35157,-11.91797 11.95703,-11.875 l 69.63282,0.46875 c 6.60547,0.0469 11.95703,5.4336 11.95703,12.03907"
      id="path212" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79698;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 371.65167,90.161039 c 0.45312,1.86719 1.48828,2.75781 2.53125,3.125 -1.05079,0.35937 -2.09375,1.23047 -2.57032,3.09375"
+     d="m 371.65167,90.16104 c 0.45312,1.86719 1.48828,2.75781 2.53125,3.125 -1.05079,0.35937 -2.09375,1.23047 -2.57032,3.09375"
      id="path214" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
@@ -1006,7 +1006,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g250"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph1-1"
        x="348.43201"
@@ -1081,7 +1081,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g258"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph1-13"
        x="400.49271"
@@ -1107,7 +1107,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g262"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph1-15"
        x="419.16077"
@@ -1119,7 +1119,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g272"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph1-3"
        x="428.0061"
@@ -1167,12 +1167,12 @@
      height="100%" />
   <path
      style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     d="m 518.37432,99.336819 v 33.941411 h 11.65625 V 99.336819 Z m 0,0"
+     d="m 518.37432,99.33682 v 33.94141 h 11.65625 V 99.33682 Z m 0,0"
      id="path278" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g290"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph4-1"
        x="404.436"
@@ -1212,7 +1212,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g294"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph5-1"
        x="404.436"
@@ -1223,20 +1223,20 @@
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 530.42901,98.938379 h -12.45313 m 12.45313,34.738281 h -12.45313"
+     d="m 530.42901,98.93838 h -12.45313 m 12.45313,34.73828 h -12.45313"
      id="path296" />
   <path
      style="fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 517.57354,133.95791 -27.89453,10.15235 V 88.504789 l 27.89453,10.15234 z m 0,0"
+     d="m 517.57354,133.95791 -27.89453,10.15235 V 88.50479 l 27.89453,10.15234 z m 0,0"
      id="path298" />
   <path
      style="fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="M 558.72588,144.11026 530.82745,133.95791 V 98.657129 l 27.89843,-10.15234 z m 0,0"
+     d="M 558.72588,144.11026 530.82745,133.95791 V 98.65713 l 27.89843,-10.15234 z m 0,0"
      id="path300" />
   <g
      style="fill:#000000;fill-opacity:1"
      id="g304"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph6-1"
        x="373.60199"
@@ -1248,7 +1248,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g308"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph6-1"
        x="418.07535"
@@ -1260,7 +1260,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g312"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph7-1"
        x="424.108"
@@ -1272,7 +1272,7 @@
   <g
      style="fill:#000000;fill-opacity:1"
      id="g316"
-     transform="translate(122.52276,-49.600679)">
+     transform="translate(122.52276,-49.600678)">
     <use
        xlink:href="#glyph8-1"
        x="430.694"
@@ -1336,17 +1336,17 @@
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
        x="-0.049991608"
-       y="195.16771"
+       y="195.16772"
        id="tspan31714">不同的似乎是放弃了 predict next token 的训练方法？</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
        x="-0.049991608"
-       y="206.16771"
+       y="206.16772"
        id="tspan31718">那么训练方法有什么不同了呢？</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
        x="-0.049991608"
-       y="217.16771"
+       y="217.16772"
        id="tspan31916">Thought 在 WM 的出现往往不能直接得到奖励</tspan><tspan
        sodipodi:role="line"
        style="font-size:10px;fill:#000000;stroke-width:1.5"
@@ -1414,13 +1414,13 @@
      transform="translate(191.35173,-191.59991)"><tspan
        x="294.65271"
        y="619.1062"
-       id="tspan1">the result is what I call a </tspan><tspan
+       id="tspan46">the result is what I call a </tspan><tspan
        x="294.65271"
        y="628.10618"
-       id="tspan2">&quot;sequitur score&quot; which </tspan><tspan
+       id="tspan47">&quot;sequitur score&quot; which </tspan><tspan
        x="294.65271"
        y="637.10618"
-       id="tspan3">serves as rewards for RL</tspan></text>
+       id="tspan48">serves as rewards for RL</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:100.077;fill:#000000;stroke-width:1.5"
@@ -1430,16 +1430,16 @@
      transform="translate(183.34529,-305.8806)"><tspan
        x="294.65271"
        y="619.1062"
-       id="tspan4">This is an LLM turned </tspan><tspan
+       id="tspan49">This is an LLM turned </tspan><tspan
        x="294.65271"
        y="628.10618"
-       id="tspan5">into the policy function </tspan><tspan
+       id="tspan50">into the policy function </tspan><tspan
        x="294.65271"
        y="637.10618"
-       id="tspan6">of RL -- the &quot;actions&quot; it </tspan><tspan
+       id="tspan51">of RL -- the &quot;actions&quot; it </tspan><tspan
        x="294.65271"
        y="646.10618"
-       id="tspan7">outputs are thoughts</tspan></text>
+       id="tspan52">outputs are thoughts</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:100.077;fill:#000000;stroke-width:1.5"
@@ -1449,24 +1449,24 @@
      transform="translate(-135.58372,-268.43239)"><tspan
        x="391.89752"
        y="619.1062"
-       id="tspan9"><tspan
+       id="tspan54"><tspan
          style="text-align:end;text-anchor:end"
-         id="tspan8">the &quot;state&quot; in RL can be </tspan></tspan><tspan
+         id="tspan53">the &quot;state&quot; in RL can be </tspan></tspan><tspan
        x="391.89752"
        y="628.10618"
-       id="tspan11"><tspan
+       id="tspan56"><tspan
          style="text-align:end;text-anchor:end"
-         id="tspan10">understood as &quot;working </tspan></tspan><tspan
+         id="tspan55">understood as &quot;working </tspan></tspan><tspan
        x="391.89752"
        y="637.10618"
-       id="tspan13"><tspan
+       id="tspan58"><tspan
          style="text-align:end;text-anchor:end"
-         id="tspan12">memory&quot;, is also the </tspan></tspan><tspan
+         id="tspan57">memory&quot;, is also the </tspan></tspan><tspan
        x="391.89752"
        y="646.10618"
-       id="tspan15"><tspan
+       id="tspan60"><tspan
          style="text-align:end;text-anchor:end"
-         id="tspan14">&quot;prompt&quot; in LLM</tspan></tspan></text>
+         id="tspan59">&quot;prompt&quot; in LLM</tspan></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:100.077;fill:#000000;stroke-width:1.5"
@@ -1476,7 +1476,7 @@
      transform="translate(117.27451,-289.95688)"><tspan
        x="294.65271"
        y="619.1062"
-       id="tspan16">RL loop</tspan></text>
+       id="tspan61">RL loop</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9px;line-height:1;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.5"
@@ -1602,26 +1602,26 @@
      transform="matrix(0.75,0,0,0.75,249.38538,300.04935)"><tspan
        x="-8.1929588"
        y="342.0011"
-       id="tspan17">新的问题出现：
+       id="tspan62">新的问题出现：
 </tspan><tspan
        x="-8.1929588"
        y="358.66772"
-       id="tspan18">LLM 本来就可以输出 next token
+       id="tspan63">LLM 本来就可以输出 next token
 </tspan><tspan
        x="-8.1929588"
        y="375.33435"
-       id="tspan19">那么所谓 RL update 是什么？
+       id="tspan64">那么所谓 RL update 是什么？
 </tspan><tspan
        x="-8.1929588"
        y="392.00097"
-       id="tspan20">那是要透过 policy function 来理解
+       id="tspan65">那是要透过 policy function 来理解
 </tspan><tspan
        x="-8.1929588"
        y="408.6676"
-       id="tspan21">那么 policy update 和 plain update 有</tspan><tspan
+       id="tspan66">那么 policy update 和 plain update 有</tspan><tspan
        x="-8.1929588"
        y="425.33423"
-       id="tspan22">什么不同呢？</tspan></text>
+       id="tspan67">什么不同呢？</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:pre;shape-padding:0;shape-margin:0;inline-size:468.955;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
@@ -1631,23 +1631,23 @@
      transform="matrix(0.75,0,0,0.75,255.1237,277.0507)"><tspan
        x="-5.0841208"
        y="-359.17432"
-       id="tspan24">On the left is the basic <tspan
+       id="tspan69">On the left is the basic <tspan
    style="font-weight:bold"
-   id="tspan23">RL (reinforcement learning)</tspan> architecture, by which the </tspan><tspan
+   id="tspan68">RL (reinforcement learning)</tspan> architecture, by which the </tspan><tspan
        x="-5.0841208"
        y="-342.50769"
-       id="tspan25">state asymptotically approximates &quot;the world&quot; by maximizing rewards while </tspan><tspan
+       id="tspan70">state asymptotically approximates &quot;the world&quot; by maximizing rewards while </tspan><tspan
        x="-5.0841208"
        y="-325.84107"
-       id="tspan27">interacting with the world.  On the right is the basic <tspan
+       id="tspan72">interacting with the world.  On the right is the basic <tspan
    style="font-weight:bold"
-   id="tspan26">auto-encoder</tspan> architecture </tspan><tspan
+   id="tspan71">auto-encoder</tspan> architecture </tspan><tspan
        x="-5.0841208"
        y="-309.17444"
-       id="tspan28">(which compresses world-data and tries to re-construct it), and is the basis of </tspan><tspan
+       id="tspan73">(which compresses world-data and tries to re-construct it), and is the basis of </tspan><tspan
        x="-5.0841208"
        y="-292.50781"
-       id="tspan29">current LLMs.  Our goal is to combine these two:</tspan></text>
+       id="tspan74">current LLMs.  Our goal is to combine these two:</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:pre;shape-padding:0;shape-margin:0;inline-size:468.955;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
@@ -1657,47 +1657,47 @@
      transform="matrix(0.75,0,0,0.75,254.11232,437.03692)"><tspan
        x="-5.0841208"
        y="-359.17432"
-       id="tspan30">Long story short, I came up with the following architecture which seems to be </tspan><tspan
+       id="tspan75">Long story short, I came up with the following architecture which seems to be </tspan><tspan
        x="-5.0841208"
        y="-342.50769"
-       id="tspan31">the same as RLHF and DeepSeek's architectures, ie, it coincides with the </tspan><tspan
+       id="tspan76">the same as RLHF and DeepSeek's architectures, ie, it coincides with the </tspan><tspan
        x="-5.0841208"
        y="-325.84107"
-       id="tspan33">&quot;mainstream&quot; approach.  This architecture has the advantage that its <tspan
+       id="tspan78">&quot;mainstream&quot; approach.  This architecture has the advantage that its <tspan
    style="font-weight:bold"
-   id="tspan32">internal </tspan></tspan><tspan
+   id="tspan77">internal </tspan></tspan><tspan
        x="-5.0841208"
        y="-309.17444"
-       id="tspan35"><tspan
+       id="tspan80"><tspan
    style="font-weight:bold"
-   id="tspan34">state</tspan> is expressed in natural language, so we can simply &quot;read off&quot; its </tspan><tspan
+   id="tspan79">state</tspan> is expressed in natural language, so we can simply &quot;read off&quot; its </tspan><tspan
        x="-5.0841208"
        y="-292.50781"
-       id="tspan37">thoughts.  Also, the reinforcement learning &quot;<tspan
+       id="tspan82">thoughts.  Also, the reinforcement learning &quot;<tspan
    style="font-weight:bold"
-   id="tspan36">loop</tspan>&quot; will force its thinking to </tspan><tspan
+   id="tspan81">loop</tspan>&quot; will force its thinking to </tspan><tspan
        x="-5.0841208"
        y="-275.84119"
-       id="tspan39">become <tspan
+       id="tspan84">become <tspan
    style="font-weight:bold"
-   id="tspan38">logically coherent</tspan> during the process of reward maximization;  this </tspan><tspan
+   id="tspan83">logically coherent</tspan> during the process of reward maximization;  this </tspan><tspan
        x="-5.0841208"
        y="-259.17456"
-       id="tspan40">solves the problem of hallucinations.
+       id="tspan85">solves the problem of hallucinations.
 </tspan><tspan
        x="-5.0841208"
        y="-242.50794"
-       id="tspan41">
+       id="tspan86">
 </tspan><tspan
        x="-5.0841208"
        y="-225.84131"
-       id="tspan42">So we have a sort of consensus architecture for AGI and the remaining task is </tspan><tspan
+       id="tspan87">So we have a sort of consensus architecture for AGI and the remaining task is </tspan><tspan
        x="-5.0841208"
        y="-209.17468"
-       id="tspan44">just to make the <tspan
+       id="tspan89">just to make the <tspan
    style="font-weight:bold"
-   id="tspan43">training process</tspan> more efficient.  This is more of an </tspan><tspan
+   id="tspan88">training process</tspan> more efficient.  This is more of an </tspan><tspan
        x="-5.0841208"
        y="-192.50806"
-       id="tspan45">engineering task but does not require further theoretical breakthroughs.</tspan></text>
+       id="tspan90">engineering task but does not require further theoretical breakthroughs.</tspan></text>
 </svg>

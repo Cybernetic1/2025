@@ -74,7 +74,7 @@
 \let\oldtextbf\textbf
 \renewcommand{\textbf}[1]{\textcolor{blue}{\oldtextbf{#1}}}
 
-\newcommand{\logic}[1]{{\color{violet}{\textit{#1}}}}
+\newcommand{\logic}[1]{{\color{violet}{\textsf{#1}}}}
 \newcommand{\underconst}{\includegraphics[scale=0.5]{../2020/UnderConst.png}}
 \newcommand{\KBsymbol}{\vcenter{\hbox{\includegraphics[scale=1]{../KB-symbol.png}}}}
 \newcommand{\bbOmega}{\vcenter{\hbox{\includegraphics[scale=1]{../bbOmega-symbol.png}}}}
@@ -95,33 +95,77 @@
 \newcounter{mypage}
 \setcounter{mypage}{0}
 
+My research in AGI has been mainly focused on using the structure of logic to constrain the \textbf{hypothesis space} of AGIs along the line of \textbf{No Free Lunch} and \textbf{inductive biases}.  The idea is that if we know all AGIs to share a certain logical structure, then we can use this structure to limit the search space (ie. hypothesis space), thus learning will be accelerated.  And learning (ie. AGI training) is very expensive.  This can be illustrated by the following diagram:
+\begin{equation}
+	\vcenter{\hbox{\includegraphics[scale=0.5]{../2021/no-free-lunch-[color].png}}}
+	% from 2021
+\end{equation}
+Richard Sutton (I don't know him personally, but I think I am one of his most loyal disciples in reinforcement learning) seems to disagree with me on this issue.  He thinks we are much more likely to find intelligences outside of our notions of logic.  Can the blue area be smaller than the red area?  I don't have a strong reason to refute him, but my intuition tells me to pursue my idea further...
+
+Usually ``\textbf{structure}'' in mathematics is expressed as some kind of \textbf{symmetry}.  Usually symmetry is expressed as some kind of equation.  For our purpose, for logic, the most relevant symmetries are:
+\begin{eqnarray}
+	\nonumber
+	&& I \heartsuit U \neq U \heartsuit I \quad \mbox{(else there wouldn't be heartbreaks)} \\
+	\label{eqn:logic-structure}
+	&& I \heartsuit U \wedge U \heartsuit I = U \heartsuit I \wedge I \heartsuit U
+\end{eqnarray}
+The second equation describes the \textbf{commutativity} of conjunctions of propositions, which is the most celebrated kind of symmetries in mathematics (The adjective \textbf{Abelian} means commutative, such as $ab = ba$ in group theory, named after the Norwegian mathematician Abel).  This is also a symmetry possessed by the Transformer / \textbf{Self-Attention} (that's why we need to add \textbf{positional encoding} to the inputs to Transformers).
+
+If we look more closely at Self-Attention, we realize it has some sort of \textit{mismatch} with logical structure.  As words correspond to tokens, and sentences correspond to logic propositions, it should be the sentences which are commutative, not the words.  Is this mismatch very significant for machine learning, or is it computationally trivial?  I still don't know as of now.  For a long time I'd wanted to fix this mismatch but it turned out to be very difficult on a theoretical level.
+
+If we could encapsulate this structure (non-commutative at the predicate level, commutative at the propositional level) into an \textbf{algebraic} structure, such as $\times$ being non-commutative and + being commutative, then we could perform our machine learning within that algebra.  And thanks to the \textbf{representation theory} of algebras, this could be transformed into operations with matrices.  But this path turns out to be unfeasible as I somehow failed to ``fit'' logic into an algebra.  In fact, the \textbf{algebraization} of logic is a very complicated research topic that has occupied great logicians such as Alfred Tarski and Paul Halmos, among others, resulting in formulations such as cylindrical algebra, relation algebra, etc.  We all know from high school, that Boolean logic with $\wedge$ and $\vee$ behaves like an algebra, and can indeed be turned into a \textbf{Boolean ring}, where $\times$ is AND but $+$ is exclusive-OR.  So far so good, but as soon as we move to \textbf{predicate logic} we seem to run out of naturally ``algebraic'' ideas to represent predicates.  Halmos suggests to treat predicates as \textbf{algebra homomorphisms}, ``homo'' meaning the morphisms preserve algebraic structure.  In my (unfinished) master's thesis I was half-way working on this approach.
+
+Another path is through \textbf{categorical logic}, which I have spent >15 years learning.  I know that logic can be captured by a category, more specifically a \textbf{topos}.  But I didn't realize that \textit{this} is the very representation that I've been looking for, day after day for 15+ years, until I had a chat with GPT!
+
+To understand categorical logic, we must start with the \textbf{Curry-Howard correspondence}.  It basically says, a \textbf{logical implication} such as $A \Rightarrow B$ should be interpreted as a \textbf{function} $f: A \rightarrow B$, ie. from the space $A$ to the space $B$, mapping a \textbf{proof object} in $A$ to another proof object in $B$.  Think of a proposition as a bowl, each may or may not have a piece of M\&M in it:
 \begin{equation}
 \hspace{-1cm} \vcenter{\hbox{\includegraphics[scale=0.7]{MnM-in-bowl.png}}}
 \end{equation}
+This is rather peculiar, as propositions are interpreted as ``spaces,''  or even more abstractly as \textbf{types}, as in type theory, which some programmers or computer science majors may be familiar with.
 
-How to represent propositions from predicates and objects? \\
-Such as loves(Romeo, Juliet)? \\
-其实很明显，我们首先假设能表示 R, J. \\
-$\heartsuit$ 是一个 type constructor，换言之是一个函数。\\
-此函数跟神经网络可能是同类的东西。\\
-它的输出是一个命题，或命题空间里的一点，但后者如何定义？\\
-它可以是一个非常高维的空间，也就是 thought space，它的极高维数似乎并不妨碍神经网络将之作为输入/输出空间。\\
-Thought space 的基本要求是不同的 thoughts 并不「相撞」。\\
-最简单的做法就是 Cartesian product（如果不怕维数）\\
-这样就可以做到 CCC 结构 融入 神经网络之中。
+The Curry-Howard correspondence is not something that can be proven;  it is kind of an axiom.  In the \textbf{philosophy} of mathematics, we study why people have notions of numbers like 1,2,3... which to me are rather boring questions (I much prefer to think about P $\stackrel{?}{=} $ NP), but that's where Curry-Howard belongs.  It is one of the \textit{profoundest} mathematical discoveries, that links logic to mathematics on a meta-physical level.
 
-问题：
+It has been re-discovered so many times that its full name could be Brouwer-Heyting-Kolmogorov-Sch\"{o}nfinkel -Curry-Meredith-Kleene-Feys-G\"{o}del-L\"{a}uchli-Kreisel-Tait-Lawvere-Howard-\mbox{de Bruijn}-Scott-Martin-L\"{o}f-Girard-Reynolds-Stenlund-Constable-Coquand-Huet-Lambek...
+\vspace{-0.3cm}
+\begin{equation}
+\nonumber
+\hspace{-0.8cm} \vcenter{\hbox{\includegraphics[scale=0.7]{Curry-Howard-full-name.jpg}}}
+\end{equation}
+(A few of them are still breathing as of 2025.  The programming language Haskell is named after guy \#5.)
+
+%How to represent propositions from predicates and objects? \\
+%Such as loves(Romeo, Juliet)? \\
+%其实很明显，我们首先假设能表示 R, J. \\
+%$\heartsuit$ 是一个 type constructor，换言之是一个函数。\\
+%此函数跟神经网络可能是同类的东西。\\
+%它的输出是一个命题，或命题空间里的一点，但后者如何定义？\\
+%它可以是一个非常高维的空间，也就是 thought space，它的极高维数似乎并不妨碍神经网络将之作为输入/输出空间。\\
+%Thought space 的基本要求是不同的 thoughts 并不「相撞」。\\
+%最简单的做法就是 Cartesian product（如果不怕维数）\\
+%这样就可以做到 CCC 结构 融入 神经网络之中。
+
 \setlist[itemize]{topsep=0pt, parsep=3pt}
-\begin{itemize}
-	\item predicate $P(A,B)$ 变成了 $\bbOmega^{AB}$ 令我有点不安
-	\item 如果 $\bbOmega^{AB}$ 变成 Cartesian product $P \times A \times B$，会不会丧失了 不交换性？
-\end{itemize}
-$P(A,B) \neq P(B,A), P(A) \neq A(P)$ 现在变成 $\bbOmega^{AB} \neq \bbOmega^{BA}, \bbOmega^A \neq \bbOmega^P$.
+%问题：
+%\begin{itemize}
+%	\item predicate $P(A,B)$ 变成了 $\bbOmega^{AB}$ 令我有点不安
+%	\item 如果 $\bbOmega^{AB}$ 变成 Cartesian product $P \times A \times B$，会不会丧失了 不交换性？
+%\end{itemize}
+%$P(A,B) \neq P(B,A), P(A) \neq A(P)$ 现在变成 $\bbOmega^{AB} \neq \bbOmega^{BA}, \bbOmega^A \neq \bbOmega^P$.
 
+Lambek (guy \#24) discovered the link between \textbf{higher-order logic} (HOL) and \textbf{Cartesian-Closed Categories} (CCCs), which I find very useful.  This is a form of ``untyped'' logic which suffers from Curry's paradox (guy \#5) but which I think can be circumvented by fuzzy logic.  Bertrand Russell and Alfred North Whitehead invented \textbf{type theory} to get around Curry's paradox, but I personally prefer untyped logic.
+
+To \textit{apply} Curry-Howard to AGI, perhaps the most important insight is explained by the following diagram, which links \textbf{neural networks} to logic and to CCCs:
 \begin{equation}
 	\hspace{-1cm} \vcenter{\hbox{\includegraphics[scale=0.7]{NN-logic-CCC.png}}}
 \end{equation}
-现在居然很神奇地获得了交换性！
+% 现在居然很神奇地获得了交换性！
+The neural network, which is a non-linear \textbf{function}, is seen as a \textbf{term} belonging to a \textbf{type} which is the logic formula.  This accords beautifully with Curry-Howard.  A proposition such as \logic{father(a,b)} is a space, and all such spaces form the big space $\bbOmega$ which is not itself a proposition; that's why I use a different font to denote it.
+
+A proposition such as \logic{$\heartsuit$(Romeo, Juliet)} is created by passing the ordered pair \logic{(Romeo, Juliet)} to the predicate $\heartsuit$, which outputs a proposition, ie. a space, in $\bbOmega$.  In other words, $\heartsuit: A \times A \rightarrow \bbOmega$, where $A$ is the set of first-order objects, eg. the set of people.  $\heartsuit$ is called a \textbf{type-constructor};  it creates new types (propositions) out of existing types (propositions).  The keen reader may notice that the arrow $\rightarrow$ is \textit{overloaded} with two purposes: one as logic implication $\Rightarrow$ as required by Curry-Howard, the other as type constructor.  We can read the arrow in $\heartsuit$ as ``if you show me a pair of who is a boy and who is a girl, I can show you if he loves her''  -- a very awkward sentence, but a sentence nonetheless.  This ``saves'' the \textit{consistency} of the Curry-Howard correspondence.  It is known as \textbf{Martin-L\"{o}f type theory} (guy \#17).
+
+Does it really work?  Does it capture the two-layer non-commutative and commutative structure in (\ref{eqn:logic-structure})?  In category theory the products $A \times B$ and $B \times A$ are \textit{isomorphic} but \textit{not equal}.  If we interpret logic $\wedge$ (AND) as $\times$, it seems to be non-commutative.  But if we look at whether there exists a \textit{function} that takes one object in each of $A, B$ and maps them to the target, then the order of $A$ and $B$ does \textit{not} matter, and quite miraculously I think, we got the commutativity of logic $\wedge$.
+
+On the other hand, for the constructed type \logic{$\heartsuit$(Romeo, Juliet)}, we can let the type constructor $\heartsuit$ simply create the Cartesian product $V_{\heartsuit} \times V_{R} \times V_{J}$ where each $V$ is a vector space.  This is similar to the concatenation of \textbf{tokens} in Transformers, except we are concatenating vector spaces instead of vectors.  And $V_\heartsuit \times V_R \times V_J \neq V_\heartsuit \times V_J \times V_R$.  Thus we have non-commutativity at the predicate level.
 
 再剩下的问题是：
 \begin{itemize}

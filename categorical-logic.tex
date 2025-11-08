@@ -173,8 +173,13 @@ On the other hand, for the constructed type \logic{$\heartsuit$(Romeo, Juliet)},
 
 以前那个网络就是 props-in props-out 的形式。  记得好像 props 是以 subject space X 内的 vectors 形式 表示的。 但现在 props 是某些空间。  它不是 vector，但可以看成是 vector 周围的空间？  这在我 2024 发表的论文里已经确立了。 NN 将 vector maps to vector 没有问题 -- 那完全是正常、且符合 Curry-Howard 的。 问题是现在 props 可以根据 vector embedding 构造出来，这是新的。 所谓旧的方法是什么？ GPT？ GPT 的输出是 probability distro over words，其实符合 Curry-Howard？？ 反而是要输出 props 可能 unfeasible。 这也是之前已经有的结论了。
 
-问题是 从 input props 来看，它们的交换性好像要额外处理，why？ 这可能是所谓 power set 的问题。 如果只考虑一个 prop 的输入，它存在于 $\bbOmega$ 里面，其实即是 tok $\times$ tok $\times$ tok ... 的空间。 Transformer 用了 Attention 去处理 tokens 的交换性。 然则我们刚刚不是说好了 CCC 自带交换性？ 交换是指 ... 当我们有两个或以上的 props，这其实是怎样表示的？ 显然，它是 props $\rightarrow 2 = 2^{\mbox{props}}$ 的形式。 换句话说，每个 prop 附带 $\{ \top, \bot \}$ 的讯息。 那也可以看成是一堆被选择了的 props，但这些 props 是否可交换的呢？ 如何决定？
+问题是 从 input props 来看，它们的交换性好像要额外处理，why？ 这可能是所谓 power set 的问题。 如果只考虑一个 prop 的输入，它存在于 $\bbOmega$ 里面，其实即是 tok $\times$ tok $\times$ tok ... 的空间。 Transformer 用了 Attention 去处理 tokens 的交换性。 然则我们刚刚不是说好了 CCC 自带交换性？ 交换是指 ... 当我们有两个或以上的 props，这其实是怎样表示的？ 显然，它是 props $\rightarrow 2 = 2^{\mbox{props}}$ 的形式。 换句话说，每个 prop 附带 $\{ \top, \bot \}$ 的讯息。 那也可以看成是一堆被选择了的 props，但这些 props 是否可交换的呢？ 如何决定？ 每组被选择的 props 构成一个 subset，它就是一个不可分割的 element。 然后这个 subset element 被 map 到目标。 但这是否可以在神经网络做到？
 
+每一次 Self Attention，所有 tokens 齐齐送上，然后输出 memory table lookup 的叠加。 这里面已经融合了 matching 和 apply，但它的结构里面已含有 交换性。
+
+如果说，需要的 maps 是由集合到集合，则当然可以满足交换性，但似乎也不见得 范畴论特别有用。 也就是说，即使固定了 type，仍然是由 terms 决定 函数的交换性。 Type 里面仍然可以存在某些 terms 利用 ordered pairs 保持 非交换性。 Curry-Howard 好像是一个空壳，它给予了 交换性 的可能，而且提供了一个结构的框架，也算是有点用吧。
+
+现在从 Curry-Howard 的框架，再从新定义一次
 
 再剩下的问题是：
 \begin{itemize}

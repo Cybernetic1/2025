@@ -167,10 +167,25 @@ Does it really work?  Does it capture the two-layer non-commutative and commutat
 
 On the other hand, for the constructed type \logic{$\heartsuit$(Romeo, Juliet)}, we can let the type constructor $\heartsuit$ simply create the Cartesian product $V_{\heartsuit} \times V_{R} \times V_{J}$ where each $V$ is a vector space.  This is similar to the concatenation of \textbf{tokens} in Transformers, except we are concatenating vector spaces instead of vectors.  And $V_\heartsuit \times V_R \times V_J \neq V_\heartsuit \times V_J \times V_R$.  Thus we have non-commutativity at the predicate level.
 
+进一步确定 神经网络 $f$ 的形式。 我刚说 CCC 形式 固定了 props 的交换性，那么为什么又要再一次「做」交换性出来？
+
+如果 交换性 和 substitutions 都已经搞掂，那还等什么呢？
+
+以前那个网络就是 props-in props-out 的形式。  记得好像 props 是以 subject space X 内的 vectors 形式 表示的。 但现在 props 是某些空间。  它不是 vector，但可以看成是 vector 周围的空间？  这在我 2024 发表的论文里已经确立了。 NN 将 vector maps to vector 没有问题 -- 那完全是正常、且符合 Curry-Howard 的。 问题是现在 props 可以根据 vector embedding 构造出来，这是新的。 所谓旧的方法是什么？ GPT？ GPT 的输出是 probability distro over words，其实符合 Curry-Howard？？ 反而是要输出 props 可能 unfeasible。 这也是之前已经有的结论了。
+
+问题是 从 input props 来看，它们的交换性好像要额外处理，why？ 这可能是所谓 power set 的问题。 如果只考虑一个 prop 的输入，它存在于 $\bbOmega$ 里面，其实即是 tok $\times$ tok $\times$ tok ... 的空间。 Transformer 用了 Attention 去处理 tokens 的交换性。 然则我们刚刚不是说好了 CCC 自带交换性？ 交换是指 ... 当我们有两个或以上的 props，这其实是怎样表示的？ 显然，它是 props $\rightarrow 2 = 2^{\mbox{props}}$ 的形式。 换句话说，每个 prop 附带 $\{ \top, \bot \}$ 的讯息。 那也可以看成是一堆被选择了的 props，但这些 props 是否可交换的呢？ 如何决定？
+
+
 再剩下的问题是：
 \begin{itemize}
 	\item 神经网络的空间大小、其可不可以叠加的问题
 	\item rules matching 问题，则又回到 my thesis 卡在的点上
+	\item
 \end{itemize}
+
+\begin{equation}
+\hspace{-1cm}	\vcenter{\hbox{\includegraphics[scale=0.5]{../masters-thesis/logic-Transformer-string-diagram-3.png}}}
+\end{equation}
+
 
 \end{document}

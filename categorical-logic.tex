@@ -2,6 +2,10 @@
 % \usepackage[no-math]{fontspec}
 % \setmainfont[BoldFont=Alibaba_Sans_Regular.otf,ItalicFont=Alibaba_Sans_Light_Italic.otf]{Alibaba_Sans_Light.otf}
 
+\usetikzlibrary{tikzmark, calc}
+% \usepackage{tkz-euclide}
+% \usepackage{string-diagrams}
+
 \usepackage[backend=biber]{biblatex}
 \bibliography{../AGI-book}
 
@@ -167,6 +171,7 @@ Does CCC really capture the two-layer non-commutative and commutative structure 
 
 On the other hand, for the constructed type \logic{$\heartsuit$(Romeo, Juliet)}, we can let the type constructor $\heartsuit$ simply create the Cartesian product $V_{\heartsuit} \times V_{R} \times V_{J}$ where each $V$ is a vector space.  This is similar to the concatenation of \textbf{tokens} in Transformers, except we are concatenating vector spaces instead of vectors.  And $V_\heartsuit \times V_R \times V_J \neq V_\heartsuit \times V_J \times V_R$.  Thus we have non-commutativity at the predicate level.
 
+\begin{comment}
 进一步确定 神经网络 $f$ 的形式。 我刚说 CCC 形式 固定了 props 的交换性，那么为什么又要再一次「做」交换性出来？
 
 如果 交换性 和 substitutions 都已经搞掂，那还等什么呢？
@@ -178,6 +183,7 @@ On the other hand, for the constructed type \logic{$\heartsuit$(Romeo, Juliet)},
 每一次 Self Attention，所有 tokens 齐齐送上，然后输出 memory table lookup 的叠加。 这里面已经融合了 matching 和 apply，但它的结构里面已含有 交换性。
 
 如果说，需要的 maps 是由集合到集合，则当然可以满足交换性，但似乎也不见得 范畴论特别有用。 也就是说，即使固定了 type，仍然是由 terms 决定 函数的交换性。 Type 里面仍然可以存在某些 terms 利用 ordered pairs 保持 非交换性。 Curry-Howard 好像是一个空壳，它给予了 交换性 的可能，而且提供了一个结构的框架，也算是有点用吧。
+\end{comment}
 
 At this point we are ready to define the \textbf{type} where our neural network $f$ lives in, under the Curry-Howard framework:
 \begin{equation}
@@ -186,9 +192,41 @@ At this point we are ready to define the \textbf{type} where our neural network 
 The left side contains a set of propositions and the right side contains just one output proposition (but it must have probabilities distributed over it).  Both parts are so huge that they must be decomposed using appropriate tricks.  This is where our neural network shares similarities with \textbf{Transformers}:  the left side requires \textbf{permutation invariance} such as offered by Self-Attention, the right side requires sentences to be decomposed into ``\textbf{tokens},'' with probabilities distributed over them.
 
 Another extremely complicated issue we have not touched upon, is that of \textbf{variables} and their \textbf{substitutions}.  Alonzo Church invented $\lambda$-calculus in the 1930s in order to study the mechanisms of variable substitution explicitly.  Long story short, I formulated a way to do variable substitutions using neural networks, in my unfinished master thesis.  I was following Paul Halmos' algebraic logic approach (which does not have Curry-Howard in it), but my result can also fit into the Curry-Howard framework.  The neural network looks like this:
-\begin{equation}
-	blah
-\end{equation}
+\begin{align}
+	\nonumber
+	& \qquad \qquad \tikzmark{Y1}
+	\setlength{\fboxrule}{3pt}
+	\fcolorbox{cyan!70}{white}{$\hat{x}^1$}
+	\qquad
+	\tikzmark{Y2} \fcolorbox{cyan!70}{white}{$\hat{x}^2$}
+	\qquad
+	\tikzmark{Y3} \fcolorbox{cyan!70}{white}{$\hat{x}^3$} \\
+	& \qquad w_{ij}^k \\
+	& \nonumber \\
+	& \logic{father}(\tikzmark{X11} x_{11}, \tikzmark{X12} x_{12}, \tikzmark{X13} \Square_{13}) \wedge
+	\logic{father}(\tikzmark{X21} \Square_{21}, \tikzmark{X22} x_{22}, \tikzmark{X23} x_{23}) \rightarrow \logic{grand\hbox{-}father}(x_1,\Square_2,x_3)
+	\nonumber
+	\begin{tikzpicture}[remember picture,overlay]
+		\draw (pic cs:Y1) +(10pt,-7pt) -- ($ (pic cs:X11) +(7pt,12pt) $);
+		\draw (pic cs:Y1) +(10pt,-7pt) -- ($ (pic cs:X12) +(7pt,12pt) $);
+		\draw (pic cs:Y1) +(10pt,-7pt) -- ($ (pic cs:X13) +(7pt,12pt) $);
+		\draw (pic cs:Y1) +(10pt,-7pt) -- ($ (pic cs:X21) +(7pt,12pt) $);
+		\draw (pic cs:Y1) +(10pt,-7pt) -- ($ (pic cs:X22) +(7pt,12pt) $);
+		\draw (pic cs:Y1) +(10pt,-7pt) -- ($ (pic cs:X23) +(7pt,12pt) $);
+		\draw (pic cs:Y2) +(10pt,-7pt) -- ($ (pic cs:X11) +(7pt,12pt) $);
+		\draw (pic cs:Y2) +(10pt,-7pt) -- ($ (pic cs:X12) +(7pt,12pt) $);
+		\draw (pic cs:Y2) +(10pt,-7pt) -- ($ (pic cs:X13) +(7pt,12pt) $);
+		\draw (pic cs:Y2) +(10pt,-7pt) -- ($ (pic cs:X21) +(7pt,12pt) $);
+		\draw (pic cs:Y2) +(10pt,-7pt) -- ($ (pic cs:X22) +(7pt,12pt) $);
+		\draw (pic cs:Y2) +(10pt,-7pt) -- ($ (pic cs:X23) +(7pt,12pt) $);
+		\draw (pic cs:Y3) +(10pt,-7pt) -- ($ (pic cs:X11) +(7pt,12pt) $);
+		\draw (pic cs:Y3) +(10pt,-7pt) -- ($ (pic cs:X12) +(7pt,12pt) $);
+		\draw (pic cs:Y3) +(10pt,-7pt) -- ($ (pic cs:X13) +(7pt,12pt) $);
+		\draw (pic cs:Y3) +(10pt,-7pt) -- ($ (pic cs:X21) +(7pt,12pt) $);
+		\draw (pic cs:Y3) +(10pt,-7pt) -- ($ (pic cs:X22) +(7pt,12pt) $);
+		\draw (pic cs:Y3) +(10pt,-7pt) -- ($ (pic cs:X23) +(7pt,12pt) $);
+	\end{tikzpicture}
+\end{align}
 The variable slots are on top, and they are shared by multiple propositions below.  Here we need \textbf{Softmax} to \textit{select a dominant object} to occupy a slot.  This mechanism is very similar to Self-Attention.
 
 再剩下的问题是：

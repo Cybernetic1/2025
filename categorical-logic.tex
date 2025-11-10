@@ -167,9 +167,9 @@ The neural network, which is a non-linear \textbf{function}, is seen as a \textb
 
 A proposition such as \logic{$\heartsuit$(Romeo, Juliet)} is created by passing the ordered pair \logic{(Romeo, Juliet)} to the predicate $\heartsuit$, which outputs a proposition, ie. a space, in $\bbOmega$.  In other words, $\heartsuit: A \times A \rightarrow \bbOmega$, where $A$ is the set of first-order objects, eg. the set of people.  $\heartsuit$ is called a \textbf{type-constructor};  it creates new types (propositions) out of existing types (propositions).  The keen reader may notice that the arrow $\rightarrow$ is \textit{overloaded} with two purposes: one as logic implication $\Rightarrow$ as required by Curry-Howard, the other as type constructor.  We can read the arrow in $\heartsuit$ as ``if you show me a pair of who is a boy and who is a girl, I can show you if he loves her''  -- a very awkward sentence, but a sentence nonetheless.  This ``rescues'' the \textit{consistency} of the Curry-Howard correspondence, and is known as \textbf{Martin-L\"{o}f type theory} (\#17).
 
-Does CCC really capture the two-layer non-commutative and commutative structure in (\ref{eqn:logic-structure})?  In category theory the products $A \times B$ and $B \times A$ are \textit{isomorphic} but \textit{not equal}.  If we interpret logic $\wedge$ (AND) as $\times$, it seems to be non-commutative.  But if we look at whether there exists a \textit{function} that takes one object in each of $A, B$ and maps them to the target, then the order of $A$ and $B$ does \textit{not} matter, and quite miraculously I think, we got the commutativity of logic $\wedge$.
+Does CCC really capture the two-layer non-commutative and commutative structure in (\ref{eqn:logic-structure})?  In category theory the products $A \times B$ and $B \times A$ are \textit{isomorphic} but \textit{not equal}.  If we interpret logic $\wedge$ (AND) as $\times$, it seems to be non-commutative.  But we need to look into the \textit{function} (ie. term) that lives within the type.  It can treat $(a, b) \in A \times B$ as an ordered or un-ordered pair. The latter choice is more appropriate for logic, and thus, we got the \textbf{commutativity} of logical $\wedge$.
 
-On the other hand, for the constructed type \logic{$\heartsuit$(Romeo, Juliet)}, we can let the type constructor $\heartsuit$ simply create the Cartesian product $V_{\heartsuit} \times V_{R} \times V_{J}$ where each $V$ is a vector space.  This is similar to the concatenation of \textbf{tokens} in Transformers, except we are concatenating vector spaces instead of vectors.  And $V_\heartsuit \times V_R \times V_J \neq V_\heartsuit \times V_J \times V_R$.  Thus we have non-commutativity at the predicate level.
+At the predicate level, for the constructed type \logic{$\heartsuit$(Romeo, Juliet)}, we can let the type constructor $\heartsuit$ simply create the Cartesian product $V_{\heartsuit} \times V_{R} \times V_{J}$ where each $V$ is a vector space.  This is similar to the concatenation of \textbf{tokens} in Transformers, except we are concatenating vector spaces instead of vectors.  And $V_\heartsuit \times V_R \times V_J \neq V_\heartsuit \times V_J \times V_R$.  Thus we have \textbf{non-commutativity} at the predicate level.
 
 \begin{comment}
 进一步确定 神经网络 $f$ 的形式。 我刚说 CCC 形式 固定了 props 的交换性，那么为什么又要再一次「做」交换性出来？
@@ -185,11 +185,11 @@ On the other hand, for the constructed type \logic{$\heartsuit$(Romeo, Juliet)},
 如果说，需要的 maps 是由集合到集合，则当然可以满足交换性，但似乎也不见得 范畴论特别有用。 也就是说，即使固定了 type，仍然是由 terms 决定 函数的交换性。 Type 里面仍然可以存在某些 terms 利用 ordered pairs 保持 非交换性。 Curry-Howard 好像是一个空壳，它给予了 交换性 的可能，而且提供了一个结构的框架，也算是有点用吧。
 \end{comment}
 
-At this point we are ready to define the \textbf{type} where our neural network $f$ lives in, under the Curry-Howard framework:
+At this point, we are ready to define the \textbf{type} where our neural network $f$ lives in, under the Curry-Howard framework:
 \begin{equation}
 	f: \overbrace{(\bbOmega \rightarrow 2)}^{\mbox{\footnotesize set of propositions}} \rightarrow \overbrace{(\bbOmega \rightarrow \mathbb{R}) .}^{\mbox{\footnotesize probabilities over propositions}}
 \end{equation}
-The left side contains a set of propositions and the right side contains just one output proposition (but it must have probabilities distributed over it).  Both parts are so huge that they must be decomposed using appropriate tricks.  This is where our neural network shares similarities with \textbf{Transformers}:  the left side requires \textbf{permutation invariance} such as offered by Self-Attention, the right side requires sentences to be decomposed into ``\textbf{tokens},'' with probabilities distributed over them.
+The left part is the type of a set of propositions and the right part is the type for just one output proposition (but it must have probabilities distributed over it).  Both parts are so huge that they must be decomposed using appropriate tricks.  This is where our neural network shares similarities with \textbf{Transformers}:  the left side requires \textbf{permutation invariance} such as offered by Self-Attention, the right side requires sentences to be decomposed into ``\textbf{tokens},'' with probabilities distributed over them.
 
 Another extremely complicated issue we have not touched upon, is that of \textbf{variables} and their \textbf{substitutions}.  Alonzo Church invented $\lambda$-calculus in the 1930s in order to study the mechanisms of variable substitution explicitly.  Long story short, I formulated a way to do variable substitutions using neural networks, in my unfinished master thesis.  I was following Paul Halmos' algebraic logic approach (which does not have Curry-Howard in it), but my result can also fit into the Curry-Howard framework.  The neural network looks like this:
 \begin{align}
@@ -227,14 +227,15 @@ Another extremely complicated issue we have not touched upon, is that of \textbf
 		\draw (pic cs:Y3) +(10pt,-7pt) -- ($ (pic cs:X23) +(7pt,12pt) $);
 	\end{tikzpicture}
 \end{align}
-The variable slots are on top, and they are shared by multiple propositions below.  Here we need \textbf{Softmax} to \textit{select a dominant object} to occupy a slot.  This mechanism is very similar to Self-Attention.
+The variable slots are on top, and they are shared by multiple propositions below.  Here we need \textbf{Softmax} to \textit{select a dominant object} to occupy each slot.  This mechanism is very similar to \textbf{Self-Attention}.
 
+\begin{comment}
 再剩下的问题是：
 \begin{itemize}
 	\item 神经网络的空间大小、其可不可以叠加的问题
 	\item rules matching 问题，则又回到 my thesis 卡在的点上
-	\item
 \end{itemize}
+\end{comment}
 
 \begin{equation}
 \hspace{-1cm}	\vcenter{\hbox{\includegraphics[scale=0.5]{../masters-thesis/logic-Transformer-string-diagram-3.png}}}

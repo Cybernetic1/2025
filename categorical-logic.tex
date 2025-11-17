@@ -229,6 +229,8 @@ Another extremely complicated issue we have not touched upon, is that of \textbf
 \end{align}
 The variable slots are on top, and they are shared by multiple propositions below.  Here we need \textbf{Softmax} to \textit{select a dominant object} to occupy each slot.  This mechanism is very similar to \textbf{Self-Attention}.
 
+The above is part of the process of ``rule matching'' which is also called \textbf{unification} in classical logic.  Another part is matching on the proposition level, and we need to list out all the \textbf{permutations} of propositions in \textbf{Working Memory}.  For example, in our ``grandfather'' rule, there are 2 propositions on the RHS of the rule, so we need the Cartesian product $W^2$ where $W$ is the list of all propositions currently in Working Memory.  Remember that Working Memory corresponds to the \textbf{prompt} in LLMs.  $W^k$ can be quite big, and we most likely need heuristics to approximate the matching process.
+
 \begin{comment}
 再剩下的问题是：
 \begin{itemize}

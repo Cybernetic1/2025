@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (1:1.4.2+202505120738+ebf0e940d0)"
+   sodipodi:docname="logic-Transformer-string-diagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.2574008"
+     inkscape:cx="584.53916"
+     inkscape:cy="738.03039"
+     inkscape:window-width="1080"
+     inkscape:window-height="1895"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Triangle-2-5-0"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-9-0-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-2-5-0-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-9-0-1-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-2-5-0-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-9-0-1-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-65"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-64"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-6-2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-1-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-65-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-6-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-65-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-6-5" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;marker-start:url(#Triangle-2-5-0)"
+       d="m 53.626525,122.89309 c -4.54946,0.10139 56.755515,-0.0692 56.755515,-0.0692"
+       id="path6-7-7-6-8"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;marker-start:url(#Triangle-2-5-0-6)"
+       d="m 53.626526,129.50768 c -4.54946,0.10139 83.213844,-0.0692 83.213844,-0.0692"
+       id="path6-7-7-6-8-2"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g14"
+       transform="translate(-3.7041668)">
+      <path
+         style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-dasharray:none;marker-end:url(#Triangle-65)"
+         d="m 160.78589,102.9135 v 53.73627"
+         id="path24-0-2-4-7-2-3-7"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="rect1-0-8-4"
+         style="display:inline;fill:#ff78ff;fill-opacity:0.999942;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-dasharray:none"
+         d="m 164.34911,100.37312 -3.50902,5.23097 -3.50902,-5.23097 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       id="g14-9"
+       transform="rotate(-90,154.51709,163.24847)">
+      <path
+         style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-dasharray:none;marker-end:url(#Triangle-65-6)"
+         d="m 160.78589,102.9135 v 89.7196"
+         id="path24-0-2-4-7-2-3-7-4"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="rect1-0-8-4-8"
+         style="display:inline;fill:#ff78ff;fill-opacity:0.999942;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-dasharray:none"
+         d="m 164.34911,100.37312 -3.50902,5.23097 -3.50902,-5.23097 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <path
+       style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;marker-start:url(#Triangle-2-5-0-9)"
+       d="m 53.626525,136.12228 c -4.54946,0.10139 104.380515,-0.0692 104.380515,-0.0692"
+       id="path6-7-7-6-8-6"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.93889px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:95.1434;display:inline;stroke-width:0.264583"
+       x="82.403427"
+       y="118.26544"
+       id="text6-0-4-9-1-8-6-6-7-3-94-4"
+       transform="translate(-132.60532,5.7404227)"><tspan
+         x="82.403427"
+         y="118.26544"
+         id="tspan12"><tspan
+           style="text-align:end;text-anchor:end"
+           id="tspan11">propositions
+</tspan></tspan><tspan
+         x="82.403427"
+         y="123.20433"
+         id="tspan15"><tspan
+           style="text-align:end;text-anchor:end"
+           id="tspan13">from
+</tspan></tspan><tspan
+         x="82.403427"
+         y="128.14322"
+         id="tspan17"><tspan
+           style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi';text-align:end;text-anchor:end"
+           id="tspan16">working
+</tspan></tspan><tspan
+         x="82.403427"
+         y="133.0821"
+         id="tspan19"><tspan
+           style="font-weight:normal;-inkscape-font-specification:'Alibaba PuHuiTi';text-align:end;text-anchor:end"
+           id="tspan18">memory</tspan></tspan></text>
+    <path
+       sodipodi:nodetypes="csscssccsscsscc"
+       inkscape:connector-curvature="0"
+       id="path7003"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:300px;line-height:125%;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.0660614"
+       d="m 50.762425,119.12585 c -0.864706,0.40342 -1.425548,1.21148 -1.634547,3.08498 l -0.457977,4.10539 c -0.256618,2.30037 -1.142766,2.94259 -2.1067,3.44093 0.935584,0.47462 1.890144,1.14025 2.1067,3.22737 l 0.457977,4.41388 c 0.194409,1.87366 0.74149,2.61037 1.634547,3.10871 -0.864706,-0.0238 -0.831994,-0.18984 -1.158031,-0.61699 -0.396915,-0.54581 -0.889061,-1.44839 -1.039175,-2.89514 l -0.457978,-4.41389 c -0.177181,-1.70763 -1.614918,-2.34932 -2.451273,-2.82394 0.878882,-0.47461 2.23334,-0.998 2.451273,-2.89512 l 0.457978,-3.98675 c 0.187969,-1.63628 0.628086,-2.5629 0.996648,-3.10871 0.311861,-0.45088 0.27915,-0.61699 1.200558,-0.64072" />
+    <path
+       sodipodi:nodetypes="csscssccsscsscc"
+       inkscape:connector-curvature="0"
+       id="path7003-4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:300px;line-height:125%;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.0660614"
+       d="m 202.40624,108.4792 c 0.8647,0.40342 1.42554,1.21148 1.63454,3.08498 l 0.45798,4.10539 c 0.25662,2.30037 1.14277,2.94259 2.1067,3.44093 -0.93558,0.47462 -1.89014,1.14025 -2.1067,3.22737 l -0.45798,4.41388 c -0.19441,1.87366 -0.74149,2.61037 -1.63454,3.10871 0.8647,-0.0238 0.83199,-0.18984 1.15803,-0.61699 0.39691,-0.54581 0.88906,-1.44839 1.03917,-2.89514 l 0.45798,-4.41389 c 0.17718,-1.70763 1.61492,-2.34932 2.45127,-2.82394 -0.87888,-0.47461 -2.23334,-0.998 -2.45127,-2.89512 l -0.45798,-3.98675 c -0.18797,-1.63628 -0.62808,-2.5629 -0.99665,-3.10871 -0.31186,-0.45088 -0.27915,-0.61699 -1.20055,-0.64072" />
+    <path
+       sodipodi:nodetypes="csscssccsscsscc"
+       inkscape:connector-curvature="0"
+       id="path7003-7"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:300px;line-height:125%;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.0973397"
+       d="m 162.63812,98.704283 c -0.87587,-0.86471 -2.63027,-1.42555 -6.69787,-1.63455 l -8.91331,-0.45797 c -4.99438,-0.25662 -6.38872,-1.14277 -7.47068,-2.1067 -1.03046,0.93558 -2.47562,1.89014 -7.00701,2.1067 l -9.58308,0.45797 c -4.06794,0.19441 -5.66743,0.74149 -6.74939,1.63455 0.0517,-0.86471 0.41217,-0.83199 1.33956,-1.15803 1.18502,-0.39692 3.14463,-0.88906 6.28571,-1.03918 l 9.58309,-0.45797 c 3.70748,-0.17718 5.10066,-1.61492 6.13112,-2.45128 1.03044,0.87889 2.16678,2.23334 6.28566,2.45128 l 8.65573,0.45797 c 3.55256,0.18797 5.56437,0.62809 6.74939,0.99665 0.97891,0.31186 1.33956,0.27915 1.39108,1.20056" />
+    <rect
+       style="opacity:1;fill:#ffffff;stroke:#000000;stroke-width:0.529167;stroke-linecap:square;paint-order:markers fill stroke"
+       id="rect1"
+       width="26.513029"
+       height="24.408815"
+       x="71.122246"
+       y="118.25652"
+       ry="4.6292586" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.93889px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:23.3899;display:inline;stroke-width:0.264583"
+       x="161.81319"
+       y="118.26544"
+       id="text6-0-4-9-1-8-6-6-7-3-94-4-2"
+       transform="translate(-89.432207,6.2347763)"><tspan
+         x="161.81319"
+         y="118.26544"
+         id="tspan22"><tspan
+           style="font-style:italic;font-weight:normal;font-family:MathJax_Math;-inkscape-font-specification:'MathJax_Math Italic'"
+           id="tspan20">k</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan21">-fold </tspan></tspan><tspan
+         x="161.81319"
+         y="123.61503"
+         id="tspan24"><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan23">Cartesian </tspan></tspan><tspan
+         x="161.81319"
+         y="128.55391"
+         id="tspan26"><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan25">product
+</tspan></tspan><tspan
+         x="161.81319"
+         y="133.49281"
+         id="tspan28"><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan27">with itself</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.93889px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:64.6324;display:inline;stroke-width:0.264583"
+       x="188.35721"
+       y="118.26544"
+       id="text6-0-4-9-1-8-6-6-7-3-94-4-2-4"
+       transform="translate(-81.105039,-31.996296)"><tspan
+         x="188.35721"
+         y="118.26544"
+         id="tspan31"><tspan
+           style="font-style:italic;font-weight:normal;font-family:MathJax_Math;-inkscape-font-specification:'MathJax_Math Italic';text-align:center;text-anchor:middle"
+           id="tspan29">k</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan30"> propositions on LHS of </tspan></tspan><tspan
+         x="188.35721"
+         y="123.61503"
+         id="tspan33"><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan32">logic rule, with variable slots</tspan></tspan></text>
+    <g
+       id="g12"
+       transform="translate(-4.2333333)">
+      <path
+         style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-dasharray:none;marker-end:url(#Triangle)"
+         d="m 118.45253,102.9135 v 53.73627"
+         id="path24-0-2-4-7-2-3"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="rect1-0-8"
+         style="display:inline;fill:#ff78ff;fill-opacity:0.999942;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-dasharray:none"
+         d="m 122.01575,100.37312 -3.50902,5.23097 -3.50902,-5.23097 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       id="g12-4"
+       transform="translate(5.2916667)">
+      <path
+         style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-dasharray:none;marker-end:url(#Triangle-64)"
+         d="m 118.45253,102.9135 v 53.73627"
+         id="path24-0-2-4-7-2-3-8"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="rect1-0-8-7"
+         style="display:inline;fill:#ff78ff;fill-opacity:0.999942;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-dasharray:none"
+         d="m 122.01575,100.37312 -3.50902,5.23097 -3.50902,-5.23097 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       id="g11"
+       transform="translate(-6.1395795,-8.4666671)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.529167;stroke-linecap:square;paint-order:markers fill stroke"
+         id="rect1-7"
+         width="17.675356"
+         height="6.9439077"
+         x="115.82088"
+         y="127.8024"
+         ry="2.7354755" />
+      <text
+         xml:space="preserve"
+         style="font-weight:300;font-size:4.93889px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:23.3899;display:inline;stroke-width:0.264583"
+         x="161.81319"
+         y="118.26544"
+         id="text6-0-4-9-1-8-6-6-7-3-94-4-2-9"
+         transform="translate(-49.090453,14.403554)"><tspan
+           x="161.81319"
+           y="118.26544"
+           id="tspan35"><tspan
+             style="text-align:center;text-anchor:middle"
+             id="tspan34">match</tspan></tspan></text>
+    </g>
+    <g
+       id="g13"
+       transform="translate(-4.2333333)">
+      <path
+         style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-dasharray:none;marker-end:url(#Triangle-6)"
+         d="m 139.61921,102.9135 v 53.73627"
+         id="path24-0-2-4-7-2-3-3"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="rect1-0-8-2"
+         style="display:inline;fill:#ff78ff;fill-opacity:0.999942;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-dasharray:none"
+         d="m 143.18243,100.37312 -3.50902,5.23097 -3.50902,-5.23097 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       id="g13-6"
+       transform="translate(5.2916667)">
+      <path
+         style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-dasharray:none;marker-end:url(#Triangle-6-2)"
+         d="m 139.61921,102.9135 v 53.73627"
+         id="path24-0-2-4-7-2-3-3-1"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="rect1-0-8-2-0"
+         style="display:inline;fill:#ff78ff;fill-opacity:0.999942;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-dasharray:none"
+         d="m 143.18243,100.37312 -3.50902,5.23097 -3.50902,-5.23097 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       id="g11-0"
+       transform="translate(15.027087,-1.7979211)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.529167;stroke-linecap:square;paint-order:markers fill stroke"
+         id="rect1-7-6"
+         width="17.675356"
+         height="6.9439077"
+         x="115.82088"
+         y="127.8024"
+         ry="2.7354755" />
+      <text
+         xml:space="preserve"
+         style="font-weight:300;font-size:4.93889px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:23.3899;display:inline;stroke-width:0.264583"
+         x="161.81319"
+         y="118.26544"
+         id="text6-0-4-9-1-8-6-6-7-3-94-4-2-9-1"
+         transform="translate(-49.090453,14.403554)"><tspan
+           x="161.81319"
+           y="118.26544"
+           id="tspan37"><tspan
+             style="text-align:center;text-anchor:middle"
+             id="tspan36">match</tspan></tspan></text>
+    </g>
+    <g
+       id="g14-0"
+       transform="translate(5.2916665)">
+      <path
+         style="display:inline;fill:none;fill-opacity:0.999942;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-dasharray:none;marker-end:url(#Triangle-65-5)"
+         d="m 160.78589,102.9135 v 53.73627"
+         id="path24-0-2-4-7-2-3-7-9"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="rect1-0-8-4-1"
+         style="display:inline;fill:#ff78ff;fill-opacity:0.999942;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-dasharray:none"
+         d="m 164.34911,100.37312 -3.50902,5.23097 -3.50902,-5.23097 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.529167;stroke-linecap:square;paint-order:markers fill stroke"
+       id="rect1-7-6-9"
+       width="61.863731"
+       height="6.9439087"
+       x="110.59583"
+       y="153.45833"
+       ry="2.7354755" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.93889px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:62.949;display:inline;stroke-width:0.264583"
+       x="161.81319"
+       y="118.26544"
+       id="text6-0-4-9-1-8-6-6-7-3-94-4-2-9-1-7"
+       transform="translate(-49.552992,40.059484)"><tspan
+         x="161.81319"
+         y="118.26544"
+         id="tspan38">match &amp; check consistency</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.93889px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:44.8528;display:inline;stroke-width:0.264583"
+       x="161.81319"
+       y="118.26544"
+       id="text6-0-4-9-1-8-6-6-7-3-94-4-2-9-1-7-9"
+       transform="translate(-109.71145,40.00477)"><tspan
+         x="161.81319"
+         y="118.26544"
+         id="tspan39">RHS of logic rule</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.93889px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:44.8528;display:inline;stroke-width:0.264583"
+       x="161.81319"
+       y="118.26544"
+       id="text6-0-4-9-1-8-6-6-7-3-94-4-2-9-1-7-9-9"
+       transform="translate(25.645785,37.853707)"><tspan
+         x="161.81319"
+         y="118.26544"
+         id="tspan40">output new </tspan><tspan
+         x="161.81319"
+         y="123.20433"
+         id="tspan41">conclusion</tspan></text>
+    <g
+       id="g11-5"
+       transform="translate(36.193755,4.9729203)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.529167;stroke-linecap:square;paint-order:markers fill stroke"
+         id="rect1-7-2"
+         width="17.675356"
+         height="6.9439077"
+         x="115.82088"
+         y="127.8024"
+         ry="2.7354755" />
+      <text
+         xml:space="preserve"
+         style="font-weight:300;font-size:4.93889px;line-height:1;font-family:'Alibaba PuHuiTi';-inkscape-font-specification:'Alibaba PuHuiTi, Light';letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:23.3899;display:inline;stroke-width:0.264583"
+         x="161.81319"
+         y="118.26544"
+         id="text6-0-4-9-1-8-6-6-7-3-94-4-2-9-5"
+         transform="translate(-49.090453,14.403554)"><tspan
+           x="161.81319"
+           y="118.26544"
+           id="tspan43"><tspan
+             style="text-align:center;text-anchor:middle"
+             id="tspan42">match</tspan></tspan></text>
+    </g>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#00c8ff;stroke-width:1.32292;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect14"
+       width="6.1022038"
+       height="5.8917971"
+       x="194.00801"
+       y="105.84168"
+       ry="0" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#00c8ff;stroke-width:1.32292;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect14-1"
+       width="6.1022038"
+       height="5.8917971"
+       x="194.00801"
+       y="116.42501"
+       ry="0" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#00c8ff;stroke-width:1.32292;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect14-8"
+       width="6.1022038"
+       height="5.8917971"
+       x="194.00801"
+       y="127.00833"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;line-height:1.25;font-family:'Alibaba Sans';-inkscape-font-specification:'Alibaba Sans';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:162.472;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="849.38666"
+       y="457.29254"
+       id="text14"
+       transform="matrix(0.26458333,0,0,0.26458333,-20.10834,0)"><tspan
+         x="849.38666"
+         y="457.29254"
+         id="tspan45"><tspan
+           style="font-weight:300;-inkscape-font-specification:'Alibaba Sans Light';text-align:center;text-anchor:middle"
+           id="tspan44">variable slots</tspan></tspan></text>
+  </g>
+</svg>

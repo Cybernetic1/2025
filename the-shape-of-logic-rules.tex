@@ -58,6 +58,7 @@
 \newcommand{\logic}[1]{{\color{violet}{\textit{#1}}}}
 \newcommand{\underconst}{\includegraphics[scale=0.5]{../2020/UnderConst.png}}
 \newcommand{\KBsymbol}{\vcenter{\hbox{\includegraphics[scale=1]{../KB-symbol.png}}}}
+\newcommand{\bbOmega}{\vcenter{\hbox{\includegraphics[scale=1]{../bbOmega-symbol.png}}}}
 \newcommand{\token}{\vcenter{\hbox{\includegraphics[scale=1]{token.png}}}}
 \newcommand{\proposition}{\vcenter{\hbox{\includegraphics[scale=0.8]{proposition.png}}}}
 
@@ -105,6 +106,7 @@
 
 而 vector field 则代表每个状态可以如何 transition 到另一状态。 换句话说，vector field \textbf{等价于} 我们的逻辑知识库，但逻辑以特殊的方式定义每个状态点上的 tangent vector;  通常一个逻辑公式可以定义很多个状态上的 tangent vectors.  因此这个 向量场具有特殊的逻辑结构，形成数学上有趣的问题。
 
+现在我们开始分析 状态空间的「形状」，以下是一个 \textbf{状态转移} 的例子：
 \centering $\mathbb{X} =$ \oldtextbf{state space (状态空间)} \vspace{-1em}
 \begin{equation}
 	\vcenter{\hbox{\includegraphics[scale=0.7]{state-space.png}}}
@@ -115,8 +117,9 @@
 		$ x_0 \mapsto x_1 $ \\
 	\end{tabular}
 \end{equation}
+这幅图像很简单清晰，但其实每个状态 $x$ 虽然只是一点，它却有复杂的内部结构，可以看作是这个点的 \textbf{坐标}。 
 
-\centering $\mathbb{X} =$ \oldtextbf{proposition space (命题空间)} \vspace{-1em}
+\centering $\mathbb{P} =$ \oldtextbf{proposition space (命题空间)} \vspace{-1em}
 \begin{equation}
 	\vcenter{\hbox{\includegraphics[scale=0.7]{proposition-space.png}}}
 	\qquad
@@ -127,7 +130,7 @@
 \end{tabular}
 \end{equation}
 
-\centering $\mathbb{X} =$ \oldtextbf{symbol space (符号空间)} \vspace{-1em}
+\centering $\bbOmega =$ \oldtextbf{symbol space (符号空间)} \vspace{-1em}
 \begin{equation}
 	\vcenter{\hbox{\includegraphics[scale=0.7]{object-space.png}}}
 	\qquad

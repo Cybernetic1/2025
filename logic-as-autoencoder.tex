@@ -86,6 +86,16 @@
 
 现在问题是： 逻辑与 AE 的关系为何？ 逻辑公理集 是 世界的 generator.  世界是可以用 AE 学习的。
 
+在 TicTacToe 问题里，世界有某种演化的方式，但我们也可以下 actions。
+
+Next thought operator 和 reconstruct world 之间的关系...  之前好像已经解决了？ 但在 TicTacToe 环境下似乎要再厘清一次。  逻辑公理的作用是 model 世界？ 但另一种做法是推导最佳 actions.  这个问题似乎跟 LLM = world model or language model 是一样的？ 是用逻辑推导世界还是推导 actions？  似乎两者都可以。 AE 可以是世界模型，也可以是 next thought 模型。 我有兴趣的是 next thought 模型。 但其实有趣的是用 AE 建立世界模型，然后再在其中玩 RL.  暂时的目的是让它产生一套能玩 RL 的语言。
+
+我们的目的是用 TicTacToe 模拟 AGI 的训练。 AGI 首先透过预测世界，建立世界模型。 问题是之后的 RL 是怎样定义的？ How to define states and rewards?  明显的答案就是，state = 命题集合，reward 是由某些命题的存在而 trigger 的。
+
+另一个问题是： AE 的 latent state 是什么？ 它是世界当前状态的压缩？ 如此说来，则它跟 RL 状态是一样的。
+
+逻辑 rule 如何表示 随机策略？
+
 \end{minipage}
 \end{preview}
 

@@ -1,0 +1,112 @@
+\input{../YKY-preamble.tex}
+% \usepackage[no-math]{fontspec}
+% \setmainfont[BoldFont=Alibaba_Sans_Regular.otf,ItalicFont=Alibaba_Sans_Light_Italic.otf]{Alibaba_Sans_Light.otf}
+
+\usepackage[backend=biber]{biblatex}
+\bibliography{../AGI-book}
+
+\usepackage[active,tightpage]{preview}		% for continuous page(s)
+\renewcommand{\PreviewBorder}{0.5cm}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
+% \usepackage[absolute,overlay]{textpos}		% for page number on upper left corner
+
+\usepackage{color}
+% \usepackage{mathtools}
+\usepackage[hyperfootnotes=false]{hyperref}
+
+% \usepackage[backend=biber,style=numeric]{biblatex}
+% \bibliography{../AGI-book}
+% \renewcommand*{\bibfont}{\footnotesize}
+
+\usetikzlibrary{shapes}
+% \usepackage[export]{adjustbox}	% ??
+\usepackage{verbatim} % for comments
+% \usepackage{newtxtext,newtxmath}	% Times New Roman font
+
+% \titleformat{\subsection}[hang]{\bfseries\large\color{blue}}{}{0pt}{}
+% \numberwithin{equation}{subsection}
+
+\newcommand{\underdash}[1]{%
+	\tikz[baseline=(toUnderline.base)]{
+		\node[inner sep=1pt,outer sep=10pt] (toUnderline) {#1};
+		\draw[dashed] ([yshift=-0pt]toUnderline.south west) -- ([yshift=-0pt]toUnderline.south east);
+	}%
+}%
+
+\newcommand\reduline{\bgroup\markoverwith{\textcolor{red}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon}
+
+%\DeclareSymbolFont{symbolsC}{U}{txsyc}{m}{n}
+%\DeclareMathSymbol{\strictif}{\mathrel}{symbolsC}{74}
+%\DeclareSymbolFont{AMSb}{U}{msb}{m}{n}
+%\DeclareSymbolFontAlphabet{\mathbb}{AMSb}
+%\setmathfont{lmroman17-regular.otf}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% \usepackage[most]{tcolorbox}
+%\tcbset{on line,
+	%	boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
+	%	colframe=red,colback=pink,
+	%	highlight math style={enhanced}
+	%}
+%\newcommand{\atom}{\vcenter{\hbox{\tcbox{....}}}}
+
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textcolor{blue}{\oldtextbf{#1}}}
+
+\newcommand{\logic}[1]{{\color{violet}{\textit{#1}}}}
+\newcommand{\underconst}{\includegraphics[scale=0.5]{../2020/UnderConst.png}}
+\newcommand{\KBsymbol}{\vcenter{\hbox{\includegraphics[scale=1]{../KB-symbol.png}}}}
+\newcommand{\bbOmega}{\vcenter{\hbox{\includegraphics[scale=1]{../bbOmega-symbol.png}}}}
+\newcommand{\token}{\vcenter{\hbox{\includegraphics[scale=1]{token.png}}}}
+\newcommand{\proposition}{\vcenter{\hbox{\includegraphics[scale=0.8]{proposition.png}}}}
+
+\begin{document}
+
+\begin{preview}
+
+% \noindent {\color{cyan}``\textit{If men cease to believe that they will one day become gods then they will surely become worms.}''
+% \hfill --- Henry Miller}
+
+\title{\vspace{-0.5cm} \bfseries\color{blue}{\Huge \cc{AGI 项目 招聘人材}{AGI project recruitment}}}
+
+\author{\small YKY [\today]} % Your name
+\date{\vspace{-0.5cm}} % Date, can be changed to a custom date
+% \date{\small \today}
+
+\maketitle
+
+\setcounter{section}{-1}
+\newcounter{mypage}
+\setcounter{mypage}{0}
+
+\begin{minipage}{\textwidth}
+	\setlength{\parskip}{0.4\baselineskip}
+
+	Hello friends, I think I solved the AGI (``strong AI'') problem recently, with key innovations being:
+	\begin{itemize}
+		\item a \textbf{differentiable logic network}, in particular the innovation of a cylindrification factor bridging logic variables and logic constants;
+		\item the AR + RL architecture (\textbf{auto-regression and reinforcement learning}), where AR learns the ``\textbf{world model}'' and RL learns to achieve goals.
+	\end{itemize}
+	The new architecture may achieve these promises:
+	\begin{itemize}
+		\item \textbf{faster convergence} because of logical structure (inductive bias by the ``No Free Lunch'' theorem);
+		\item \textbf{fewer parameters} (also due to logic structure);
+		\item logic coherence will \textbf{eliminate hallucinations}, which I think is the final obstacle in AGI
+		\item multi-step reasoning for rigorous planning of complex tasks
+	\end{itemize}
+	The details of my theory are not difficult to learn and I am willing to explain to people who are interested in it.  We are looking for collaborators.  The main requirements are:
+	\begin{itemize}
+		\item the AGI must be allowed to \textbf{speak the truth} without distortion or bias
+		\item our organization must be \textbf{open and transparent} to the public
+		\item members are required to \textbf{adhere to facts and scientific method}, dishonesty can be penalized, but we also have ample \textbf{tolerance for mistakes}
+		\item we strictly respect the \textbf{freedom of speech} and our organization is \textbf{democratic} based on weighted voting.  No one, including the founders, has special privilege within the group.  Everyone is entitled to challenge the opinion or ideas of others.  No one can use ``excuses'' to try to suppress free expression;
+		\item we must include competition in our organization as otherwise it would not progress or evolve;  but we also strive to make the distribution of rewards egalitarian (in the form of a moderate Gaussian distribution instead of the more extreme log-normal distribution)
+		\item disputes can be appealed for \textbf{retrograde resolution by future AI}
+	\end{itemize}
+	It would not be too difficult to learn my ideas and start new projects elsewhere.  I hope to build a community where contributions are respected, recognized, and rewarded.  While it is important to build a powerful AGI, it is equally important \textit{how} it is built.  An AGI built by a racist team would be racist; an AGI built by a dictatorship will be oppressive.
+	\end{minipage}
+\end{preview}
+
+\end{document}
